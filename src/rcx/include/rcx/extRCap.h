@@ -76,6 +76,14 @@ class extMeasure;
 
 using utl::Logger;
 
+class extMetBox  // assume cross-section on the z-direction
+{
+  int _bot[3];
+  int _top[3];
+  uint _botDX;
+  uint _topDX;
+};
+
 class ext2dBox  // assume cross-section on the z-direction
 {
   int _ll[2];
@@ -103,6 +111,7 @@ class extGeoVarTable
   int _y;
   double _nominal;
   double _epsilon;
+  char* _layerName;
   Ath__array1D<double>* _diffTable;
   Ath__array1D<double>* _varCoeffTable;
   bool _fractionDiff;
@@ -124,6 +133,7 @@ class extGeoVarTable
 
 class extGeoThickTable
 {
+  char* _layerName;
   Ath__array1D<uint>* _widthTable;
   uint _rowCnt;
   uint _colCnt;

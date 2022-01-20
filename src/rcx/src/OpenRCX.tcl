@@ -203,13 +203,14 @@ sta::define_cmd_args "bench_wires" {
     [-under_met layer]
     [-w_list width]
     [-s_list space]
+    [-write_to_solver]
 }
 
 proc bench_wires { args } {
   sta::parse_key_args "bench_wires" args keys \
       { -met_cnt -cnt -len -under_met
         -w_list -s_list } \
-      flags { -diag -over -all -db_only }
+      flags { -diag -over -all -db_only -write_to_solver}
 
   if { ![ord::db_has_tech] } {
     utl::error RCX 357 "No LEF technology has been read."
@@ -219,8 +220,9 @@ proc bench_wires { args } {
   set all [info exists flags(-all)]
   set diag [info exists flags(-diag)]
   set db_only [info exists flags(-db_only)]
-
-  set met_cnt 1000 
+  set solver [info exists flags(-write_to_solver)]
+ 
+ set met_cnt 1000 
   if { [info exists keys(-met_cnt)] } {
     set met_cnt $keys(-met_cnt)
   }
@@ -250,7 +252,7 @@ proc bench_wires { args } {
     set s_list $keys(-s_list)
   }
   
-  rcx::bench_wires $db_only $over $diag $all $met_cnt $cnt $len $under_met $w_list $s_list 
+  rcx::bench_wires $db_only $over $diag $all $met_cnt $cnt $len $under_met $w_list $s_list $solver 
 }
 
 sta::define_cmd_args "bench_verilog" { filename }
@@ -306,3 +308,76 @@ proc write_rules { args } {
  rcx::write_rules $filename $dir $name $pattern $db $solver
 }
 
+sta::define_cmd_args "metal_rules_gen" {
+    [-file filename]
+    [-dir dir]
+    [-name name]
+    [-write_to_solver]
+    [-read_from_solver]
+    [-run_solver]
+    [-pattern pattern]
+    [-metal metal]
+    [-keep_file]
+}
+
+proc metal_rules_gen { args } {
+  sta::parse_key_args "metal_rules_gen" args keys \
+      { -file -dir -name -pattern -metal } \
+      flags { -write_to_solver -read_from_solver  \
+              -run_solver -keep_file }
+
+  set filename "metalProcess"
+  if { [info exists keys(-file)] } {
+    set filename $keys(-file)
+  }
+
+  set dir "./"
+  if { [info exists keys(-dir)] } {
+    set dir $keys(-dir)
+  }
+
+  set name "TYP"
+  if { [info exists keys(-name)] } {
+    set name $keys(-name)
+  }
+
+  set pattern 0
+  if { [info exists keys(-pattern)] } {
+    set pattern $keys(-pattern)
+  }
+
+  set metal 0
+  if { [info exists keys(-metal)] } {
+    set metal $keys(-metal)
+  }
+
+  set write_to_solver [info exists flags(-write_to_solver)]
+  set read_from_solver [info exists flags(-read_from_solver)]
+  set run_solver [info exists flags(-run_solver)]
+  set keep_file [info exists flags(-keep_file)]
+
+ rcx::metal_rules_gen $filename $dir $name $write_to_solver $read_from_solver $run_solver $pattern $keep_file $metal
+}
+
+
+sta::define_cmd_args "read_process" {
+    [-file filename]
+    [-name name]
+}
+
+proc read_process { args } {
+  sta::parse_key_args "read_process" args keys \
+      { -file -name  } 
+
+  set filename "metalProcess"
+  if { [info exists keys(-file)] } {
+    set filename $keys(-file)
+  }
+
+  set name "TYPE"
+  if { [info exists keys(-name)] } {
+    set name $keys(-name)
+  }
+
+ rcx::read_process $filename $name
+}

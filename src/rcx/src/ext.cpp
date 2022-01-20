@@ -124,9 +124,12 @@ bool Ext::metal_rules_gen(const std::string& name, const std::string& dir,
                           const std::string& file, bool write_to_solver,
                           bool read_from_solver, bool run_solver, int pattern,
                           bool keep_file, int metal) {
+  
+  printf("RCX-MET: Entered metal_rules_gen\n");
   _ext->metRulesGen(name.c_str(), dir.c_str(), file.c_str(), pattern,
                     write_to_solver, read_from_solver, run_solver, keep_file,
                     metal);
+  
   return TCL_OK;
 }
 
@@ -875,9 +878,6 @@ bool Ext::net_stats(std::list<int>& net_ids, const std::string& tcap,
   limits.update_int(&parser, len.c_str(), limits._len, 1000);
   limits.update_int(&parser, met_cnt.c_str(), limits._layerCnt);
   limits.update_int(&parser, wire_cnt.c_str(), limits._wCnt);
-  limits.update_int(&parser, via_cnt.c_str(), limits._vCnt);
-  limits.update_int(&parser, term_cnt.c_str(), limits._termCnt);
-  limits.update_int(&parser, bterm_cnt.c_str(), limits._btermCnt);
   limits.update_bbox(&parser, bbox.c_str());
 
   FILE* fp = stdout;

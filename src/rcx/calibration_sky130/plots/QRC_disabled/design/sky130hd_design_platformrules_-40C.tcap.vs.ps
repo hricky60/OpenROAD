@@ -1,0 +1,1089 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 89 239 522 555
+%%Pages: 0
+%%Creator: (BLT 2.4 Graph)
+%%CreationDate: (Fri Dec 17 14:19:18 2021)
+%%Title: (sky130hd_design_platformrules_-40C.tcap.vs.ps)
+%%DocumentData: Clean7Bit
+%%Orientation: Portrait
+%%DocumentNeededResources: font Helvetica Courier
+%%EndComments
+
+
+% including file "/import/cadence/INNOVUS181/share/tcltools/icd8.6.4/lib/blt2.4/bltGraph.pro"
+
+%%BeginProlog
+%
+% PostScript prolog file of the BLT graph widget.
+%
+% Copyright 1989-1992 Regents of the University of California.
+% Permission to use, copy, modify, and distribute this
+% software and its documentation for any purpose and without
+% fee is hereby granted, provided that the above copyright
+% notice appear in all copies.  The University of California
+% makes no representations about the suitability of this
+% software for any purpose.  It is provided "as is" without
+% express or implied warranty.
+%
+% Copyright 1991-1997 Bell Labs Innovations for Lucent Technologies.
+%
+% Permission to use, copy, modify, and distribute this software and its
+% documentation for any purpose and without fee is hereby granted, provided
+% that the above copyright notice appear in all copies and that both that the
+% copyright notice and warranty disclaimer appear in supporting documentation,
+% and that the names of Lucent Technologies any of their entities not be used
+% in advertising or publicity pertaining to distribution of the software
+% without specific, written prior permission.
+%
+% Lucent Technologies disclaims all warranties with regard to this software,
+% including all implied warranties of merchantability and fitness.  In no event
+% shall Lucent Technologies be liable for any special, indirect or
+% consequential damages or any damages whatsoever resulting from loss of use,
+% data or profits, whether in an action of contract, negligence or other
+% tortuous action, arising out of or in connection with the use or performance
+% of this software.
+%
+
+200 dict begin
+
+/BaseRatio 1.3467736870885982 def	% Ratio triangle base / symbol size
+/BgColorProc 0 def			% Background color routine (symbols)
+/DrawSymbolProc 0 def			% Routine to draw symbol outline/fill
+/StippleProc 0 def			% Stipple routine (bar segments)
+/DashesProc 0 def			% Dashes routine (line segments)
+  
+% Define the array ISOLatin1Encoding (which specifies how characters are 
+% encoded for ISO-8859-1 fonts), if it isn't already present (Postscript 
+% level 2 is supposed to define it, but level 1 doesn't). 
+ 
+systemdict /ISOLatin1Encoding known not { 
+  /ISOLatin1Encoding [ 
+    /space /space /space /space /space /space /space /space 
+    /space /space /space /space /space /space /space /space 
+    /space /space /space /space /space /space /space /space 
+    /space /space /space /space /space /space /space /space 
+    /space /exclam /quotedbl /numbersign /dollar /percent /ampersand 
+    /quoteright 
+    /parenleft /parenright /asterisk /plus /comma /minus /period /slash 
+    /zero /one /two /three /four /five /six /seven 
+    /eight /nine /colon /semicolon /less /equal /greater /question 
+    /at /A /B /C /D /E /F /G 
+    /H /I /J /K /L /M /N /O 
+    /P /Q /R /S /T /U /V /W 
+    /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore 
+    /quoteleft /a /b /c /d /e /f /g 
+    /h /i /j /k /l /m /n /o 
+    /p /q /r /s /t /u /v /w 
+    /x /y /z /braceleft /bar /braceright /asciitilde /space 
+    /space /space /space /space /space /space /space /space 
+    /space /space /space /space /space /space /space /space 
+    /dotlessi /grave /acute /circumflex /tilde /macron /breve /dotaccent 
+    /dieresis /space /ring /cedilla /space /hungarumlaut /ogonek /caron 
+    /space /exclamdown /cent /sterling /currency /yen /brokenbar /section 
+    /dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen 
+    /registered /macron 
+    /degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph 
+    /periodcentered 
+    /cedillar /onesuperior /ordmasculine /guillemotright /onequarter 
+    /onehalf /threequarters /questiondown 
+    /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla 
+    /Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex 
+    /Idieresis 
+    /Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply 
+    /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn 
+    /germandbls 
+    /agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla 
+    /egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex 
+    /idieresis 
+    /eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide 
+    /oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn 
+    /ydieresis 
+  ] def 
+} if 
+
+% font ISOEncode font 
+% This procedure changes the encoding of a font from the default 
+% Postscript encoding to ISOLatin1.  It is typically invoked just 
+% before invoking "setfont".  The body of this procedure comes from 
+% Section 5.6.1 of the Postscript book. 
+
+/ISOEncode { 
+  dup length dict
+  begin 
+    {1 index /FID ne {def} {pop pop} ifelse} forall 
+    /Encoding ISOLatin1Encoding def 
+    currentdict 
+  end 
+
+  % I'm not sure why it's necessary to use "definefont" on this new 
+  % font, but it seems to be important; just use the name "Temporary" 
+  % for the font. 
+
+  /Temporary exch definefont 
+} bind def 
+
+/Stroke {
+  gsave
+    stroke
+  grestore
+} def
+
+/Fill {
+  gsave
+    fill
+  grestore
+} def
+
+/SetFont { 	
+  % Stack: pointSize fontName
+  findfont exch scalefont ISOEncode setfont
+} def
+
+/Box {
+  % Stack: x y width height
+  newpath
+  exch 4 2 roll moveto
+  dup 0 rlineto
+  exch 0 exch rlineto
+  neg 0 rlineto
+  closepath
+} def
+
+/SetFgColor {
+  % Stack: red green blue
+  CL 0 eq { 
+    pop pop pop 0 0 0 
+  } if
+  setrgbcolor
+  CL 1 eq { 
+    currentgray setgray 
+  } if
+} def
+
+/SetBgColor {
+  % Stack: red green blue
+  CL 0 eq { 
+    pop pop pop 1 1 1 
+  } if
+  setrgbcolor
+  CL 1 eq { 
+    currentgray setgray 
+  } if
+} def
+
+% The next two definitions are taken from "$tk_library/prolog.ps"
+
+% desiredSize EvenPixels closestSize
+%
+% The procedure below is used for stippling.  Given the optimal size
+% of a dot in a stipple pattern in the current user coordinate system,
+% compute the closest size that is an exact multiple of the device's
+% pixel size.  This allows stipple patterns to be displayed without
+% aliasing effects.
+
+/EvenPixels {
+  % Compute exact number of device pixels per stipple dot.
+  dup 0 matrix currentmatrix dtransform
+  dup mul exch dup mul add sqrt
+
+  % Round to an integer, make sure the number is at least 1, and compute
+  % user coord distance corresponding to this.
+  dup round dup 1 lt {pop 1} if
+  exch div mul
+} bind def
+
+% width height string filled StippleFill --
+%
+% Given a path and other graphics information already set up, this
+% procedure will fill the current path in a stippled fashion.  "String"
+% contains a proper image description of the stipple pattern and
+% "width" and "height" give its dimensions.  If "filled" is true then
+% it means that the area to be stippled is gotten by filling the
+% current path (e.g. the interior of a polygon); if it's false, the
+% area is gotten by stroking the current path (e.g. a wide line).
+% Each stipple dot is assumed to be about one unit across in the
+% current user coordinate system.
+
+% width height string StippleFill --
+%
+% Given a path already set up and a clipping region generated from
+% it, this procedure will fill the clipping region with a stipple
+% pattern.  "String" contains a proper image description of the
+% stipple pattern and "width" and "height" give its dimensions.  Each
+% stipple dot is assumed to be about one unit across in the current
+% user coordinate system.  This procedure trashes the graphics state.
+
+/StippleFill {
+    % The following code is needed to work around a NeWSprint bug.
+
+    /tmpstip 1 index def
+
+    % Change the scaling so that one user unit in user coordinates
+    % corresponds to the size of one stipple dot.
+    1 EvenPixels dup scale
+
+    % Compute the bounding box occupied by the path (which is now
+    % the clipping region), and round the lower coordinates down
+    % to the nearest starting point for the stipple pattern.  Be
+    % careful about negative numbers, since the rounding works
+    % differently on them.
+
+    pathbbox
+    4 2 roll
+    5 index div dup 0 lt {1 sub} if cvi 5 index mul 4 1 roll
+    6 index div dup 0 lt {1 sub} if cvi 6 index mul 3 2 roll
+
+    % Stack now: width height string y1 y2 x1 x2
+    % Below is a doubly-nested for loop to iterate across this area
+    % in units of the stipple pattern size, going up columns then
+    % across rows, blasting out a stipple-pattern-sized rectangle at
+    % each position
+
+    6 index exch {
+	2 index 5 index 3 index {
+	    % Stack now: width height string y1 y2 x y
+
+	    gsave
+	    1 index exch translate
+	    5 index 5 index true matrix tmpstip imagemask
+	    grestore
+	} for
+	pop
+    } for
+    pop pop pop pop pop
+} bind def
+
+
+/LS {	% Stack: x1 y1 x2 y2
+  newpath 4 2 roll moveto lineto stroke
+} def
+
+/EndText {
+  %Stack :
+  grestore
+} def
+
+/BeginText {
+  %Stack :  w h theta centerX centerY
+  gsave
+    % Translate the origin to the center of bounding box and rotate
+    translate neg rotate
+    % Translate back to the origin of the text region
+    -0.5 mul exch -0.5 mul exch translate
+} def
+
+/DrawAdjText {
+  %Stack : str strWidth x y
+  moveto				% Go to the text position
+  exch dup dup 4 2 roll
+
+  % Adjust character widths to get desired overall string width
+  % adjust X = (desired width - real width)/#chars
+
+  stringwidth pop sub exch
+  length div
+  0 3 -1 roll
+
+  % Flip back the scale so that the string is not drawn in reverse
+
+  gsave
+    1 -1 scale
+    ashow
+  grestore
+} def
+
+/DrawBitmap {
+  % Stack: ?bgColorProc? boolean centerX centerY width height theta imageStr
+  gsave
+    6 -2 roll translate			% Translate to center of bounding box
+    4 1 roll neg rotate			% Rotate by theta
+    
+    % Find upperleft corner of bounding box
+    
+    2 copy -.5 mul exch -.5 mul exch translate
+    2 copy scale			% Make pixel unit scale
+    newpath
+    0 0 moveto 0 1 lineto 1 1 lineto 1 0 lineto
+    closepath
+    
+    % Fill rectangle with background color
+    
+    4 -1 roll { 
+      gsave 
+	4 -1 roll exec fill 
+      grestore 
+    } if
+    
+    % Paint the image string into the unit rectangle
+    
+    2 copy true 3 -1 roll 0 0 5 -1 roll 0 0 6 array astore 5 -1 roll
+    imagemask
+  grestore
+} def
+
+% Symbols:
+
+% Skinny-cross
+/Sc {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate 45 rotate
+    0 0 3 -1 roll Sp
+  grestore
+} def
+
+% Skinny-plus
+/Sp {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate
+    2 idiv
+    dup 2 copy
+    newpath neg 0 moveto 0 lineto
+    DrawSymbolProc
+    newpath neg 0 exch moveto 0 exch lineto
+    DrawSymbolProc
+  grestore
+} def
+
+% Cross
+/Cr {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate 45 rotate
+    0 0 3 -1 roll Pl
+  grestore
+} def
+
+% Plus
+/Pl {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate
+    dup 2 idiv
+    exch 6 idiv
+
+    %
+    %          2   3		The plus/cross symbol is a
+    %				closed polygon of 12 points.
+    %      0   1   4    5	The diagram to the left
+    %           x,y		represents the positions of
+    %     11  10   7    6	the points which are computed
+    %				below.
+    %          9   8
+    %
+
+    newpath
+    2 copy exch neg exch neg moveto dup neg dup lineto
+    2 copy neg exch neg lineto 2 copy exch neg lineto
+    dup dup neg lineto 2 copy neg lineto 2 copy lineto
+    dup dup lineto 2 copy exch lineto 2 copy neg exch lineto
+    dup dup neg exch lineto exch neg exch lineto
+    closepath
+    DrawSymbolProc
+  grestore
+} def
+
+% Circle
+/Ci {
+  % Stack: x y symbolSize
+  gsave
+    3 copy pop
+    moveto newpath
+    2 div 0 360 arc
+    closepath DrawSymbolProc
+  grestore
+} def
+
+% Square
+/Sq {
+  % Stack: x y symbolSize
+  gsave
+    dup dup 2 div dup
+    6 -1 roll exch sub exch
+    5 -1 roll exch sub 4 -2 roll Box
+    DrawSymbolProc
+  grestore
+} def
+
+% Line
+/Li {
+  % Stack: x y symbolSize
+  gsave
+    3 1 roll exch 3 -1 roll 2 div 3 copy
+    newpath
+    sub exch moveto add exch lineto
+    stroke
+  grestore
+} def
+
+% Diamond
+/Di {
+  % Stack: x y symbolSize
+  gsave
+    3 1 roll translate 45 rotate 0 0 3 -1 roll Sq
+  grestore
+} def
+    
+% Triangle
+/Tr {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate
+    BaseRatio mul 0.5 mul		% Calculate 1/2 base
+    dup 0 exch 30 cos mul		% h1 = height above center point
+    neg					% b2 0 -h1
+    newpath moveto			% point 1;  b2
+    dup 30 sin 30 cos div mul		% h2 = height below center point
+    2 copy lineto			% point 2;  b2 h2
+    exch neg exch lineto		% 
+    closepath
+    DrawSymbolProc
+  grestore
+} def
+
+% Arrow
+/Ar {
+  % Stack: x y symbolSize
+  gsave
+    3 -2 roll translate
+    BaseRatio mul 0.5 mul		% Calculate 1/2 base
+    dup 0 exch 30 cos mul		% h1 = height above center point
+					% b2 0 h1
+    newpath moveto			% point 1;  b2
+    dup 30 sin 30 cos div mul		% h2 = height below center point
+    neg					% -h2 b2
+    2 copy lineto			% point 2;  b2 h2
+    exch neg exch lineto		% 
+    closepath
+    DrawSymbolProc
+  grestore
+} def
+
+% Bitmap
+/Bm {
+  % Stack: x y symbolSize
+  gsave
+    3 1 roll translate pop DrawSymbolProc
+  grestore
+} def
+
+%%EndProlog
+
+%%BeginSetup
+gsave					% Save the graphics state
+
+% Default line/text style parameters
+
+1 setlinewidth				% width
+1 setlinejoin				% join
+0 setlinecap				% cap
+[] 0 setdash				% dashes
+
+/CL 0 def				% Set color level mode
+0 0 0 setrgbcolor			% color
+
+% Transform coordinate system to use X11 coordinates
+
+% 1. Flip y-axis over by reversing the scale,
+% 2. Translate the origin to the other side of the page,
+%    making the origin the upper left corner
+0.719734 -0.720472 scale
+0 -1100 translate
+
+% User defined page layout
+
+% Set color level
+/CL 2 def
+
+% Set origin
+125 331 translate
+
+
+%%EndSetup
+
+12 /Helvetica-Bold SetFont
+40 32 557 380 Box
+
+1 1 1 SetBgColor
+Fill
+gsave clip
+
+
+% Element "excluded"
+
+
+% Element "over"
+
+1 setlinewidth
+[ ] 0 setdash
+
+/DrawSymbolProc {
+  0 0.501961 0 SetBgColor
+  Fill
+  0 0.501961 0 SetFgColor
+  stroke
+} def
+
+50.7204 403.68 1 Ci
+
+% Element "under"
+
+1 setlinewidth
+[ ] 0 setdash
+
+/DrawSymbolProc {
+  1 0 0 SetBgColor
+  Fill
+  1 0 0 SetFgColor
+  stroke
+} def
+
+130.122 357.545 1 Ci
+47.1748 407.159 1 Ci
+66.6573 395.344 1 Ci
+53.7327 403.348 1 Ci
+56.0889 403.025 1 Ci
+53.1249 403.844 1 Ci
+60.7718 398.072 1 Ci
+48.4976 406.574 1 Ci
+123.155 360.54 1 Ci
+46.4884 407.11 1 Ci
+45.2245 408.349 1 Ci
+49.5975 405.616 1 Ci
+49.9004 405.778 1 Ci
+53.2092 404.874 1 Ci
+43.8673 409.543 1 Ci
+45.0997 408.671 1 Ci
+55.6396 403.929 1 Ci
+51.8779 404.605 1 Ci
+48.7575 405.903 1 Ci
+79.0709 389.13 1 Ci
+74.0713 391.77 1 Ci
+46.1565 408.037 1 Ci
+148.814 371.552 1 Ci
+67.4246 396.814 1 Ci
+143.058 359.297 1 Ci
+55.3185 403.419 1 Ci
+44.7322 408.906 1 Ci
+44.601 408.38 1 Ci
+58.5042 400.814 1 Ci
+53.5237 404.315 1 Ci
+48.8646 406.306 1 Ci
+94.4026 381.967 1 Ci
+51.2826 405.082 1 Ci
+54.8556 402.336 1 Ci
+51.5562 404.413 1 Ci
+58.8147 400.508 1 Ci
+44.2638 408.447 1 Ci
+42.9597 409.766 1 Ci
+51.0259 405.888 1 Ci
+115.013 370.254 1 Ci
+88.0234 381.999 1 Ci
+134.776 357.765 1 Ci
+45.4576 408.469 1 Ci
+75.8256 392.436 1 Ci
+45.2895 408.371 1 Ci
+43.9711 409.705 1 Ci
+155.417 358.891 1 Ci
+46.1634 408.232 1 Ci
+54.0926 403.444 1 Ci
+46.2913 407.907 1 Ci
+85.6649 384.619 1 Ci
+83.5092 386.401 1 Ci
+47.3545 407.002 1 Ci
+52.588 404.282 1 Ci
+51.2489 405.213 1 Ci
+51.3423 404.221 1 Ci
+71.5188 393.352 1 Ci
+62.997 398.579 1 Ci
+47.0831 407.078 1 Ci
+76.2117 392.207 1 Ci
+67.4534 393.363 1 Ci
+84.6346 382.766 1 Ci
+141.706 356.032 1 Ci
+59.1245 401.861 1 Ci
+61.8492 398.73 1 Ci
+50.4974 406.561 1 Ci
+52.1661 404.954 1 Ci
+83.087 386.009 1 Ci
+47.2087 407.894 1 Ci
+153.303 350.566 1 Ci
+81.0568 390.457 1 Ci
+45.838 407.713 1 Ci
+77.1047 391.586 1 Ci
+55.122 401.534 1 Ci
+47.321 407.207 1 Ci
+104.002 371.451 1 Ci
+50.4854 406.522 1 Ci
+48.2017 406.808 1 Ci
+86.183 380.736 1 Ci
+189.338 330.871 1 Ci
+45.4467 408.533 1 Ci
+73.5593 394.306 1 Ci
+81.7318 391.692 1 Ci
+49.0626 404.96 1 Ci
+51.8067 404.721 1 Ci
+90.2798 380.541 1 Ci
+77.8852 388.013 1 Ci
+49.9569 406.272 1 Ci
+51.8984 405.735 1 Ci
+45.4087 408.732 1 Ci
+153.939 367.337 1 Ci
+46.011 408.605 1 Ci
+114.849 373.528 1 Ci
+46.8104 408.081 1 Ci
+75.0774 390.985 1 Ci
+43.8574 409.283 1 Ci
+49.5413 406.121 1 Ci
+56.2259 402.281 1 Ci
+87.3228 382.149 1 Ci
+52.2494 405.726 1 Ci
+52.1497 405.941 1 Ci
+49.256 406.756 1 Ci
+57.1089 402.215 1 Ci
+111.52 371.098 1 Ci
+74.3132 392.116 1 Ci
+78.3567 389.603 1 Ci
+49.2462 407.522 1 Ci
+104.445 372.424 1 Ci
+68.4846 394.86 1 Ci
+54.6517 403.394 1 Ci
+55.2562 403.485 1 Ci
+54.1573 402.43 1 Ci
+126.4 363.715 1 Ci
+168.485 361.95 1 Ci
+57.054 402.67 1 Ci
+72.6511 396.078 1 Ci
+46.91 407.539 1 Ci
+163.336 362.269 1 Ci
+43.1036 409.655 1 Ci
+50.0726 406.003 1 Ci
+46.4419 407.665 1 Ci
+51.897 404.889 1 Ci
+44.3234 408.694 1 Ci
+44.5468 408.498 1 Ci
+47.5113 407.198 1 Ci
+81.542 389.254 1 Ci
+66.7397 397.675 1 Ci
+44.2932 409.435 1 Ci
+53.0586 404.111 1 Ci
+43.9053 409.004 1 Ci
+52.7529 405.497 1 Ci
+59.838 400.439 1 Ci
+87.8754 384.996 1 Ci
+43.5787 409.857 1 Ci
+127.24 381.735 1 Ci
+45.5811 408.827 1 Ci
+50.7764 406.379 1 Ci
+393.139 211.911 1 Ci
+44.4022 409.056 1 Ci
+66.9152 396.412 1 Ci
+53.6689 403.988 1 Ci
+67.2188 396.013 1 Ci
+50.4569 406.474 1 Ci
+306.351 263.207 1 Ci
+130.932 362.775 1 Ci
+43.5273 409.314 1 Ci
+48.6515 405.543 1 Ci
+47.399 407.027 1 Ci
+66.7938 397.929 1 Ci
+45.8503 407.963 1 Ci
+45.6141 408.573 1 Ci
+53.7782 404.042 1 Ci
+86.5517 380.224 1 Ci
+88.9817 380.388 1 Ci
+47.1748 407.023 1 Ci
+54.774 401.099 1 Ci
+153.208 369.801 1 Ci
+44.479 409.112 1 Ci
+52.5472 403.109 1 Ci
+48.6198 406.046 1 Ci
+74.991 392.315 1 Ci
+78.867 391.342 1 Ci
+51.8543 404.889 1 Ci
+49.1172 405.862 1 Ci
+50.7855 405.976 1 Ci
+52.3491 404.085 1 Ci
+59.0372 398.667 1 Ci
+81.6814 391.27 1 Ci
+45.7993 408.035 1 Ci
+51.277 406.756 1 Ci
+46.63 407.447 1 Ci
+181.336 336.792 1 Ci
+287.314 281.18 1 Ci
+49.905 406.419 1 Ci
+101.654 374.831 1 Ci
+139.415 376.744 1 Ci
+113.583 372.331 1 Ci
+53.0378 404.781 1 Ci
+45.4291 408.229 1 Ci
+54.1217 403.311 1 Ci
+44.7349 409.017 1 Ci
+157.279 347.801 1 Ci
+50.6525 406.309 1 Ci
+50.7569 404.779 1 Ci
+101.014 374.146 1 Ci
+58.9298 401.098 1 Ci
+45.1914 408.45 1 Ci
+46.7014 407.193 1 Ci
+127.643 357.958 1 Ci
+44.1485 409.501 1 Ci
+46.162 408.631 1 Ci
+53.1939 404.371 1 Ci
+64.0526 399.897 1 Ci
+89.0544 383.755 1 Ci
+177.968 325.143 1 Ci
+100.829 374.225 1 Ci
+80.1691 389.503 1 Ci
+55.5331 402.723 1 Ci
+47.6689 407.027 1 Ci
+187.772 340.994 1 Ci
+44.138 409.096 1 Ci
+57.1705 401.068 1 Ci
+67.697 396.304 1 Ci
+46.2749 407.575 1 Ci
+59.1932 398.976 1 Ci
+51.4701 405.407 1 Ci
+44.3417 409.125 1 Ci
+52.4794 404.923 1 Ci
+135.228 359.435 1 Ci
+46.4492 407.512 1 Ci
+51.3767 406.679 1 Ci
+82.3865 387.776 1 Ci
+45.8961 408.347 1 Ci
+43.017 409.795 1 Ci
+43.5198 409.43 1 Ci
+183.155 352.442 1 Ci
+100.488 376.485 1 Ci
+45.2273 408.238 1 Ci
+47.8534 407.284 1 Ci
+162.144 343.066 1 Ci
+106.482 378.901 1 Ci
+58.8182 400.681 1 Ci
+50.6451 405.952 1 Ci
+54.1225 402.947 1 Ci
+52.6136 405.197 1 Ci
+74.2183 392.611 1 Ci
+55.8201 401.675 1 Ci
+52.9335 404.273 1 Ci
+56.9767 401.158 1 Ci
+54.4393 403.168 1 Ci
+75.8652 390.462 1 Ci
+44.8456 408.606 1 Ci
+123.36 371.254 1 Ci
+49.0128 406.477 1 Ci
+75.2083 390.141 1 Ci
+42.6999 410.014 1 Ci
+51.0701 404.369 1 Ci
+48.8178 406.554 1 Ci
+46.863 407.394 1 Ci
+91.1474 379.504 1 Ci
+46.6922 407.711 1 Ci
+65.6607 397.961 1 Ci
+46.1995 408.646 1 Ci
+44.7023 408.15 1 Ci
+49.0075 406.172 1 Ci
+51.494 405.395 1 Ci
+93.8805 383.788 1 Ci
+76.404 388.808 1 Ci
+72.8399 393.879 1 Ci
+47.3832 407.148 1 Ci
+44.2698 408.831 1 Ci
+46.3494 408.05 1 Ci
+53.0832 403.901 1 Ci
+57.9836 401.869 1 Ci
+49.9917 407.365 1 Ci
+57.5404 400.729 1 Ci
+77.2344 392.51 1 Ci
+56.36 402.857 1 Ci
+44.7392 408.868 1 Ci
+136.095 358.157 1 Ci
+90.5921 378.827 1 Ci
+56.5553 403.132 1 Ci
+48.9721 406.321 1 Ci
+61.1308 399.917 1 Ci
+130.313 376.78 1 Ci
+51.3848 404.232 1 Ci
+55.0549 403.424 1 Ci
+46.8259 407.236 1 Ci
+53.3247 404.6 1 Ci
+46.8123 407.557 1 Ci
+45.4793 408.075 1 Ci
+126.598 362.232 1 Ci
+43.7758 409.375 1 Ci
+57.8122 402.038 1 Ci
+50.7994 406.229 1 Ci
+44.7992 408.812 1 Ci
+59.0551 403.201 1 Ci
+52.8223 403.006 1 Ci
+52.6752 403.935 1 Ci
+108.137 377.638 1 Ci
+294.711 275.766 1 Ci
+99.8026 374.3 1 Ci
+50.3617 406.627 1 Ci
+74.5751 392.033 1 Ci
+77.3748 393.866 1 Ci
+46.6981 407.584 1 Ci
+96.9189 382.488 1 Ci
+52.1807 405.215 1 Ci
+46.3414 406.763 1 Ci
+51.4904 405.325 1 Ci
+56.7452 399.996 1 Ci
+59.3218 399.75 1 Ci
+44.5897 408.567 1 Ci
+46.0302 408 1 Ci
+44.7626 408.843 1 Ci
+43.8235 409.35 1 Ci
+62.5307 399.528 1 Ci
+44.9649 409.25 1 Ci
+48.0716 406.601 1 Ci
+105.522 376.592 1 Ci
+135.191 355.262 1 Ci
+49.2922 405.767 1 Ci
+81.774 386.497 1 Ci
+57.082 400.197 1 Ci
+50.0261 406.787 1 Ci
+44.3881 409.296 1 Ci
+86.6054 385.136 1 Ci
+44.2598 408.826 1 Ci
+45.0191 408.839 1 Ci
+147.647 353.718 1 Ci
+52.7801 404.001 1 Ci
+50.4717 405.425 1 Ci
+64.8704 395.836 1 Ci
+69.002 394.356 1 Ci
+48.4492 407.075 1 Ci
+74.0521 392.026 1 Ci
+145.267 374.848 1 Ci
+127.939 381.277 1 Ci
+141.371 353.38 1 Ci
+58.9212 399.916 1 Ci
+48.499 406.017 1 Ci
+62.482 399.208 1 Ci
+59.9272 401.806 1 Ci
+44.8099 408.152 1 Ci
+149.59 351.926 1 Ci
+48.742 406.322 1 Ci
+45.7153 408.416 1 Ci
+68.2074 396.009 1 Ci
+596 100.15 1 Ci
+48.2401 406.625 1 Ci
+49.7148 406.214 1 Ci
+169.779 338.301 1 Ci
+47.3796 408.023 1 Ci
+43.9568 408.946 1 Ci
+141.976 350.978 1 Ci
+122.275 368.51 1 Ci
+92.2564 380.435 1 Ci
+68.2469 396.836 1 Ci
+51.9663 405.344 1 Ci
+51.5613 405.909 1 Ci
+56.8645 403.372 1 Ci
+55.3833 402.538 1 Ci
+91.3572 381.437 1 Ci
+55.1706 401.822 1 Ci
+44.7399 408.761 1 Ci
+64.6402 399.469 1 Ci
+48.4564 406.368 1 Ci
+50.4881 406.521 1 Ci
+63.9727 401.618 1 Ci
+53.5879 404.802 1 Ci
+48.6334 407.163 1 Ci
+48.5502 406.615 1 Ci
+159.159 369.031 1 Ci
+52.4597 405.262 1 Ci
+224.093 297.789 1 Ci
+107.097 373.072 1 Ci
+48.5836 406.257 1 Ci
+105.683 372.459 1 Ci
+110.1 374.476 1 Ci
+42.9313 409.829 1 Ci
+52.9394 405.264 1 Ci
+78.135 390.84 1 Ci
+45.158 408.996 1 Ci
+44.5559 408.931 1 Ci
+47.1489 407.214 1 Ci
+50.1188 406.567 1 Ci
+53.6114 403.803 1 Ci
+52.9247 404.123 1 Ci
+89.4187 385.198 1 Ci
+59.8838 400.905 1 Ci
+
+% Element "unity_line"
+
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+1 setlinewidth
+[ ] 0 setdash
+/DashesProc {} def
+/DashesProc {} def
+ newpath 40 411 moveto
+ 596 32 lineto
+DashesProc stroke
+
+% Marker "annotations_box" is a PolygonMarker marker
+newpath 457 35.79 moveto
+590.44 35.79 lineto
+590.44 183.6 lineto
+457 183.6 lineto
+457 35.79 lineto
+closepath
+1 1 1 SetFgColor
+Fill
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+1 setlinewidth
+[ ] 0 setdash
+/DashesProc {} def
+/DashesProc {} def
+457 183.6 moveto
+ 457 35.79 lineto
+DashesProc stroke
+457 35.79 moveto
+ 590.44 35.79 lineto
+DashesProc stroke
+590.44 35.79 moveto
+ 590.44 183.6 lineto
+DashesProc stroke
+590.44 183.6 moveto
+ 457 183.6 lineto
+DashesProc stroke
+
+% Marker "marker1" is a TextMarker marker
+106 20 0 514.633 44.7076 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(VS Statistics:) 98 4 11 DrawAdjText
+EndText
+
+% Marker "marker2" is a TextMarker marker
+78 20 0 500.633 58.0841 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(Appl Scale) 70 4 11 DrawAdjText
+EndText
+
+% Marker "marker3" is a TextMarker marker
+134 20 0 528.633 67.0018 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(    Factor: 1.0000) 126 4 11 DrawAdjText
+EndText
+
+% Marker "marker4" is a TextMarker marker
+78 20 0 500.633 84.8371 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+( Rec Scale) 70 4 11 DrawAdjText
+EndText
+
+% Marker "marker5" is a TextMarker marker
+134 20 0 528.633 93.7547 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(    Factor: 1.3010) 126 4 11 DrawAdjText
+EndText
+
+% Unset clipping
+grestore
+
+1 1 1 SetBgColor
+0 0 600 32 Box fill
+
+0 32 40 379 Box fill
+
+596 32 4 379 Box fill
+
+0 411 600 26 Box fill
+
+200 18 0 318 15 BeginText
+12 /Helvetica-Bold SetFont
+0 0 0 SetFgColor
+(openrcx vs invs tcap) 200 0 11 DrawAdjText
+EndText
+10 11 0 40 428.5 BeginText
+10 /Helvetica SetFont
+0 0 0 SetFgColor
+(0) 6 2 8 DrawAdjText
+EndText
+25 11 0 291.023 428.5 BeginText
+10 /Helvetica SetFont
+0 0 0 SetFgColor
+(0.05) 21 2 8 DrawAdjText
+EndText
+19 11 0 542.045 428.5 BeginText
+10 /Helvetica SetFont
+0 0 0 SetFgColor
+(0.1) 15 2 8 DrawAdjText
+EndText
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+1 setlinewidth
+[ ] 0 setdash
+/DashesProc {} def
+40 413 moveto
+ 596 413 lineto
+DashesProc stroke
+165.511 413 moveto
+ 165.511 418 lineto
+DashesProc stroke
+40 413 moveto
+ 40 421 lineto
+DashesProc stroke
+416.534 413 moveto
+ 416.534 418 lineto
+DashesProc stroke
+291.023 413 moveto
+ 291.023 421 lineto
+DashesProc stroke
+542.045 413 moveto
+ 542.045 421 lineto
+DashesProc stroke
+10 11 0 23 411 BeginText
+10 /Helvetica SetFont
+0 0 0 SetFgColor
+(0) 6 2 8 DrawAdjText
+EndText
+25 11 0 15.5 239.889 BeginText
+10 /Helvetica SetFont
+0 0 0 SetFgColor
+(0.05) 21 2 8 DrawAdjText
+EndText
+19 11 0 18.5 68.7785 BeginText
+10 /Helvetica SetFont
+0 0 0 SetFgColor
+(0.1) 15 2 8 DrawAdjText
+EndText
+0 setlinejoin
+0 setlinecap
+0 0 0 SetFgColor
+1 setlinewidth
+[ ] 0 setdash
+/DashesProc {} def
+38 411 moveto
+ 38 32 lineto
+DashesProc stroke
+38 325.445 moveto
+ 33 325.445 lineto
+DashesProc stroke
+38 411 moveto
+ 30 411 lineto
+DashesProc stroke
+38 154.334 moveto
+ 33 154.334 lineto
+DashesProc stroke
+38 239.889 moveto
+ 30 239.889 lineto
+DashesProc stroke
+38 68.7785 moveto
+ 30 68.7785 lineto
+DashesProc stroke
+showpage
+%Trailer
+grestore
+end
+%EOF

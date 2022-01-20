@@ -4,9 +4,9 @@
 
 # Variables that point to the LEF files
 # NEEDS to be changed for different tech.
-set DIR ../../test/sky130
-set TECH_LEF ${DIR}/sky130_tech.lef
-set MACRO_LEF ${DIR}/sky130_std_cell.lef
+set DIR ../../test/sky130hs
+set TECH_LEF ${DIR}/sky130hs.tlef
+set MACRO_LEF ${DIR}/sky130hs_std_cell.lef
 
 # This is just an example of the parasitics of the 
 # patterns that is used for Demo purposes.

@@ -1,0 +1,138 @@
+=================================================
+<FF>      Foundation Flow Code Generator
+<FF>        Version : 17.10-p003_1
+=================================================
+<FF> FLOW MODE == flat
+<FF> OUTPUT DIRECTORY == FF
+<FF> SETUP PATH == .
+<FF> DIRECTORY NAMING STYLE == none
+<FF> GENERATE MAKEFILE == false
+<FF> LOADING CONFIGURATION FILES:
+<FF> Finished loading setup.tcl
+<FF>    setup_tcl -> ./setup.tcl
+<FF>    innovus_config_tcl -> ./innovus_config.tcl
+<FF> Seeding variables ...
+<FF> Seeding variables ...
+<FF> Generating step init
+-------------------------------------------------
+
+                   Info Summary
+                  ---------------
+    (1) Changing vars(enable_ocv) from "false" to "pre_cts"
+
+                  Warning Summary
+                  ---------------
+    (1) Either fp_file, def_files, fp_tcl_file, fp_tcl_proc should be defined
+    (2) PAC is obsolete and will be removed in a future version. Consider using Sign-off ECO.
+    (3) Recommended variable vars(tie_cells) not defined
+    (4) Recommended variables dont_use_list and dont_use_file not defined
+    (5) Recommended variable vars(antenna_diode) not defined
+    (6) No scale factors set for rc corner (rc_typ)
+    (7) No derating factors set for delay corner (corner_tt)
+
+                   Error Summary
+                   ---------------
+    (1) Variable vars(rc_typ,cap_table) or vars(rc_typ,qx_tech_file) must be defined
+    (2) File does not exist (/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/results/sky130hd/riscv32i/base/6_final.v)
+    (3) File does not exist (/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/results/sky130hd/riscv32i/base/6_final.sdc)
+HELLO
+
+
+-------------------------------------------------
+<FF> CODE GENERATION COMPLETE
+<FF> ... VERSION  -> 17.1.0
+<FF> ... RUN DIRECTORY  -> /import/okita1/ricardh/OpenROAD/pnr/sky130_design
+<FF> ... SCRIPTS  -> FF
+<FF> ... PLUGINS  -> 6 defined, 6 found
+<FF> ... REPORT   -> FF/check.rpt
+-------------------------------------------------
+<FF> Creating FF/procs.tcl
+VPATH=make; export VPATH; innovus -init FF/INNOVUS/run_init.tcl -log LOG/init.log -overwrite -64 -nowin
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v18.14-s088_1, built Tue May 28 15:23:59 PDT 2019
+Options:	-init FF/INNOVUS/run_init.tcl -log LOG/init.log -overwrite -nowin 
+Date:		Tue Aug 24 13:44:59 2021
+Host:		okita.ecen.okstate.edu (x86_64 w/Linux 3.10.0-1062.9.1.el7.x86_64) (8cores*16cpus*Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz 16384KB)
+OS:		Red Hat Enterprise Linux Server release 7.7 (Maipo)
+
+License:
+		invs	Innovus Implementation System	18.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_2897_okita.ecen.okstate.edu_rjridle_7HPvRu.
+
+The soft stacksize limit is either up to the hard limit or larger than 0.2%RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+Sourcing file "FF/INNOVUS/run_init.tcl" ...
+<FF> Finished loading setup.tcl
+
+
+###############################################################
+# Host ID: okita
+# OS:      RedHat Linux 3.10.0-1062.9.1.el7.x86_64 x86_64
+# CPU:     2 -- Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz @ 3600.000 MHz
+/opt/rh/devtoolset-8/root/usr/bin/size: '67222163456': No such file
+/opt/rh/devtoolset-8/root/usr/bin/size: '33755754496': No such file
+# TIME:    13:45:08 CDT
+###############################################################
+
+
+The timeout for a remote job to respond is 3600 seconds.
+Submit command for task runs will be: local
+<FF> Plugin -> pre_init_tcl
+<FF> LOADING 'pre_init_tcl' PLUG-IN FILE(s) 
+<FF> -> PLUG/INNOVUS/pre_init.tcl
+#% Begin Load MMMC data ... (date=08/24 13:45:08, mem=405.1M)
+**ERROR: (TCLCMD-989):	cannot open SDC file '/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/results/sky130hd/riscv32i/base/6_final.sdc' for mode 'setup_func_mode'
+**ERROR: (IMPSYT-6692):	Invalid return code while executing 'FF/INNOVUS/run_init.tcl' was returned and script processing was stopped. Review the following error in 'FF/INNOVUS/run_init.tcl' then restart.
+Error info: FF/INNOVUS/run_init.tcl: 
+    while executing
+"create_constraint_mode -name setup_func_mode \
+   -sdc_files [list /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/results/sk..."
+    (file "/tmp/innovus_temp_2897_okita.ecen.okstate.edu_rjridle_7HPvRu/.view_def_init_design_2897.tclOPs9m8" line 18)
+    invoked from within
+"::se_source_orig /tmp/innovus_temp_2897_okita.ecen.okstate.edu_rjridle_7HPvRu/.view_def_init_design_2897.tclOPs9m8"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 159)
+    invoked from within
+"source /tmp/innovus_temp_2897_okita.ecen.okstate.edu_rjridle_7HPvRu/.view_def_init_design_2897.tclOPs9m8"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list source $view_def_to_be_processed]"
+    (procedure "::init_design::process_view_def" line 81)
+    invoked from within
+"::init_design::process_view_def $::init_mmmc_file"
+    (procedure "init_design" line 166)
+    invoked from within
+"init_design"
+    (file "FF/INNOVUS/run_init.tcl" line 55)
+    invoked from within
+"::se_source_orig FF/INNOVUS/run_init.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 159)
+    invoked from within
+"source FF/INNOVUS/run_init.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source FF/INNOVUS/run_init.tcl"
+    ("eval" body line 1)
+    invoked from within
+"eval {uplevel #0 source FF/INNOVUS/run_init.tcl}"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: eval "uplevel #0 source $fileName"".
+innovus 1> er[1D [1D[1D [1Dexit
+
+*** Memory Usage v#1 (Current mem = 490.637M, initial mem = 228.625M) ***
+*** Message Summary: 0 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:08.2, real=0:00:25.0, mem=490.6M) ---
+

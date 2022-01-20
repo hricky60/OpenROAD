@@ -73,10 +73,16 @@ extMainOptions::extMainOptions() {
 }
 uint extRCModel::benchWithVar_density(extMainOptions* opt,
                                       extMeasure* measure) {
-  if (opt->_db_only)
+  printf("RCX-OMG: Entered benchWithVar\n");
+
+  if (opt->_db_only){
+    printf("RCX-WUT: DB_ONLY is TRUE thus entering benchDB_WS function\n");
     return benchDB_WS(opt, measure);
+  }
   if (opt->_listsFlag)
     return benchWithVar_lists(opt, measure);
+
+  printf("RCX-uwu: PASSED benchWithVar IF BLOCK\n");
 
   uint cnt = 0;
   int met = measure->_met;
@@ -145,6 +151,9 @@ uint extRCModel::benchWithVar_lists(extMainOptions* opt, extMeasure* measure) {
   Ath__array1D<double>* sTable = &opt->_spaceTable;
   Ath__array1D<double>* thTable = &opt->_thicknessTable;
   Ath__array1D<double>* gTable = &opt->_gridTable;
+
+
+  printf("RCX-3000: INSIDE BENCHWITHVAR_LISTS\n");
 
   uint cnt = 0;
   int met = measure->_met;
@@ -262,6 +271,8 @@ uint extRCModel::linesOverBench(extMainOptions* opt) {
         continue;
 
       measure.setMets(met, underMet, -1);
+
+      printf("RCX-TF: ENTERED LINEOVERBENCH\n");
 
       uint cnt1 = benchWithVar_density(opt, &measure);
 
@@ -466,6 +477,13 @@ uint extMain::benchWires(extMainOptions* opt) {
 
   m->setOptions(opt->_topDir, opt->_name, opt->_write_to_solver,
                 opt->_read_from_solver, opt->_run_solver);
+
+	
+  printf("RCX-69: WRITE_TO_SOLVER VERSION OF BENCH_WIRES\n");
+  if(opt->_write_to_solver)
+	printf("RCX-96: TRUE\n");
+  else
+	printf("RCX-96: FALSE\n");
 
   opt->_tech = _tech;
 
@@ -778,9 +796,7 @@ uint extRCModel::netWiresBench(extMainOptions* opt, extMain* xMain, uint netId,
     sprintf(_wireDirName, "%s/%d/%d", _topDir, netId, shapeId);
     char cmd[2048];
     sprintf(cmd, "%s %s", "mkdir", _wireDirName);
-    if (system(cmd) == -1) {
-      logger_->error(RCX, 488, "mkdir failed on {}", _wireDirName);
-    }
+    system(cmd);
 
     FILE* fp = openFile(_wireDirName, "db_geoms", NULL, "w");
     fprintf(fp, "BBOX: (%g, %g)  (%g, %g)\n\n", 0.001 * measure._ll[0],

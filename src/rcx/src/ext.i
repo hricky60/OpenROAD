@@ -141,7 +141,8 @@ bench_wires(bool db_only,
             int len,
             int under_met,
             const char* w_list,
-            const char* s_list)
+            const char* s_list,
+            bool write_to_solver)
 {
   Ext* ext = getOpenRCX();
   Ext::BenchWiresOptions opts;
@@ -156,6 +157,7 @@ bench_wires(bool db_only,
   opts.under_met = under_met;
   opts.met_cnt = met_cnt;
   opts.db_only = db_only;
+  opts.write_to_solver = write_to_solver;
 
   ext->bench_wires(opts);
 }
@@ -176,6 +178,7 @@ write_rules(const char* file,
             bool read_from_solver)
 {
   Ext* ext = getOpenRCX();
+  Ext::BenchWiresOptions opts;
   
   ext->write_rules(name, dir, file, pattern, read_from_db,
                    read_from_solver);
@@ -191,6 +194,37 @@ read_spef(const char* file)
   ext->read_spef(opts);
 }
 
+// Addition by RICKY (Nov 30 2021)
+void
+metal_rules_gen(const char* file,
+                const char* dir,
+                const char* name,
+                bool write_to_solver,
+                bool read_from_solver,
+                bool run_solver,
+                int pattern,
+                bool keep_file,
+                int metal)
+{
+  Ext* ext = getOpenRCX();
+  Ext::BenchWiresOptions opts;
+
+  ext->metal_rules_gen(name, dir, file, write_to_solver, 
+                        read_from_solver, run_solver, pattern,
+                        keep_file, metal);
+
+}
+
+void
+read_process(const char* name,
+             const char* file)
+{
+  Ext* ext = getOpenRCX();
+
+  ext->read_process(name, file);
+
+}
+// End of Addition by RICKY
 
 %} // inline
 

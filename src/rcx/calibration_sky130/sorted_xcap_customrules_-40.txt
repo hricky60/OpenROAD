@@ -1,0 +1,1395 @@
+##########################################################
+# Ostrich sorted net output file.
+# Input options:
+#    export_sorted_list -plotname design_openrcx_customrules_vs_invs_-40C -datatype xcap -filename sorted_xcap_customrules_-40.txt 
+#
+# golden_setname = invs
+# target_setname = openrcx
+#
+# Each line represents a net pair, with fields in the
+# following order.
+#   - golden xcap 
+#   - target xcap 
+#   - absolute difference
+#   - signed difference
+#   - percent error
+#   - notes
+#
+# Non-excluded nets are listed first, followed
+# by excluced nets.
+##############################################
+clknet_2_2_0_clk,net55 0.000636 0.002372 0.001736 0.001736 272.767485 {}
+_101_,net79 0.001663 0.004107 0.002444 0.002444 147.003368 {}
+net3,net6 0.000575 0.000000 0.000575 -0.000575 100.000000 {}
+net12,net23 0.000689 0.000000 0.000689 -0.000689 100.000000 {}
+net25,net43 0.000715 0.000000 0.000715 -0.000715 100.000000 {}
+net26,net33 0.000467 0.000000 0.000467 -0.000467 100.000000 {}
+net1,net43 0.001406 0.000000 0.001406 -0.001406 100.000000 {}
+net35,net53 0.001222 0.000126 0.001096 -0.001096 89.700416 {}
+net36,net55 0.000517 0.000078 0.000439 -0.000439 84.921341 {}
+_101_,clknet_2_1_0_clk 0.000401 0.000721 0.000321 0.000321 80.093814 {}
+dpath.a_lt_b$in0[10],dpath.a_lt_b$in1[10] 0.000416 0.000710 0.000294 0.000294 70.762967 {}
+net42,net55 0.000419 0.000153 0.000266 -0.000266 63.413116 {}
+_101_,net13 0.000626 0.000897 0.000271 0.000271 43.244182 {}
+net36,net68 0.000958 0.001363 0.000405 0.000405 42.276945 {}
+_111_,_137_ 0.001221 0.001710 0.000489 0.000489 40.064245 {}
+clknet_2_1_0_clk,net82 0.000416 0.000563 0.000147 0.000147 35.469111 {}
+_101_,net64 0.000675 0.000909 0.000234 0.000234 34.600735 {}
+dpath.a_lt_b$in0[1],net75 0.000748 0.000957 0.000209 0.000209 27.959237 {}
+net33,net36 0.000416 0.000521 0.000105 0.000105 25.221805 {}
+_101_,_150_ 0.000588 0.000732 0.000144 0.000144 24.516271 {}
+_101_,net103 0.000589 0.000729 0.000140 0.000140 23.734560 {}
+_087_,net64 0.000439 0.000542 0.000103 0.000103 23.454210 {}
+_023_,dpath.a_lt_b$in0[4] 0.000562 0.000694 0.000132 0.000132 23.439134 {}
+_042_,_058_ 0.000647 0.000797 0.000151 0.000151 23.291834 {}
+dpath.a_lt_b$in0[11],dpath.a_lt_b$in1[11] 0.000405 0.000499 0.000094 0.000094 23.233289 {}
+dpath.a_lt_b$in1[10],net36 0.000469 0.000577 0.000109 0.000109 23.158537 {}
+_101_,_111_ 0.000744 0.000914 0.000170 0.000170 22.844719 {}
+_112_,net36 0.001933 0.001491 0.000441 -0.000441 22.834994 {}
+_101_,dpath.a_lt_b$in1[15] 0.000401 0.000489 0.000089 0.000089 22.169354 {}
+dpath.a_lt_b$in0[12],dpath.a_lt_b$in1[12] 0.000761 0.000927 0.000166 0.000166 21.856110 {}
+dpath.a_lt_b$in1[14],net36 0.000821 0.000644 0.000177 -0.000177 21.551696 {}
+req_msg[29],req_rdy 0.000481 0.000382 0.000098 -0.000098 20.420100 {}
+req_msg[25],resp_msg[9] 0.000498 0.000398 0.000100 -0.000100 20.152744 {}
+req_msg[27],req_msg[29] 0.000498 0.000399 0.000100 -0.000100 19.992172 {}
+req_msg[20],req_msg[2] 0.000545 0.000438 0.000107 -0.000107 19.660105 {}
+req_msg[23],resp_msg[7] 0.000545 0.000438 0.000107 -0.000107 19.660105 {}
+dpath.a_lt_b$in0[9],net36 0.000635 0.000759 0.000124 0.000124 19.587523 {}
+_060_,dpath.a_lt_b$in1[8] 0.000687 0.000821 0.000134 0.000134 19.542799 {}
+_137_,dpath.a_lt_b$in0[9] 0.000735 0.000879 0.000144 0.000144 19.516046 {}
+req_rdy,resp_msg[11] 0.000475 0.000382 0.000093 -0.000093 19.492064 {}
+resp_msg[11],resp_msg[13] 0.000507 0.000409 0.000098 -0.000098 19.313679 {}
+req_msg[26],resp_msg[10] 0.000498 0.000404 0.000094 -0.000094 18.816788 {}
+req_msg[21],req_msg[8] 0.000498 0.000405 0.000093 -0.000093 18.664245 {}
+net36,net64 0.000418 0.000496 0.000078 0.000078 18.615488 {}
+_070_,net80 0.000600 0.000712 0.000112 0.000112 18.600263 {}
+_055_,net70 0.000439 0.000520 0.000081 0.000081 18.552446 {}
+req_msg[21],resp_msg[5] 0.000521 0.000427 0.000094 -0.000094 18.055236 {}
+req_msg[19],resp_msg[3] 0.000545 0.000450 0.000094 -0.000094 17.288002 {}
+net1,net56 0.000706 0.000827 0.000122 0.000122 17.230865 {}
+dpath.a_lt_b$in1[4],net36 0.000600 0.000702 0.000101 0.000101 16.855579 {}
+req_msg[13],req_msg[30] 0.000591 0.000496 0.000095 -0.000095 16.126379 {}
+_158_,dpath.a_lt_b$in1[3] 0.000515 0.000598 0.000083 0.000083 16.106516 {}
+_112_,dpath.a_lt_b$in1[8] 0.000706 0.000817 0.000112 0.000112 15.828204 {}
+clknet_2_1_0_clk,dpath.a_lt_b$in0[11] 0.000601 0.000695 0.000094 0.000094 15.588417 {}
+dpath.a_lt_b$in0[11],net39 0.000706 0.000814 0.000109 0.000109 15.386795 {}
+_111_,clknet_2_2_0_clk 0.000458 0.000527 0.000070 0.000070 15.195063 {}
+_053_,_111_ 0.000954 0.001094 0.000140 0.000140 14.706746 {}
+_061_,_086_ 0.000612 0.000701 0.000090 0.000090 14.649402 {}
+dpath.a_lt_b$in1[6],net70 0.000429 0.000491 0.000062 0.000062 14.483271 {}
+req_msg[25],resp_msg[12] 0.000683 0.000585 0.000098 -0.000098 14.407641 {}
+_042_,clknet_2_2_0_clk 0.000413 0.000469 0.000057 0.000057 13.692120 {}
+net36,net79 0.001214 0.001380 0.000166 0.000166 13.671891 {}
+clknet_2_1_0_clk,net55 0.001035 0.000894 0.000141 -0.000141 13.613369 {}
+_058_,_093_ 0.001087 0.001232 0.000144 0.000144 13.269751 {}
+dpath.a_lt_b$in0[10],net55 0.000437 0.000495 0.000057 0.000057 13.066129 {}
+_037_,_065_ 0.000490 0.000552 0.000063 0.000063 12.814102 {}
+clk,net12 0.002779 0.002426 0.000353 -0.000353 12.690993 {}
+net19,net38 0.012372 0.010833 0.001539 -0.001539 12.441160 {}
+_105_,net68 0.001014 0.001139 0.000125 0.000125 12.304051 {}
+clknet_2_2_0_clk,ctrl.state.out[2] 0.000476 0.000533 0.000057 0.000057 11.974077 {}
+net21,net36 0.001625 0.001437 0.000188 -0.000188 11.546889 {}
+net55,net68 0.002742 0.003058 0.000316 0.000316 11.525734 {}
+_070_,_112_ 0.000554 0.000617 0.000063 0.000063 11.398744 {}
+_065_,_101_ 0.000935 0.001037 0.000102 0.000102 10.915663 {}
+_089_,_105_ 0.000500 0.000445 0.000054 -0.000054 10.901580 {}
+_064_,net70 0.000406 0.000450 0.000044 0.000044 10.893776 {}
+_023_,net36 0.000943 0.000841 0.000102 -0.000102 10.806216 {}
+_143_,clknet_2_0_0_clk 0.000647 0.000579 0.000068 -0.000068 10.511444 {}
+dpath.a_lt_b$in1[10],dpath.a_lt_b$in1[12] 0.000750 0.000672 0.000078 -0.000078 10.350608 {}
+dpath.a_lt_b$in1[9],net70 0.000625 0.000563 0.000062 -0.000062 9.909903 {}
+_039_,_083_ 0.000400 0.000440 0.000040 0.000040 9.905485 {}
+dpath.a_lt_b$in0[0],net32 0.001250 0.001126 0.000124 -0.000124 9.903100 {}
+_103_,net33 0.000562 0.000508 0.000054 -0.000054 9.614496 {}
+net21,net40 0.000562 0.000508 0.000054 -0.000054 9.608450 {}
+net68,net97 0.001424 0.001558 0.000134 0.000134 9.408123 {}
+_091_,clknet_1_0_0_clk 0.001108 0.001005 0.000104 -0.000104 9.361829 {}
+net19,net36 0.001000 0.000907 0.000092 -0.000092 9.243749 {}
+_093_,_105_ 0.000739 0.000671 0.000068 -0.000068 9.183875 {}
+_112_,dpath.a_lt_b$in1[6] 0.000609 0.000665 0.000056 0.000056 9.120969 {}
+_137_,dpath.a_lt_b$in1[15] 0.000812 0.000885 0.000073 0.000073 8.925881 {}
+_044_,dpath.a_lt_b$in1[6] 0.000454 0.000414 0.000041 -0.000041 8.920555 {}
+_112_,dpath.a_lt_b$in1[14] 0.000421 0.000459 0.000037 0.000037 8.890339 {}
+_041_,_060_ 0.000647 0.000704 0.000057 0.000057 8.825549 {}
+dpath.a_lt_b$in0[2],net79 0.000437 0.000399 0.000038 -0.000038 8.770975 {}
+dpath.a_lt_b$in1[15],net42 0.000437 0.000399 0.000038 -0.000038 8.770975 {}
+_142_,dpath.a_lt_b$in1[0] 0.000437 0.000399 0.000038 -0.000038 8.759087 {}
+_012_,_124_ 0.000554 0.000506 0.000048 -0.000048 8.650404 {}
+_067_,net42 0.000993 0.001078 0.000084 0.000084 8.464628 {}
+clknet_2_2_0_clk,net59 0.000616 0.000667 0.000051 0.000051 8.200675 {}
+dpath.a_lt_b$in0[15],net36 0.002375 0.002186 0.000188 -0.000188 7.919870 {}
+clknet_2_1_0_clk,net68 0.000647 0.000697 0.000050 0.000050 7.741796 {}
+net15,net49 0.005036 0.005423 0.000387 0.000387 7.679461 {}
+_112_,dpath.a_lt_b$in1[13] 0.000457 0.000491 0.000034 0.000034 7.544766 {}
+_133_,dpath.a_lt_b$in1[15] 0.000647 0.000599 0.000048 -0.000048 7.433653 {}
+_077_,dpath.a_lt_b$in0[5] 0.000647 0.000599 0.000048 -0.000048 7.433653 {}
+_012_,_105_ 0.000554 0.000513 0.000041 -0.000041 7.414297 {}
+_093_,_159_ 0.000831 0.000771 0.000061 -0.000061 7.294674 {}
+_112_,dpath.a_lt_b$in0[0] 0.001105 0.001024 0.000080 -0.000080 7.284199 {}
+_038_,_063_ 0.001093 0.001171 0.000078 0.000078 7.124225 {}
+_178_,dpath.a_lt_b$in1[15] 0.000554 0.000515 0.000039 -0.000039 7.017357 {}
+_112_,_155_ 0.000831 0.000773 0.000058 -0.000058 6.973754 {}
+ctrl.state.out[1],net34 0.000831 0.000775 0.000057 -0.000057 6.829412 {}
+dpath.a_lt_b$in0[8],dpath.a_lt_b$in1[8] 0.002111 0.002255 0.000144 0.000144 6.819376 {}
+_112_,net24 0.000416 0.000388 0.000028 -0.000028 6.655119 {}
+_100_,net26 0.000924 0.000863 0.000061 -0.000061 6.575477 {}
+dpath.a_lt_b$in1[1],net86 0.000625 0.000584 0.000041 -0.000041 6.571182 {}
+_111_,net45 0.000785 0.000734 0.000051 -0.000051 6.475241 {}
+_095_,_105_ 0.001339 0.001253 0.000086 -0.000086 6.428251 {}
+clknet_2_3_0_clk,ctrl.state.out[1] 0.000812 0.000864 0.000052 0.000052 6.397208 {}
+net45,net79 0.000618 0.000656 0.000038 0.000038 6.230005 {}
+_050_,_143_ 0.000437 0.000465 0.000027 0.000027 6.214051 {}
+req_msg[18],resp_msg[2] 0.000521 0.000554 0.000032 0.000032 6.163982 {}
+_050_,_101_ 0.001462 0.001372 0.000089 -0.000089 6.111955 {}
+net36,net6 0.000533 0.000501 0.000032 -0.000032 5.977993 {}
+_101_,dpath.a_lt_b$in0[2] 0.001146 0.001078 0.000068 -0.000068 5.963176 {}
+dpath.a_lt_b$in1[15],net36 0.000647 0.000609 0.000038 -0.000038 5.881998 {}
+dpath.a_lt_b$in0[14],net55 0.000736 0.000693 0.000042 -0.000042 5.713971 {}
+_105_,net102 0.001432 0.001351 0.000081 -0.000081 5.651706 {}
+_037_,_105_ 0.003233 0.003052 0.000181 -0.000181 5.604354 {}
+_125_,net72 0.000687 0.000649 0.000038 -0.000038 5.572480 {}
+_172_,net40 0.000739 0.000698 0.000041 -0.000041 5.541557 {}
+clknet_2_2_0_clk,net57 0.000511 0.000539 0.000028 0.000028 5.444827 {}
+_178_,dpath.a_lt_b$in0[14] 0.000878 0.000830 0.000048 -0.000048 5.435080 {}
+_067_,_177_ 0.000859 0.000813 0.000046 -0.000046 5.311163 {}
+_071_,_104_ 0.001375 0.001302 0.000072 -0.000072 5.270164 {}
+net68,net70 0.000846 0.000890 0.000044 0.000044 5.253067 {}
+_101_,net36 0.003862 0.004060 0.000198 0.000198 5.117895 {}
+_153_,net79 0.001016 0.000965 0.000051 -0.000051 5.004232 {}
+_101_,_112_ 0.000653 0.000620 0.000033 -0.000033 4.991347 {}
+net90,net92 0.000982 0.001031 0.000049 0.000049 4.976885 {}
+_048_,_111_ 0.000508 0.000483 0.000025 -0.000025 4.965160 {}
+dpath.a_lt_b$in0[15],net1 0.000689 0.000655 0.000034 -0.000034 4.926899 {}
+_105_,dpath.a_lt_b$in0[8] 0.000500 0.000524 0.000024 0.000024 4.868014 {}
+dpath.a_lt_b$in0[11],net64 0.001125 0.001071 0.000054 -0.000054 4.804847 {}
+_145_,net103 0.001108 0.001057 0.000051 -0.000051 4.599993 {}
+net64,net68 0.003958 0.003779 0.000180 -0.000180 4.536242 {}
+_042_,net36 0.001375 0.001313 0.000062 -0.000062 4.502008 {}
+dpath.a_lt_b$in0[4],net36 0.000500 0.000478 0.000022 -0.000022 4.455901 {}
+_053_,dpath.a_lt_b$in1[4] 0.000937 0.000896 0.000041 -0.000041 4.387101 {}
+_053_,net57 0.002540 0.002429 0.000111 -0.000111 4.367073 {}
+_060_,dpath.a_lt_b$in1[11] 0.000437 0.000456 0.000019 0.000019 4.346395 {}
+_060_,_082_ 0.000416 0.000433 0.000018 0.000018 4.271555 {}
+_043_,_058_ 0.003227 0.003092 0.000136 -0.000136 4.205710 {}
+net102,net79 0.001386 0.001327 0.000058 -0.000058 4.192468 {}
+_043_,_081_ 0.000527 0.000549 0.000022 0.000022 4.184875 {}
+_093_,clknet_1_0_0_clk 0.000508 0.000487 0.000021 -0.000021 4.141997 {}
+_049_,dpath.a_lt_b$in0[2] 0.000547 0.000525 0.000022 -0.000022 4.068730 {}
+_061_,_083_ 0.000663 0.000690 0.000027 0.000027 4.042193 {}
+_111_,net79 0.000586 0.000609 0.000023 0.000023 3.986452 {}
+_112_,net85 0.000577 0.000599 0.000023 0.000023 3.934082 {}
+_101_,net68 0.005032 0.005229 0.000197 0.000197 3.919165 {}
+_042_,net68 0.001187 0.001141 0.000046 -0.000046 3.889544 {}
+clknet_2_1_0_clk,net72 0.001894 0.001822 0.000072 -0.000072 3.791428 {}
+_105_,dpath.a_lt_b$in0[11] 0.000818 0.000787 0.000031 -0.000031 3.759446 {}
+clknet_2_1_0_clk,dpath.a_lt_b$in1[13] 0.001104 0.001063 0.000041 -0.000041 3.741919 {}
+_101_,net94 0.000625 0.000602 0.000023 -0.000023 3.623416 {}
+_137_,net68 0.000687 0.000663 0.000024 -0.000024 3.556404 {}
+_065_,_166_ 0.000554 0.000573 0.000019 0.000019 3.431185 {}
+_101_,_166_ 0.000554 0.000573 0.000019 0.000019 3.431185 {}
+_041_,net79 0.000554 0.000573 0.000019 0.000019 3.431185 {}
+net45,net60 0.000554 0.000535 0.000019 -0.000019 3.427245 {}
+_071_,dpath.a_lt_b$in1[15] 0.001395 0.001443 0.000048 0.000048 3.410431 {}
+net36,net70 0.002679 0.002588 0.000090 -0.000090 3.377802 {}
+_057_,_105_ 0.000437 0.000423 0.000015 -0.000015 3.376389 {}
+net76,net95 0.000554 0.000536 0.000018 -0.000018 3.230189 {}
+net75,net76 0.000554 0.000536 0.000018 -0.000018 3.230189 {}
+_112_,_127_ 0.000600 0.000619 0.000019 0.000019 3.168449 {}
+dpath.a_lt_b$in1[1],net91 0.000600 0.000619 0.000019 0.000019 3.168449 {}
+_101_,clknet_2_3_0_clk 0.001706 0.001653 0.000053 -0.000053 3.112466 {}
+_037_,_066_ 0.000500 0.000515 0.000015 0.000015 3.100148 {}
+_043_,_105_ 0.002078 0.002016 0.000062 -0.000062 2.977896 {}
+_148_,net46 0.000500 0.000485 0.000015 -0.000015 2.952791 {}
+_101_,net75 0.001108 0.001078 0.000031 -0.000031 2.792473 {}
+_106_,_137_ 0.000423 0.000435 0.000012 0.000012 2.791655 {}
+dpath.a_lt_b$in1[13],net41 0.000588 0.000571 0.000016 -0.000016 2.785683 {}
+_089_,dpath.a_lt_b$in0[14] 0.000733 0.000713 0.000020 -0.000020 2.754657 {}
+_176_,net72 0.000693 0.000712 0.000019 0.000019 2.744948 {}
+_055_,_112_ 0.000854 0.000831 0.000023 -0.000023 2.736465 {}
+_082_,dpath.a_lt_b$in1[8] 0.000416 0.000404 0.000011 -0.000011 2.710258 {}
+_060_,net82 0.000526 0.000540 0.000014 0.000014 2.698992 {}
+_101_,dpath.a_lt_b$in1[3] 0.000416 0.000405 0.000011 -0.000011 2.684517 {}
+_158_,dpath.a_lt_b$in1[2] 0.001062 0.001034 0.000028 -0.000028 2.638664 {}
+ctrl.state.out[1],ctrl.state.out[2] 0.000416 0.000405 0.000011 -0.000011 2.593582 {}
+_068_,net55 0.000739 0.000758 0.000019 0.000019 2.574359 {}
+dpath.a_lt_b$in1[13],net36 0.000739 0.000758 0.000019 0.000019 2.555956 {}
+dpath.a_lt_b$in1[13],dpath.a_lt_b$in1[14] 0.000892 0.000914 0.000022 0.000022 2.505213 {}
+net90,net96 0.000500 0.000487 0.000012 -0.000012 2.481096 {}
+_041_,_043_ 0.000562 0.000549 0.000014 -0.000014 2.456168 {}
+req_msg[31],resp_msg[15] 0.000639 0.000655 0.000016 0.000016 2.430753 {}
+net36,net95 0.001755 0.001713 0.000042 -0.000042 2.421428 {}
+_112_,dpath.a_lt_b$in1[11] 0.001965 0.002010 0.000045 0.000045 2.305912 {}
+_040_,_112_ 0.001201 0.001173 0.000028 -0.000028 2.302638 {}
+dpath.a_lt_b$in0[12],net36 0.000508 0.000497 0.000011 -0.000011 2.119321 {}
+dpath.a_lt_b$in0[6],net36 0.000450 0.000459 0.000009 0.000009 2.040150 {}
+dpath.a_lt_b$in1[4],net55 0.000517 0.000507 0.000010 -0.000010 1.927911 {}
+_112_,net51 0.001163 0.001185 0.000022 0.000022 1.891727 {}
+_105_,dpath.a_lt_b$in0[10] 0.000916 0.000933 0.000017 0.000017 1.881430 {}
+_157_,clknet_2_2_0_clk 0.000600 0.000589 0.000011 -0.000011 1.834882 {}
+net14,net36 0.001250 0.001227 0.000023 -0.000023 1.809976 {}
+_101_,clknet_2_0_0_clk 0.000484 0.000492 0.000009 0.000009 1.763298 {}
+_112_,net45 0.001125 0.001105 0.000019 -0.000019 1.713343 {}
+net18,net51 0.002000 0.001966 0.000033 -0.000033 1.661832 {}
+_040_,dpath.a_lt_b$in1[11] 0.000755 0.000767 0.000012 0.000012 1.604809 {}
+_038_,_064_ 0.000433 0.000426 0.000007 -0.000007 1.558131 {}
+clknet_2_1_0_clk,net36 0.002214 0.002247 0.000033 0.000033 1.501488 {}
+_066_,_085_ 0.000600 0.000609 0.000009 0.000009 1.479631 {}
+dpath.a_lt_b$in0[0],dpath.a_lt_b$in1[0] 0.001005 0.001019 0.000014 0.000014 1.407525 {}
+_071_,_111_ 0.000437 0.000443 0.000006 0.000006 1.385625 {}
+_023_,_150_ 0.000437 0.000443 0.000006 0.000006 1.381510 {}
+net36,net37 0.001155 0.001139 0.000016 -0.000016 1.370187 {}
+_037_,net51 0.001250 0.001233 0.000017 -0.000017 1.326575 {}
+_026_,_112_ 0.000739 0.000748 0.000009 0.000009 1.220601 {}
+clknet_2_1_0_clk,net41 0.000670 0.000662 0.000008 -0.000008 1.214723 {}
+_046_,dpath.a_lt_b$in0[5] 0.001595 0.001576 0.000019 -0.000019 1.164018 {}
+_052_,_111_ 0.001016 0.001005 0.000011 -0.000011 1.121445 {}
+_066_,_087_ 0.000918 0.000929 0.000010 0.000010 1.118153 {}
+net22,net68 0.000625 0.000631 0.000006 0.000006 0.967706 {}
+_101_,clknet_2_2_0_clk 0.000549 0.000554 0.000005 0.000005 0.933969 {}
+net36,net75 0.001478 0.001490 0.000012 0.000012 0.788657 {}
+_101_,net55 0.001180 0.001189 0.000009 0.000009 0.781406 {}
+_104_,_111_ 0.000831 0.000825 0.000006 -0.000006 0.742398 {}
+clknet_2_2_0_clk,net68 0.002501 0.002484 0.000017 -0.000017 0.663411 {}
+_112_,dpath.a_lt_b$in0[8] 0.002055 0.002042 0.000013 -0.000013 0.648421 {}
+net101,net56 0.000951 0.000957 0.000006 0.000006 0.623146 {}
+dpath.a_lt_b$in0[4],dpath.a_lt_b$in1[4] 0.001165 0.001172 0.000007 0.000007 0.586818 {}
+_070_,net43 0.000625 0.000623 0.000002 -0.000002 0.290136 {}
+_147_,net79 0.000462 0.000461 0.000001 -0.000001 0.271727 {}
+net36,net46 0.000554 0.000553 0.000001 -0.000001 0.227699 {}
+clknet_1_0_0_clk,net72 0.001187 0.001190 0.000002 0.000002 0.207638 {}
+_112_,_142_ 0.000647 0.000645 0.000001 -0.000001 0.172131 {}
+_145_,net44 0.000647 0.000646 0.000001 -0.000001 0.155583 {}
+net36,net4 0.001138 0.001138 0.000001 -0.000001 0.066763 {}
+dpath.a_lt_b$in0[10],net68 0.001250 0.001249 0.000000 0.000000 0.024965 {}
+################## EXCLUDED NETS #########################
+################## UNMATCHED NETS #########################
+_112_,net81 NaN 0.000399 NaN NaN NaN { NF golden}
+net1,net101 NaN 0.000014 NaN NaN NaN { NF golden}
+_081_,_093_ NaN 0.000357 NaN NaN NaN { NF golden}
+_112_,net79 NaN 0.000000 NaN NaN NaN { NF golden}
+_017_,clknet_2_1_0_clk NaN 0.000131 NaN NaN NaN { NF golden}
+_093_,_160_ NaN 0.000266 NaN NaN NaN { NF golden}
+_017_,net55 NaN 0.000136 NaN NaN NaN { NF golden}
+_112_,net77 NaN 0.000068 NaN NaN NaN { NF golden}
+req_msg[24],req_val NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[3],net36 NaN 0.000000 NaN NaN NaN { NF golden}
+net39,net66 NaN 0.000182 NaN NaN NaN { NF golden}
+_034_,net25 NaN 0.000021 NaN NaN NaN { NF golden}
+_112_,net72 NaN 0.000000 NaN NaN NaN { NF golden}
+_045_,net109 NaN 0.000040 NaN NaN NaN { NF golden}
+_112_,net70 NaN 0.000000 NaN NaN NaN { NF golden}
+_039_,dpath.a_lt_b$in1[10] NaN 0.000067 NaN NaN NaN { NF golden}
+_017_,net42 NaN 0.000199 NaN NaN NaN { NF golden}
+_128_,net36 NaN 0.000000 NaN NaN NaN { NF golden}
+net40,net52 NaN 0.006289 NaN NaN NaN { NF golden}
+net41,net68 NaN 0.000053 NaN NaN NaN { NF golden}
+_034_,dpath.a_lt_b$in1[15] NaN 0.000000 NaN NaN NaN { NF golden}
+_105_,dpath.a_lt_b$in0[6] NaN 0.000038 NaN NaN NaN { NF golden}
+_015_,_128_ NaN 0.000025 NaN NaN NaN { NF golden}
+net41,net64 NaN 0.000000 NaN NaN NaN { NF golden}
+_111_,_147_ NaN 0.000143 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[3],net11 NaN 0.000305 NaN NaN NaN { NF golden}
+_171_,net36 NaN 0.000181 NaN NaN NaN { NF golden}
+_112_,net50 NaN 0.000053 NaN NaN NaN { NF golden}
+_044_,_045_ NaN 0.000019 NaN NaN NaN { NF golden}
+net42,net72 NaN 0.000093 NaN NaN NaN { NF golden}
+_056_,_112_ NaN 0.000134 NaN NaN NaN { NF golden}
+_022_,_101_ NaN 0.000360 NaN NaN NaN { NF golden}
+net11,req_msg[19] NaN 0.000088 NaN NaN NaN { NF golden}
+req_msg[14],resp_msg[14] NaN 0.000000 NaN NaN NaN { NF golden}
+_137_,net79 NaN 0.000889 NaN NaN NaN { NF golden}
+_027_,dpath.a_lt_b$in1[2] NaN 0.000389 NaN NaN NaN { NF golden}
+_093_,net102 NaN 0.000000 NaN NaN NaN { NF golden}
+_137_,net74 NaN 0.000340 NaN NaN NaN { NF golden}
+clknet_2_1_0_clk,net100 NaN 0.000342 NaN NaN NaN { NF golden}
+_137_,net73 NaN 0.000037 NaN NaN NaN { NF golden}
+_035_,_036_ NaN 0.000223 NaN NaN NaN { NF golden}
+_006_,_118_ NaN 0.000088 NaN NaN NaN { NF golden}
+_011_,dpath.a_lt_b$in0[8] NaN 0.000025 NaN NaN NaN { NF golden}
+_075_,net105 NaN 0.000098 NaN NaN NaN { NF golden}
+_137_,net60 NaN 0.000085 NaN NaN NaN { NF golden}
+_137_,net57 NaN 0.000351 NaN NaN NaN { NF golden}
+_005_,_101_ NaN 0.000018 NaN NaN NaN { NF golden}
+_137_,net56 NaN 0.000135 NaN NaN NaN { NF golden}
+net44,net75 NaN 0.000374 NaN NaN NaN { NF golden}
+_090_,_093_ NaN 0.000235 NaN NaN NaN { NF golden}
+_112_,net16 NaN 0.000050 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net105 NaN 0.000012 NaN NaN NaN { NF golden}
+net43,net56 NaN 0.000414 NaN NaN NaN { NF golden}
+_085_,net39 NaN 0.000107 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[7],net110 NaN 0.000000 NaN NaN NaN { NF golden}
+_174_,clknet_2_1_0_clk NaN 0.000233 NaN NaN NaN { NF golden}
+ctrl.state.out[2],net36 NaN 0.000126 NaN NaN NaN { NF golden}
+_057_,net110 NaN 0.000000 NaN NaN NaN { NF golden}
+_057_,net109 NaN 0.000237 NaN NaN NaN { NF golden}
+_125_,dpath.a_lt_b$in1[9] NaN 0.000377 NaN NaN NaN { NF golden}
+_038_,_084_ NaN 0.000000 NaN NaN NaN { NF golden}
+net103,net9 NaN 0.000076 NaN NaN NaN { NF golden}
+net12,req_msg[1] NaN 0.000093 NaN NaN NaN { NF golden}
+_137_,_163_ NaN 0.000044 NaN NaN NaN { NF golden}
+_045_,_057_ NaN 0.000832 NaN NaN NaN { NF golden}
+_137_,net45 NaN 0.000189 NaN NaN NaN { NF golden}
+_179_,net56 NaN 0.000024 NaN NaN NaN { NF golden}
+_101_,_118_ NaN 0.000000 NaN NaN NaN { NF golden}
+_128_,dpath.a_lt_b$in0[12] NaN 0.000307 NaN NaN NaN { NF golden}
+_054_,dpath.a_lt_b$in1[3] NaN 0.000208 NaN NaN NaN { NF golden}
+_009_,net70 NaN 0.000103 NaN NaN NaN { NF golden}
+net45,net77 NaN 0.000056 NaN NaN NaN { NF golden}
+_010_,net68 NaN 0.000296 NaN NaN NaN { NF golden}
+net45,net75 NaN 0.000199 NaN NaN NaN { NF golden}
+_163_,net74 NaN 0.000449 NaN NaN NaN { NF golden}
+net45,net74 NaN 0.000199 NaN NaN NaN { NF golden}
+_137_,net36 NaN 0.000250 NaN NaN NaN { NF golden}
+_085_,net24 NaN 0.000109 NaN NaN NaN { NF golden}
+_045_,_056_ NaN 0.000180 NaN NaN NaN { NF golden}
+_105_,dpath.a_lt_b$in0[0] NaN 0.000445 NaN NaN NaN { NF golden}
+_090_,_091_ NaN 0.000079 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,dpath.a_lt_b$in0[7] NaN 0.000287 NaN NaN NaN { NF golden}
+_064_,_086_ NaN 0.000061 NaN NaN NaN { NF golden}
+_055_,clknet_2_2_0_clk NaN 0.000271 NaN NaN NaN { NF golden}
+_104_,net81 NaN 0.000000 NaN NaN NaN { NF golden}
+net47,net99 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[6],net36 NaN 0.000018 NaN NaN NaN { NF golden}
+_104_,net79 NaN 0.000235 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[9],dpath.a_lt_b$in1[9] NaN 0.000325 NaN NaN NaN { NF golden}
+_046_,dpath.a_lt_b$in1[5] NaN 0.000476 NaN NaN NaN { NF golden}
+_010_,net55 NaN 0.000296 NaN NaN NaN { NF golden}
+net47,net96 NaN 0.000000 NaN NaN NaN { NF golden}
+_101_,_116_ NaN 0.000031 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[4],net96 NaN 0.000000 NaN NaN NaN { NF golden}
+clknet_1_1_0_clk,clknet_2_2_0_clk NaN 0.000038 NaN NaN NaN { NF golden}
+_104_,net73 NaN 0.000404 NaN NaN NaN { NF golden}
+net45,net57 NaN 0.000312 NaN NaN NaN { NF golden}
+clknet_2_1_0_clk,dpath.a_lt_b$in0[14] NaN 0.000320 NaN NaN NaN { NF golden}
+net25,req_msg[31] NaN 0.000019 NaN NaN NaN { NF golden}
+_010_,net46 NaN 0.000025 NaN NaN NaN { NF golden}
+_052_,net57 NaN 0.000350 NaN NaN NaN { NF golden}
+_104_,net68 NaN 0.000000 NaN NaN NaN { NF golden}
+_180_,net25 NaN 0.000296 NaN NaN NaN { NF golden}
+_101_,_115_ NaN 0.000000 NaN NaN NaN { NF golden}
+_011_,_043_ NaN 0.000135 NaN NaN NaN { NF golden}
+_026_,net16 NaN 0.000205 NaN NaN NaN { NF golden}
+_055_,clknet_2_3_0_clk NaN 0.000387 NaN NaN NaN { NF golden}
+_064_,_084_ NaN 0.000000 NaN NaN NaN { NF golden}
+_121_,net36 NaN 0.000055 NaN NaN NaN { NF golden}
+clknet_2_1_0_clk,dpath.a_lt_b$in0[13] NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[15],dpath.a_lt_b$in1[9] NaN 0.000127 NaN NaN NaN { NF golden}
+_009_,net36 NaN 0.000102 NaN NaN NaN { NF golden}
+net46,net57 NaN 0.000381 NaN NaN NaN { NF golden}
+_112_,_154_ NaN 0.000000 NaN NaN NaN { NF golden}
+_154_,_155_ NaN 0.000066 NaN NaN NaN { NF golden}
+_037_,_062_ NaN 0.000000 NaN NaN NaN { NF golden}
+_039_,_105_ NaN 0.000361 NaN NaN NaN { NF golden}
+_163_,net102 NaN 0.000422 NaN NaN NaN { NF golden}
+net47,net58 NaN 0.000076 NaN NaN NaN { NF golden}
+_014_,clknet_2_1_0_clk NaN 0.000025 NaN NaN NaN { NF golden}
+_037_,_061_ NaN 0.000000 NaN NaN NaN { NF golden}
+net48,net70 NaN 0.000290 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,dpath.a_lt_b$in0[2] NaN 0.000090 NaN NaN NaN { NF golden}
+_112_,_152_ NaN 0.000259 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[4],net55 NaN 0.000015 NaN NaN NaN { NF golden}
+_018_,net73 NaN 0.000054 NaN NaN NaN { NF golden}
+_063_,_064_ NaN 0.000316 NaN NaN NaN { NF golden}
+_145_,net106 NaN 0.000220 NaN NaN NaN { NF golden}
+_067_,dpath.a_lt_b$in0[14] NaN 0.000000 NaN NaN NaN { NF golden}
+_022_,_078_ NaN 0.000171 NaN NaN NaN { NF golden}
+_160_,dpath.a_lt_b$in1[2] NaN 0.000000 NaN NaN NaN { NF golden}
+_130_,net55 NaN 0.000215 NaN NaN NaN { NF golden}
+_010_,_157_ NaN 0.000018 NaN NaN NaN { NF golden}
+_152_,dpath.a_lt_b$in1[5] NaN 0.000181 NaN NaN NaN { NF golden}
+_004_,dpath.a_lt_b$in1[1] NaN 0.000012 NaN NaN NaN { NF golden}
+_054_,_055_ NaN 0.000242 NaN NaN NaN { NF golden}
+_065_,_105_ NaN 0.000000 NaN NaN NaN { NF golden}
+clknet_0_clk,net103 NaN 0.000071 NaN NaN NaN { NF golden}
+net4,req_msg[12] NaN 0.000206 NaN NaN NaN { NF golden}
+_003_,clknet_2_0_0_clk NaN 0.000162 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[4],net27 NaN 0.000020 NaN NaN NaN { NF golden}
+_016_,_130_ NaN 0.000000 NaN NaN NaN { NF golden}
+_016_,_129_ NaN 0.000000 NaN NaN NaN { NF golden}
+_087_,dpath.a_lt_b$in0[13] NaN 0.000389 NaN NaN NaN { NF golden}
+_074_,_111_ NaN 0.000125 NaN NaN NaN { NF golden}
+_129_,net36 NaN 0.000138 NaN NaN NaN { NF golden}
+_061_,net51 NaN 0.000238 NaN NaN NaN { NF golden}
+_040_,_090_ NaN 0.000071 NaN NaN NaN { NF golden}
+_006_,_105_ NaN 0.000019 NaN NaN NaN { NF golden}
+_018_,net36 NaN 0.000321 NaN NaN NaN { NF golden}
+_015_,_112_ NaN 0.000235 NaN NaN NaN { NF golden}
+_091_,dpath.a_lt_b$in0[9] NaN 0.000000 NaN NaN NaN { NF golden}
+_058_,clknet_0_clk NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[9],dpath.a_lt_b$in1[0] NaN 0.000223 NaN NaN NaN { NF golden}
+_057_,dpath.a_lt_b$in1[7] NaN 0.000191 NaN NaN NaN { NF golden}
+resp_rdy,resp_val NaN 0.000000 NaN NaN NaN { NF golden}
+_023_,_101_ NaN 0.000173 NaN NaN NaN { NF golden}
+_063_,dpath.a_lt_b$in1[13] NaN 0.000139 NaN NaN NaN { NF golden}
+_122_,clknet_2_2_0_clk NaN 0.000250 NaN NaN NaN { NF golden}
+_101_,_105_ NaN 0.000000 NaN NaN NaN { NF golden}
+net52,net61 NaN 0.000019 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[2],dpath.a_lt_b$in1[2] NaN 0.000008 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in0[7] NaN 0.000277 NaN NaN NaN { NF golden}
+clknet_2_0_0_clk,net73 NaN 0.000202 NaN NaN NaN { NF golden}
+_096_,ctrl.state.out[2] NaN 0.000317 NaN NaN NaN { NF golden}
+_002_,net36 NaN 0.000000 NaN NaN NaN { NF golden}
+clknet_2_0_0_clk,net71 NaN 0.000154 NaN NaN NaN { NF golden}
+_069_,net81 NaN 0.000290 NaN NaN NaN { NF golden}
+net55,net99 NaN 0.000210 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[7],net68 NaN 0.000015 NaN NaN NaN { NF golden}
+_002_,net26 NaN 0.000026 NaN NaN NaN { NF golden}
+_064_,net107 NaN 0.000169 NaN NaN NaN { NF golden}
+_103_,ctrl.state.out[2] NaN 0.000094 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[11],dpath.a_lt_b$in1[13] NaN 0.000160 NaN NaN NaN { NF golden}
+_063_,dpath.a_lt_b$in1[11] NaN 0.000338 NaN NaN NaN { NF golden}
+net55,net94 NaN 0.000672 NaN NaN NaN { NF golden}
+_173_,_175_ NaN 0.000298 NaN NaN NaN { NF golden}
+_006_,_101_ NaN 0.000259 NaN NaN NaN { NF golden}
+net55,net93 NaN 0.000454 NaN NaN NaN { NF golden}
+_137_,_147_ NaN 0.000158 NaN NaN NaN { NF golden}
+_105_,_169_ NaN 0.000031 NaN NaN NaN { NF golden}
+net55,net89 NaN 0.000109 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in0[5] NaN 0.000008 NaN NaN NaN { NF golden}
+_022_,dpath.a_lt_b$in0[3] NaN 0.000334 NaN NaN NaN { NF golden}
+net55,net88 NaN 0.000019 NaN NaN NaN { NF golden}
+_101_,net9 NaN 0.000076 NaN NaN NaN { NF golden}
+net55,net86 NaN 0.000013 NaN NaN NaN { NF golden}
+_177_,dpath.a_lt_b$in0[14] NaN 0.000290 NaN NaN NaN { NF golden}
+_039_,_084_ NaN 0.000016 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[7],net55 NaN 0.000000 NaN NaN NaN { NF golden}
+_112_,dpath.a_lt_b$in0[15] NaN 0.000376 NaN NaN NaN { NF golden}
+clknet_1_0_0_clk,net102 NaN 0.000000 NaN NaN NaN { NF golden}
+net55,net82 NaN 0.000000 NaN NaN NaN { NF golden}
+_122_,net68 NaN 0.000250 NaN NaN NaN { NF golden}
+net55,net79 NaN 0.000019 NaN NaN NaN { NF golden}
+_083_,dpath.a_lt_b$in1[11] NaN 0.000285 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[7],net50 NaN 0.000071 NaN NaN NaN { NF golden}
+_155_,net15 NaN 0.000051 NaN NaN NaN { NF golden}
+_065_,_087_ NaN 0.000154 NaN NaN NaN { NF golden}
+_022_,clknet_2_2_0_clk NaN 0.000046 NaN NaN NaN { NF golden}
+_002_,_158_ NaN 0.000050 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[7],net46 NaN 0.000284 NaN NaN NaN { NF golden}
+net55,net75 NaN 0.000106 NaN NaN NaN { NF golden}
+_040_,_083_ NaN 0.000049 NaN NaN NaN { NF golden}
+clknet_2_0_0_clk,net37 NaN 0.000000 NaN NaN NaN { NF golden}
+clknet_2_0_0_clk,net36 NaN 0.000651 NaN NaN NaN { NF golden}
+net55,net71 NaN 0.000216 NaN NaN NaN { NF golden}
+_164_,net70 NaN 0.000145 NaN NaN NaN { NF golden}
+net55,net70 NaN 0.000211 NaN NaN NaN { NF golden}
+_164_,net68 NaN 0.000071 NaN NaN NaN { NF golden}
+_132_,dpath.a_lt_b$in0[15] NaN 0.000290 NaN NaN NaN { NF golden}
+_016_,dpath.a_lt_b$in0[13] NaN 0.000000 NaN NaN NaN { NF golden}
+_105_,net81 NaN 0.000246 NaN NaN NaN { NF golden}
+_077_,_153_ NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[7],net36 NaN 0.000360 NaN NaN NaN { NF golden}
+_062_,dpath.a_lt_b$in0[10] NaN 0.000271 NaN NaN NaN { NF golden}
+_038_,_065_ NaN 0.000279 NaN NaN NaN { NF golden}
+net55,net64 NaN 0.000115 NaN NaN NaN { NF golden}
+net20,req_msg[27] NaN 0.000000 NaN NaN NaN { NF golden}
+net55,net61 NaN 0.000211 NaN NaN NaN { NF golden}
+clknet_1_1_0_clk,net105 NaN 0.000344 NaN NaN NaN { NF golden}
+req_msg[4],resp_msg[4] NaN 0.000000 NaN NaN NaN { NF golden}
+_056_,_078_ NaN 0.000076 NaN NaN NaN { NF golden}
+_105_,net74 NaN 0.000758 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[7],net30 NaN 0.000031 NaN NaN NaN { NF golden}
+_065_,_085_ NaN 0.000000 NaN NaN NaN { NF golden}
+reset,resp_rdy NaN 0.000000 NaN NaN NaN { NF golden}
+_164_,net55 NaN 0.000000 NaN NaN NaN { NF golden}
+_053_,net58 NaN 0.000158 NaN NaN NaN { NF golden}
+_112_,dpath.a_lt_b$in0[12] NaN 0.000250 NaN NaN NaN { NF golden}
+net19,req_msg[26] NaN 0.000090 NaN NaN NaN { NF golden}
+_042_,dpath.a_lt_b$in1[7] NaN 0.000221 NaN NaN NaN { NF golden}
+_052_,_147_ NaN 0.000001 NaN NaN NaN { NF golden}
+clknet_1_0_0_clk,dpath.a_lt_b$in1[9] NaN 0.000125 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in0[1] NaN 0.000342 NaN NaN NaN { NF golden}
+_027_,_160_ NaN 0.000000 NaN NaN NaN { NF golden}
+_021_,_049_ NaN 0.000123 NaN NaN NaN { NF golden}
+_147_,net74 NaN 0.000005 NaN NaN NaN { NF golden}
+net57,net79 NaN 0.000000 NaN NaN NaN { NF golden}
+_048_,dpath.a_lt_b$in0[3] NaN 0.000047 NaN NaN NaN { NF golden}
+req_msg[5],resp_msg[5] NaN 0.000171 NaN NaN NaN { NF golden}
+_112_,dpath.a_lt_b$in0[11] NaN 0.000042 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[5],net79 NaN 0.000000 NaN NaN NaN { NF golden}
+_042_,dpath.a_lt_b$in1[6] NaN 0.000175 NaN NaN NaN { NF golden}
+_105_,net56 NaN 0.000049 NaN NaN NaN { NF golden}
+req_msg[16],req_msg[9] NaN 0.000070 NaN NaN NaN { NF golden}
+_036_,net68 NaN 0.000000 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in0[0] NaN 0.000281 NaN NaN NaN { NF golden}
+_112_,_137_ NaN 0.000076 NaN NaN NaN { NF golden}
+_049_,dpath.a_lt_b$in1[2] NaN 0.000323 NaN NaN NaN { NF golden}
+req_msg[1],req_msg[2] NaN 0.000000 NaN NaN NaN { NF golden}
+_041_,_105_ NaN 0.000242 NaN NaN NaN { NF golden}
+_147_,net60 NaN 0.000098 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[11],dpath.a_lt_b$in1[13] NaN 0.000256 NaN NaN NaN { NF golden}
+_053_,net36 NaN 0.000235 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[5],net70 NaN 0.000641 NaN NaN NaN { NF golden}
+_147_,net57 NaN 0.000000 NaN NaN NaN { NF golden}
+_105_,_163_ NaN 0.000028 NaN NaN NaN { NF golden}
+_015_,_101_ NaN 0.000110 NaN NaN NaN { NF golden}
+resp_msg[1],resp_msg[2] NaN 0.000272 NaN NaN NaN { NF golden}
+_078_,net68 NaN 0.000473 NaN NaN NaN { NF golden}
+_105_,net42 NaN 0.000002 NaN NaN NaN { NF golden}
+net48,resp_msg[5] NaN 0.000017 NaN NaN NaN { NF golden}
+_105_,net40 NaN 0.000281 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[0],net84 NaN 0.000022 NaN NaN NaN { NF golden}
+_105_,net36 NaN 0.000000 NaN NaN NaN { NF golden}
+net19,resp_msg[10] NaN 0.000000 NaN NaN NaN { NF golden}
+_095_,net34 NaN 0.000193 NaN NaN NaN { NF golden}
+_127_,dpath.a_lt_b$in1[14] NaN 0.000010 NaN NaN NaN { NF golden}
+_112_,_135_ NaN 0.000103 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[8],net102 NaN 0.000000 NaN NaN NaN { NF golden}
+_078_,net55 NaN 0.000009 NaN NaN NaN { NF golden}
+_011_,clknet_2_3_0_clk NaN 0.000022 NaN NaN NaN { NF golden}
+req_msg[7],resp_msg[7] NaN 0.000000 NaN NaN NaN { NF golden}
+net60,net79 NaN 0.000302 NaN NaN NaN { NF golden}
+_095_,net26 NaN 0.000000 NaN NaN NaN { NF golden}
+_030_,clknet_2_1_0_clk NaN 0.000449 NaN NaN NaN { NF golden}
+_102_,_111_ NaN 0.000228 NaN NaN NaN { NF golden}
+_147_,net36 NaN 0.000161 NaN NaN NaN { NF golden}
+_154_,dpath.a_lt_b$in0[6] NaN 0.000076 NaN NaN NaN { NF golden}
+req_msg[10],resp_msg[10] NaN 0.000000 NaN NaN NaN { NF golden}
+net10,req_msg[18] NaN 0.000094 NaN NaN NaN { NF golden}
+net60,net74 NaN 0.000007 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[10],net2 NaN 0.000082 NaN NaN NaN { NF golden}
+_122_,_157_ NaN 0.000031 NaN NaN NaN { NF golden}
+_173_,net68 NaN 0.000034 NaN NaN NaN { NF golden}
+_123_,clknet_1_1_0_clk NaN 0.000071 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[11],dpath.a_lt_b$in1[8] NaN 0.000027 NaN NaN NaN { NF golden}
+_105_,_160_ NaN 0.000201 NaN NaN NaN { NF golden}
+_017_,_131_ NaN 0.000178 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[5],net36 NaN 0.000226 NaN NaN NaN { NF golden}
+resp_msg[3],resp_msg[4] NaN 0.000000 NaN NaN NaN { NF golden}
+_066_,_105_ NaN 0.000071 NaN NaN NaN { NF golden}
+_041_,net102 NaN 0.000040 NaN NaN NaN { NF golden}
+_078_,net36 NaN 0.000078 NaN NaN NaN { NF golden}
+net61,net79 NaN 0.000056 NaN NaN NaN { NF golden}
+_112_,dpath.a_lt_b$in0[7] NaN 0.000260 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[5],dpath.a_lt_b$in1[5] NaN 0.000189 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[11],net3 NaN 0.000103 NaN NaN NaN { NF golden}
+_095_,_158_ NaN 0.000218 NaN NaN NaN { NF golden}
+_131_,net42 NaN 0.000269 NaN NaN NaN { NF golden}
+_112_,dpath.a_lt_b$in0[6] NaN 0.000181 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[10],net68 NaN 0.000369 NaN NaN NaN { NF golden}
+_026_,dpath.a_lt_b$in1[7] NaN 0.000000 NaN NaN NaN { NF golden}
+_018_,clknet_2_0_0_clk NaN 0.000022 NaN NaN NaN { NF golden}
+net62,net79 NaN 0.000142 NaN NaN NaN { NF golden}
+net22,resp_msg[11] NaN 0.000007 NaN NaN NaN { NF golden}
+_173_,net41 NaN 0.000360 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[0],net36 NaN 0.000240 NaN NaN NaN { NF golden}
+_037_,_038_ NaN 0.000032 NaN NaN NaN { NF golden}
+_173_,net36 NaN 0.000013 NaN NaN NaN { NF golden}
+_105_,dpath.a_lt_b$in1[8] NaN 0.000000 NaN NaN NaN { NF golden}
+net10,net9 NaN 0.000143 NaN NaN NaN { NF golden}
+_025_,dpath.a_lt_b$in0[6] NaN 0.000259 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[10],net55 NaN 0.000072 NaN NaN NaN { NF golden}
+_112_,dpath.a_lt_b$in0[4] NaN 0.000000 NaN NaN NaN { NF golden}
+_008_,_120_ NaN 0.000267 NaN NaN NaN { NF golden}
+_052_,_137_ NaN 0.000294 NaN NaN NaN { NF golden}
+_156_,net50 NaN 0.000150 NaN NaN NaN { NF golden}
+_048_,clknet_2_2_0_clk NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[8],net82 NaN 0.000031 NaN NaN NaN { NF golden}
+_173_,net22 NaN 0.000178 NaN NaN NaN { NF golden}
+_111_,_112_ NaN 0.000649 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[8],net79 NaN 0.000000 NaN NaN NaN { NF golden}
+_167_,dpath.a_lt_b$in1[11] NaN 0.000104 NaN NaN NaN { NF golden}
+_066_,_101_ NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[11],net68 NaN 0.000008 NaN NaN NaN { NF golden}
+clknet_0_clk,net61 NaN 0.000000 NaN NaN NaN { NF golden}
+_105_,dpath.a_lt_b$in1[6] NaN 0.000230 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[8],net74 NaN 0.000082 NaN NaN NaN { NF golden}
+_071_,net79 NaN 0.000240 NaN NaN NaN { NF golden}
+_104_,_137_ NaN 0.000010 NaN NaN NaN { NF golden}
+clknet_0_clk,net55 NaN 0.000139 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[8],net70 NaN 0.000067 NaN NaN NaN { NF golden}
+_109_,net1 NaN 0.000032 NaN NaN NaN { NF golden}
+_078_,_156_ NaN 0.000000 NaN NaN NaN { NF golden}
+_045_,net36 NaN 0.000485 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[11],net55 NaN 0.000034 NaN NaN NaN { NF golden}
+_174_,_175_ NaN 0.000134 NaN NaN NaN { NF golden}
+net25,resp_msg[15] NaN 0.000119 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[8],net62 NaN 0.000106 NaN NaN NaN { NF golden}
+_028_,net55 NaN 0.000296 NaN NaN NaN { NF golden}
+net64,net70 NaN 0.000161 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in0[12] NaN 0.000000 NaN NaN NaN { NF golden}
+net64,net66 NaN 0.000181 NaN NaN NaN { NF golden}
+net64,net65 NaN 0.000031 NaN NaN NaN { NF golden}
+_012_,net72 NaN 0.000290 NaN NaN NaN { NF golden}
+_071_,net56 NaN 0.000000 NaN NaN NaN { NF golden}
+net36,net9 NaN 0.000508 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[9],net102 NaN 0.000024 NaN NaN NaN { NF golden}
+net36,net7 NaN 0.000006 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[11],net36 NaN 0.000091 NaN NaN NaN { NF golden}
+_011_,dpath.a_lt_b$in1[8] NaN 0.000000 NaN NaN NaN { NF golden}
+_140_,net37 NaN 0.000014 NaN NaN NaN { NF golden}
+net36,net5 NaN 0.000264 NaN NaN NaN { NF golden}
+_095_,dpath.a_lt_b$in1[3] NaN 0.000000 NaN NaN NaN { NF golden}
+_097_,clknet_2_3_0_clk NaN 0.000168 NaN NaN NaN { NF golden}
+net65,net72 NaN 0.000065 NaN NaN NaN { NF golden}
+_158_,ctrl.state.out[2] NaN 0.000066 NaN NaN NaN { NF golden}
+_165_,net70 NaN 0.000000 NaN NaN NaN { NF golden}
+_028_,_162_ NaN 0.000296 NaN NaN NaN { NF golden}
+clknet_0_clk,net23 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[8],net36 NaN 0.000036 NaN NaN NaN { NF golden}
+_106_,net80 NaN 0.000233 NaN NaN NaN { NF golden}
+_039_,_065_ NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[11],net24 NaN 0.000071 NaN NaN NaN { NF golden}
+_105_,dpath.a_lt_b$in1[2] NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[14],dpath.a_lt_b$in1[14] NaN 0.000410 NaN NaN NaN { NF golden}
+_057_,_078_ NaN 0.000060 NaN NaN NaN { NF golden}
+_058_,_105_ NaN 0.000310 NaN NaN NaN { NF golden}
+_112_,_123_ NaN 0.000230 NaN NaN NaN { NF golden}
+_106_,net73 NaN 0.000449 NaN NaN NaN { NF golden}
+_067_,_112_ NaN 0.000131 NaN NaN NaN { NF golden}
+_106_,net70 NaN 0.000279 NaN NaN NaN { NF golden}
+_054_,net57 NaN 0.000000 NaN NaN NaN { NF golden}
+_047_,_054_ NaN 0.000343 NaN NaN NaN { NF golden}
+net66,net68 NaN 0.000114 NaN NaN NaN { NF golden}
+_058_,_094_ NaN 0.000276 NaN NaN NaN { NF golden}
+_045_,dpath.a_lt_b$in1[6] NaN 0.000454 NaN NaN NaN { NF golden}
+_054_,net46 NaN 0.000147 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[6],net79 NaN 0.000049 NaN NaN NaN { NF golden}
+_044_,dpath.a_lt_b$in0[6] NaN 0.000215 NaN NaN NaN { NF golden}
+req_msg[9],resp_msg[0] NaN 0.000272 NaN NaN NaN { NF golden}
+net14,req_msg[21] NaN 0.000181 NaN NaN NaN { NF golden}
+_080_,net79 NaN 0.000490 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[1],net98 NaN 0.000006 NaN NaN NaN { NF golden}
+_112_,_121_ NaN 0.000065 NaN NaN NaN { NF golden}
+_165_,net38 NaN 0.000040 NaN NaN NaN { NF golden}
+_065_,_066_ NaN 0.000129 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[1],net96 NaN 0.000000 NaN NaN NaN { NF golden}
+net68,net86 NaN 0.000060 NaN NaN NaN { NF golden}
+_039_,_062_ NaN 0.000259 NaN NaN NaN { NF golden}
+_042_,_105_ NaN 0.000193 NaN NaN NaN { NF golden}
+_054_,net36 NaN 0.000104 NaN NaN NaN { NF golden}
+_051_,_112_ NaN 0.000000 NaN NaN NaN { NF golden}
+net68,net81 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[1],net90 NaN 0.000193 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[1],net87 NaN 0.000181 NaN NaN NaN { NF golden}
+_106_,net42 NaN 0.000322 NaN NaN NaN { NF golden}
+net68,net75 NaN 0.000065 NaN NaN NaN { NF golden}
+_158_,dpath.a_lt_b$in1[7] NaN 0.000419 NaN NaN NaN { NF golden}
+_040_,_061_ NaN 0.000205 NaN NaN NaN { NF golden}
+clknet_2_0_0_clk,dpath.a_lt_b$in1[9] NaN 0.000106 NaN NaN NaN { NF golden}
+_157_,dpath.a_lt_b$in0[7] NaN 0.000071 NaN NaN NaN { NF golden}
+_132_,net73 NaN 0.000053 NaN NaN NaN { NF golden}
+_115_,net98 NaN 0.000235 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[1],net79 NaN 0.000000 NaN NaN NaN { NF golden}
+_056_,_057_ NaN 0.000425 NaN NaN NaN { NF golden}
+_096_,net34 NaN 0.000117 NaN NaN NaN { NF golden}
+_004_,net98 NaN 0.000235 NaN NaN NaN { NF golden}
+_026_,clknet_2_2_0_clk NaN 0.000186 NaN NaN NaN { NF golden}
+_000_,_102_ NaN 0.000223 NaN NaN NaN { NF golden}
+_176_,dpath.a_lt_b$in1[15] NaN 0.000051 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[6],net49 NaN 0.000291 NaN NaN NaN { NF golden}
+_018_,_132_ NaN 0.000203 NaN NaN NaN { NF golden}
+_037_,net40 NaN 0.000266 NaN NaN NaN { NF golden}
+_079_,net50 NaN 0.000323 NaN NaN NaN { NF golden}
+_115_,clknet_2_2_0_clk NaN 0.000182 NaN NaN NaN { NF golden}
+_034_,_112_ NaN 0.000088 NaN NaN NaN { NF golden}
+_176_,dpath.a_lt_b$in1[14] NaN 0.000235 NaN NaN NaN { NF golden}
+_028_,dpath.a_lt_b$in0[9] NaN 0.000088 NaN NaN NaN { NF golden}
+_111_,dpath.a_lt_b$in1[15] NaN 0.000256 NaN NaN NaN { NF golden}
+clknet_2_3_0_clk,dpath.a_lt_b$in1[12] NaN 0.000126 NaN NaN NaN { NF golden}
+_078_,dpath.a_lt_b$in0[3] NaN 0.000368 NaN NaN NaN { NF golden}
+_174_,net64 NaN 0.000131 NaN NaN NaN { NF golden}
+_004_,net75 NaN 0.000007 NaN NaN NaN { NF golden}
+_129_,_130_ NaN 0.000144 NaN NaN NaN { NF golden}
+_061_,dpath.a_lt_b$in1[11] NaN 0.000014 NaN NaN NaN { NF golden}
+_115_,net68 NaN 0.000356 NaN NaN NaN { NF golden}
+_105_,net101 NaN 0.000098 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[1],net45 NaN 0.000070 NaN NaN NaN { NF golden}
+net72,net85 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[11],net68 NaN 0.000217 NaN NaN NaN { NF golden}
+_035_,dpath.a_lt_b$in1[14] NaN 0.000007 NaN NaN NaN { NF golden}
+net72,net79 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[6],net15 NaN 0.000058 NaN NaN NaN { NF golden}
+_030_,_168_ NaN 0.000000 NaN NaN NaN { NF golden}
+_115_,net55 NaN 0.000094 NaN NaN NaN { NF golden}
+_015_,dpath.a_lt_b$in1[12] NaN 0.000102 NaN NaN NaN { NF golden}
+_004_,net55 NaN 0.000164 NaN NaN NaN { NF golden}
+_175_,dpath.a_lt_b$in0[13] NaN 0.000250 NaN NaN NaN { NF golden}
+_009_,_121_ NaN 0.000011 NaN NaN NaN { NF golden}
+net33,req_val NaN 0.000019 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[11],net55 NaN 0.000062 NaN NaN NaN { NF golden}
+_060_,_112_ NaN 0.000000 NaN NaN NaN { NF golden}
+_059_,_112_ NaN 0.000235 NaN NaN NaN { NF golden}
+_030_,_167_ NaN 0.000100 NaN NaN NaN { NF golden}
+_025_,_101_ NaN 0.000089 NaN NaN NaN { NF golden}
+clknet_1_1_0_clk,dpath.a_lt_b$in0[8] NaN 0.000412 NaN NaN NaN { NF golden}
+net73,net79 NaN 0.000316 NaN NaN NaN { NF golden}
+net73,net80 NaN 0.000269 NaN NaN NaN { NF golden}
+_157_,net50 NaN 0.000050 NaN NaN NaN { NF golden}
+_020_,_143_ NaN 0.000000 NaN NaN NaN { NF golden}
+_093_,_095_ NaN 0.000025 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[9],net82 NaN 0.000364 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[12],net70 NaN 0.000042 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[11],net39 NaN 0.000000 NaN NaN NaN { NF golden}
+_015_,clknet_2_3_0_clk NaN 0.000076 NaN NaN NaN { NF golden}
+_029_,net70 NaN 0.000389 NaN NaN NaN { NF golden}
+_060_,net102 NaN 0.000356 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[11],net36 NaN 0.000472 NaN NaN NaN { NF golden}
+_091_,dpath.a_lt_b$in1[9] NaN 0.000276 NaN NaN NaN { NF golden}
+_105_,_137_ NaN 0.000025 NaN NaN NaN { NF golden}
+_093_,_094_ NaN 0.000319 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[9],net72 NaN 0.000078 NaN NaN NaN { NF golden}
+_116_,dpath.a_lt_b$in1[2] NaN 0.000016 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[9],net71 NaN 0.000142 NaN NaN NaN { NF golden}
+_055_,dpath.a_lt_b$in0[8] NaN 0.000132 NaN NaN NaN { NF golden}
+_029_,_165_ NaN 0.000033 NaN NaN NaN { NF golden}
+net74,net82 NaN 0.000449 NaN NaN NaN { NF golden}
+_135_,net103 NaN 0.000150 NaN NaN NaN { NF golden}
+_067_,_089_ NaN 0.000000 NaN NaN NaN { NF golden}
+_130_,dpath.a_lt_b$in0[13] NaN 0.000021 NaN NaN NaN { NF golden}
+net75,net95 NaN 0.000074 NaN NaN NaN { NF golden}
+_105_,dpath.a_lt_b$in1[15] NaN 0.000000 NaN NaN NaN { NF golden}
+_084_,_086_ NaN 0.000000 NaN NaN NaN { NF golden}
+_056_,dpath.a_lt_b$in1[7] NaN 0.000260 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[11],net24 NaN 0.000211 NaN NaN NaN { NF golden}
+_029_,_164_ NaN 0.000204 NaN NaN NaN { NF golden}
+_029_,net55 NaN 0.000000 NaN NaN NaN { NF golden}
+_115_,dpath.a_lt_b$in0[1] NaN 0.000000 NaN NaN NaN { NF golden}
+net75,net86 NaN 0.000052 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[9],net55 NaN 0.000103 NaN NaN NaN { NF golden}
+clknet_2_0_0_clk,dpath.a_lt_b$in1[0] NaN 0.000031 NaN NaN NaN { NF golden}
+_124_,net72 NaN 0.000061 NaN NaN NaN { NF golden}
+_054_,_151_ NaN 0.000357 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in1[7] NaN 0.001495 NaN NaN NaN { NF golden}
+_056_,dpath.a_lt_b$in1[6] NaN 0.000000 NaN NaN NaN { NF golden}
+_058_,_081_ NaN 0.000013 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[12],net40 NaN 0.000034 NaN NaN NaN { NF golden}
+net75,net77 NaN 0.000187 NaN NaN NaN { NF golden}
+_004_,clknet_2_2_0_clk NaN 0.000012 NaN NaN NaN { NF golden}
+_030_,net39 NaN 0.000000 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in1[6] NaN 0.000042 NaN NaN NaN { NF golden}
+_056_,dpath.a_lt_b$in1[5] NaN 0.000764 NaN NaN NaN { NF golden}
+net76,net86 NaN 0.000317 NaN NaN NaN { NF golden}
+_001_,_097_ NaN 0.000039 NaN NaN NaN { NF golden}
+_105_,dpath.a_lt_b$in1[12] NaN 0.000000 NaN NaN NaN { NF golden}
+_013_,net55 NaN 0.000000 NaN NaN NaN { NF golden}
+_090_,net102 NaN 0.000090 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in1[5] NaN 0.000008 NaN NaN NaN { NF golden}
+req_msg[10],resp_msg[9] NaN 0.000000 NaN NaN NaN { NF golden}
+_034_,_101_ NaN 0.000164 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in1[4] NaN 0.000553 NaN NaN NaN { NF golden}
+_148_,_149_ NaN 0.000238 NaN NaN NaN { NF golden}
+_021_,dpath.a_lt_b$in0[2] NaN 0.000015 NaN NaN NaN { NF golden}
+_124_,net36 NaN 0.000191 NaN NaN NaN { NF golden}
+_112_,clknet_2_1_0_clk NaN 0.000000 NaN NaN NaN { NF golden}
+_169_,dpath.a_lt_b$in0[11] NaN 0.000181 NaN NaN NaN { NF golden}
+_001_,_095_ NaN 0.000347 NaN NaN NaN { NF golden}
+_013_,net36 NaN 0.000000 NaN NaN NaN { NF golden}
+_124_,net32 NaN 0.000071 NaN NaN NaN { NF golden}
+_105_,dpath.a_lt_b$in1[10] NaN 0.000702 NaN NaN NaN { NF golden}
+_140_,_142_ NaN 0.000181 NaN NaN NaN { NF golden}
+_048_,_053_ NaN 0.000118 NaN NaN NaN { NF golden}
+_023_,clknet_2_2_0_clk NaN 0.000000 NaN NaN NaN { NF golden}
+_059_,_093_ NaN 0.000183 NaN NaN NaN { NF golden}
+_097_,net53 NaN 0.000000 NaN NaN NaN { NF golden}
+net100,net68 NaN 0.000000 NaN NaN NaN { NF golden}
+net100,net64 NaN 0.000035 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[2],net92 NaN 0.000342 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[7],net68 NaN 0.000030 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in1[2] NaN 0.000178 NaN NaN NaN { NF golden}
+_112_,clknet_2_2_0_clk NaN 0.000250 NaN NaN NaN { NF golden}
+_055_,net31 NaN 0.000023 NaN NaN NaN { NF golden}
+_013_,net18 NaN 0.000084 NaN NaN NaN { NF golden}
+_048_,dpath.a_lt_b$in1[4] NaN 0.000071 NaN NaN NaN { NF golden}
+_012_,clknet_2_0_0_clk NaN 0.000022 NaN NaN NaN { NF golden}
+net100,net55 NaN 0.000000 NaN NaN NaN { NF golden}
+_105_,ctrl.state.out[2] NaN 0.000034 NaN NaN NaN { NF golden}
+_085_,_105_ NaN 0.000000 NaN NaN NaN { NF golden}
+_133_,net73 NaN 0.000240 NaN NaN NaN { NF golden}
+_068_,dpath.a_lt_b$in0[14] NaN 0.000416 NaN NaN NaN { NF golden}
+_097_,net34 NaN 0.000056 NaN NaN NaN { NF golden}
+net102,net82 NaN 0.000268 NaN NaN NaN { NF golden}
+_048_,dpath.a_lt_b$in1[3] NaN 0.000836 NaN NaN NaN { NF golden}
+net79,net83 NaN 0.000145 NaN NaN NaN { NF golden}
+_046_,_153_ NaN 0.000071 NaN NaN NaN { NF golden}
+_041_,_059_ NaN 0.000251 NaN NaN NaN { NF golden}
+_043_,_093_ NaN 0.000051 NaN NaN NaN { NF golden}
+_022_,net68 NaN 0.000949 NaN NaN NaN { NF golden}
+_112_,clknet_2_3_0_clk NaN 0.000235 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[7],net50 NaN 0.000030 NaN NaN NaN { NF golden}
+_102_,ctrl.state.out[2] NaN 0.000248 NaN NaN NaN { NF golden}
+clknet_2_3_0_clk,net63 NaN 0.000000 NaN NaN NaN { NF golden}
+net102,net74 NaN 0.001114 NaN NaN NaN { NF golden}
+_112_,net110 NaN 0.000029 NaN NaN NaN { NF golden}
+_036_,net104 NaN 0.000125 NaN NaN NaN { NF golden}
+_060_,_090_ NaN 0.000071 NaN NaN NaN { NF golden}
+_031_,_172_ NaN 0.000025 NaN NaN NaN { NF golden}
+_090_,dpath.a_lt_b$in1[12] NaN 0.000040 NaN NaN NaN { NF golden}
+_046_,_152_ NaN 0.000048 NaN NaN NaN { NF golden}
+_041_,_058_ NaN 0.000139 NaN NaN NaN { NF golden}
+_105_,clknet_1_1_0_clk NaN 0.000085 NaN NaN NaN { NF golden}
+_158_,clknet_0_clk NaN 0.000000 NaN NaN NaN { NF golden}
+_021_,_147_ NaN 0.000065 NaN NaN NaN { NF golden}
+net102,net63 NaN 0.000021 NaN NaN NaN { NF golden}
+net103,net79 NaN 0.000033 NaN NaN NaN { NF golden}
+req_msg[12],resp_msg[8] NaN 0.000169 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[2],net55 NaN 0.000314 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[7],net30 NaN 0.000013 NaN NaN NaN { NF golden}
+_011_,_123_ NaN 0.000308 NaN NaN NaN { NF golden}
+_116_,net68 NaN 0.000019 NaN NaN NaN { NF golden}
+_084_,net108 NaN 0.000073 NaN NaN NaN { NF golden}
+_097_,_158_ NaN 0.000201 NaN NaN NaN { NF golden}
+net101,net36 NaN 0.000106 NaN NaN NaN { NF golden}
+_031_,_170_ NaN 0.000358 NaN NaN NaN { NF golden}
+_071_,_137_ NaN 0.000600 NaN NaN NaN { NF golden}
+_068_,_104_ NaN 0.000037 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[12],net70 NaN 0.000009 NaN NaN NaN { NF golden}
+_085_,_101_ NaN 0.000000 NaN NaN NaN { NF golden}
+_154_,dpath.a_lt_b$in1[6] NaN 0.000088 NaN NaN NaN { NF golden}
+clknet_2_3_0_clk,net34 NaN 0.000399 NaN NaN NaN { NF golden}
+_105_,_124_ NaN 0.000397 NaN NaN NaN { NF golden}
+clknet_2_3_0_clk,dpath.a_lt_b$in0[8] NaN 0.000185 NaN NaN NaN { NF golden}
+net52,resp_msg[9] NaN 0.000046 NaN NaN NaN { NF golden}
+_116_,net55 NaN 0.000203 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[2],net36 NaN 0.000226 NaN NaN NaN { NF golden}
+_047_,net68 NaN 0.000000 NaN NaN NaN { NF golden}
+_005_,net55 NaN 0.000197 NaN NaN NaN { NF golden}
+net32,req_msg[9] NaN 0.000037 NaN NaN NaN { NF golden}
+_176_,_178_ NaN 0.000129 NaN NaN NaN { NF golden}
+_180_,dpath.a_lt_b$in1[15] NaN 0.000040 NaN NaN NaN { NF golden}
+net104,net68 NaN 0.000000 NaN NaN NaN { NF golden}
+_142_,net85 NaN 0.000143 NaN NaN NaN { NF golden}
+_104_,_106_ NaN 0.000181 NaN NaN NaN { NF golden}
+_142_,net84 NaN 0.000359 NaN NaN NaN { NF golden}
+_153_,dpath.a_lt_b$in0[5] NaN 0.000000 NaN NaN NaN { NF golden}
+_061_,_112_ NaN 0.000235 NaN NaN NaN { NF golden}
+_112_,dpath.a_lt_b$in1[7] NaN 0.000118 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[12],net52 NaN 0.001000 NaN NaN NaN { NF golden}
+_158_,net55 NaN 0.000000 NaN NaN NaN { NF golden}
+net36,resp_msg[13] NaN 0.000128 NaN NaN NaN { NF golden}
+_047_,net57 NaN 0.000067 NaN NaN NaN { NF golden}
+net103,net45 NaN 0.000067 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[2],net23 NaN 0.000029 NaN NaN NaN { NF golden}
+clknet_1_0_0_clk,clknet_2_1_0_clk NaN 0.000431 NaN NaN NaN { NF golden}
+net103,net44 NaN 0.000050 NaN NaN NaN { NF golden}
+_176_,_177_ NaN 0.000096 NaN NaN NaN { NF golden}
+clknet_0_clk,dpath.a_lt_b$in1[2] NaN 0.000000 NaN NaN NaN { NF golden}
+_094_,_095_ NaN 0.000126 NaN NaN NaN { NF golden}
+_094_,_105_ NaN 0.000038 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[0],net85 NaN 0.000192 NaN NaN NaN { NF golden}
+_074_,dpath.a_lt_b$in0[2] NaN 0.000110 NaN NaN NaN { NF golden}
+clknet_2_3_0_clk,dpath.a_lt_b$in0[6] NaN 0.000235 NaN NaN NaN { NF golden}
+_050_,clknet_2_0_0_clk NaN 0.000308 NaN NaN NaN { NF golden}
+req_msg[3],reset NaN 0.000000 NaN NaN NaN { NF golden}
+net103,net36 NaN 0.000207 NaN NaN NaN { NF golden}
+_047_,net47 NaN 0.000173 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[12],net40 NaN 0.000000 NaN NaN NaN { NF golden}
+_059_,dpath.a_lt_b$in1[8] NaN 0.000240 NaN NaN NaN { NF golden}
+_006_,_042_ NaN 0.000025 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[13],net64 NaN 0.000218 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[12],net36 NaN 0.000411 NaN NaN NaN { NF golden}
+_064_,dpath.a_lt_b$in1[11] NaN 0.000281 NaN NaN NaN { NF golden}
+clknet_2_1_0_clk,dpath.a_lt_b$in0[9] NaN 0.000098 NaN NaN NaN { NF golden}
+_090_,net52 NaN 0.000152 NaN NaN NaN { NF golden}
+clknet_2_3_0_clk,dpath.a_lt_b$in0[5] NaN 0.000000 NaN NaN NaN { NF golden}
+_119_,clknet_2_2_0_clk NaN 0.000197 NaN NaN NaN { NF golden}
+_112_,dpath.a_lt_b$in1[5] NaN 0.000008 NaN NaN NaN { NF golden}
+_116_,net23 NaN 0.000066 NaN NaN NaN { NF golden}
+_035_,_105_ NaN 0.000071 NaN NaN NaN { NF golden}
+_158_,net34 NaN 0.000264 NaN NaN NaN { NF golden}
+_020_,clknet_2_0_0_clk NaN 0.000162 NaN NaN NaN { NF golden}
+_167_,_168_ NaN 0.000000 NaN NaN NaN { NF golden}
+_047_,net36 NaN 0.000342 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[13],net55 NaN 0.000126 NaN NaN NaN { NF golden}
+_010_,_101_ NaN 0.000007 NaN NaN NaN { NF golden}
+net105,net55 NaN 0.000150 NaN NaN NaN { NF golden}
+_073_,net69 NaN 0.000015 NaN NaN NaN { NF golden}
+_089_,net42 NaN 0.000028 NaN NaN NaN { NF golden}
+_158_,net26 NaN 0.000000 NaN NaN NaN { NF golden}
+_112_,dpath.a_lt_b$in1[4] NaN 0.000306 NaN NaN NaN { NF golden}
+_100_,net36 NaN 0.000044 NaN NaN NaN { NF golden}
+net105,net46 NaN 0.000140 NaN NaN NaN { NF golden}
+_055_,_151_ NaN 0.000240 NaN NaN NaN { NF golden}
+req_msg[19],req_msg[7] NaN 0.000000 NaN NaN NaN { NF golden}
+_100_,net33 NaN 0.000024 NaN NaN NaN { NF golden}
+_105_,_118_ NaN 0.000195 NaN NaN NaN { NF golden}
+_001_,clknet_2_3_0_clk NaN 0.000114 NaN NaN NaN { NF golden}
+_038_,dpath.a_lt_b$in1[13] NaN 0.000144 NaN NaN NaN { NF golden}
+_158_,_160_ NaN 0.000134 NaN NaN NaN { NF golden}
+_067_,_071_ NaN 0.000381 NaN NaN NaN { NF golden}
+net2,req_msg[10] NaN 0.000206 NaN NaN NaN { NF golden}
+_106_,net101 NaN 0.000194 NaN NaN NaN { NF golden}
+_133_,dpath.a_lt_b$in0[15] NaN 0.000173 NaN NaN NaN { NF golden}
+net107,net70 NaN 0.000090 NaN NaN NaN { NF golden}
+net86,net89 NaN 0.000085 NaN NaN NaN { NF golden}
+net86,net88 NaN 0.000192 NaN NaN NaN { NF golden}
+_151_,net97 NaN 0.000495 NaN NaN NaN { NF golden}
+_151_,net96 NaN 0.000039 NaN NaN NaN { NF golden}
+_073_,net45 NaN 0.000028 NaN NaN NaN { NF golden}
+_125_,net55 NaN 0.000125 NaN NaN NaN { NF golden}
+_078_,net109 NaN 0.000378 NaN NaN NaN { NF golden}
+_091_,_176_ NaN 0.000181 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[0],net37 NaN 0.000141 NaN NaN NaN { NF golden}
+net87,net96 NaN 0.000250 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[0],net36 NaN 0.000013 NaN NaN NaN { NF golden}
+_150_,_151_ NaN 0.000193 NaN NaN NaN { NF golden}
+_146_,dpath.a_lt_b$in1[2] NaN 0.000087 NaN NaN NaN { NF golden}
+_038_,dpath.a_lt_b$in1[11] NaN 0.000000 NaN NaN NaN { NF golden}
+clknet_2_0_0_clk,clknet_2_1_0_clk NaN 0.000294 NaN NaN NaN { NF golden}
+req_msg[20],req_msg[4] NaN 0.000186 NaN NaN NaN { NF golden}
+_070_,_111_ NaN 0.000051 NaN NaN NaN { NF golden}
+_145_,dpath.a_lt_b$in0[1] NaN 0.000395 NaN NaN NaN { NF golden}
+_014_,net36 NaN 0.000000 NaN NaN NaN { NF golden}
+_011_,_112_ NaN 0.000141 NaN NaN NaN { NF golden}
+_040_,net72 NaN 0.000075 NaN NaN NaN { NF golden}
+_049_,_053_ NaN 0.000076 NaN NaN NaN { NF golden}
+net13,net95 NaN 0.000319 NaN NaN NaN { NF golden}
+_058_,_059_ NaN 0.000181 NaN NaN NaN { NF golden}
+_167_,net39 NaN 0.000000 NaN NaN NaN { NF golden}
+net88,net89 NaN 0.000326 NaN NaN NaN { NF golden}
+_023_,net94 NaN 0.000313 NaN NaN NaN { NF golden}
+_032_,_175_ NaN 0.000270 NaN NaN NaN { NF golden}
+net12,net76 NaN 0.000029 NaN NaN NaN { NF golden}
+_167_,net36 NaN 0.000299 NaN NaN NaN { NF golden}
+net38,resp_msg[10] NaN 0.000070 NaN NaN NaN { NF golden}
+_127_,clknet_2_1_0_clk NaN 0.000000 NaN NaN NaN { NF golden}
+_056_,net36 NaN 0.000000 NaN NaN NaN { NF golden}
+_151_,net58 NaN 0.000131 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[8],net70 NaN 0.000097 NaN NaN NaN { NF golden}
+net10,net36 NaN 0.000011 NaN NaN NaN { NF golden}
+net40,resp_msg[12] NaN 0.000040 NaN NaN NaN { NF golden}
+net89,net96 NaN 0.000131 NaN NaN NaN { NF golden}
+_032_,_174_ NaN 0.000134 NaN NaN NaN { NF golden}
+_037_,dpath.a_lt_b$in0[10] NaN 0.000080 NaN NaN NaN { NF golden}
+clk,net27 NaN 0.000000 NaN NaN NaN { NF golden}
+net90,net91 NaN 0.000000 NaN NaN NaN { NF golden}
+_101_,_172_ NaN 0.000000 NaN NaN NaN { NF golden}
+_043_,net102 NaN 0.000067 NaN NaN NaN { NF golden}
+_050_,_051_ NaN 0.000115 NaN NaN NaN { NF golden}
+clk,net23 NaN 0.000000 NaN NaN NaN { NF golden}
+_105_,_112_ NaN 0.001788 NaN NaN NaN { NF golden}
+net39,resp_msg[11] NaN 0.000065 NaN NaN NaN { NF golden}
+req_msg[12],resp_msg[12] NaN 0.000171 NaN NaN NaN { NF golden}
+net35,resp_val NaN 0.000250 NaN NaN NaN { NF golden}
+net12,net55 NaN 0.000000 NaN NaN NaN { NF golden}
+net11,net36 NaN 0.000315 NaN NaN NaN { NF golden}
+net24,net5 NaN 0.000389 NaN NaN NaN { NF golden}
+net41,resp_msg[13] NaN 0.000070 NaN NaN NaN { NF golden}
+net91,net96 NaN 0.000000 NaN NaN NaN { NF golden}
+_082_,net52 NaN 0.000181 NaN NaN NaN { NF golden}
+net91,net94 NaN 0.000071 NaN NaN NaN { NF golden}
+_061_,_090_ NaN 0.000230 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[3],net68 NaN 0.000008 NaN NaN NaN { NF golden}
+clk,net11 NaN 0.000000 NaN NaN NaN { NF golden}
+_070_,_106_ NaN 0.000065 NaN NaN NaN { NF golden}
+net110,net36 NaN 0.000389 NaN NaN NaN { NF golden}
+net13,net58 NaN 0.000084 NaN NaN NaN { NF golden}
+_176_,net64 NaN 0.000044 NaN NaN NaN { NF golden}
+net28,req_msg[5] NaN 0.000085 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[8],net36 NaN 0.000000 NaN NaN NaN { NF golden}
+_091_,net102 NaN 0.000168 NaN NaN NaN { NF golden}
+_032_,dpath.a_lt_b$in0[13] NaN 0.000137 NaN NaN NaN { NF golden}
+req_rdy,resp_msg[13] NaN 0.000277 NaN NaN NaN { NF golden}
+net12,net36 NaN 0.000033 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[3],net57 NaN 0.000286 NaN NaN NaN { NF golden}
+net37,net8 NaN 0.000176 NaN NaN NaN { NF golden}
+_081_,clknet_1_0_0_clk NaN 0.000267 NaN NaN NaN { NF golden}
+_002_,_100_ NaN 0.000169 NaN NaN NaN { NF golden}
+_047_,_151_ NaN 0.000033 NaN NaN NaN { NF golden}
+_042_,_057_ NaN 0.000307 NaN NaN NaN { NF golden}
+_101_,net96 NaN 0.000131 NaN NaN NaN { NF golden}
+_101_,_168_ NaN 0.000000 NaN NaN NaN { NF golden}
+net13,net47 NaN 0.000082 NaN NaN NaN { NF golden}
+net92,net93 NaN 0.000143 NaN NaN NaN { NF golden}
+_101_,net95 NaN 0.000411 NaN NaN NaN { NF golden}
+_069_,_104_ NaN 0.000144 NaN NaN NaN { NF golden}
+_070_,_104_ NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[3],net46 NaN 0.000286 NaN NaN NaN { NF golden}
+net44,net9 NaN 0.000076 NaN NaN NaN { NF golden}
+_078_,_111_ NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[7],dpath.a_lt_b$in1[7] NaN 0.000398 NaN NaN NaN { NF golden}
+_042_,_056_ NaN 0.000076 NaN NaN NaN { NF golden}
+_101_,_167_ NaN 0.000203 NaN NaN NaN { NF golden}
+_011_,_105_ NaN 0.000188 NaN NaN NaN { NF golden}
+net17,req_msg[24] NaN 0.000082 NaN NaN NaN { NF golden}
+clknet_2_1_0_clk,dpath.a_lt_b$in1[14] NaN 0.000213 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[13],net64 NaN 0.000416 NaN NaN NaN { NF golden}
+_082_,net18 NaN 0.000054 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[3],net36 NaN 0.000203 NaN NaN NaN { NF golden}
+net14,net48 NaN 0.000361 NaN NaN NaN { NF golden}
+_127_,dpath.a_lt_b$in0[11] NaN 0.000085 NaN NaN NaN { NF golden}
+_078_,dpath.a_lt_b$in1[3] NaN 0.000282 NaN NaN NaN { NF golden}
+_177_,_178_ NaN 0.000343 NaN NaN NaN { NF golden}
+_101_,net74 NaN 0.000012 NaN NaN NaN { NF golden}
+_116_,clknet_2_2_0_clk NaN 0.000378 NaN NaN NaN { NF golden}
+_105_,_106_ NaN 0.000428 NaN NaN NaN { NF golden}
+_027_,_101_ NaN 0.000065 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[3],net26 NaN 0.000033 NaN NaN NaN { NF golden}
+_101_,net70 NaN 0.000000 NaN NaN NaN { NF golden}
+req_msg[16],resp_msg[0] NaN 0.000272 NaN NaN NaN { NF golden}
+_048_,net57 NaN 0.000204 NaN NaN NaN { NF golden}
+_048_,net55 NaN 0.000204 NaN NaN NaN { NF golden}
+_074_,net92 NaN 0.000005 NaN NaN NaN { NF golden}
+net27,req_msg[4] NaN 0.000000 NaN NaN NaN { NF golden}
+_159_,net51 NaN 0.000017 NaN NaN NaN { NF golden}
+net94,net96 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[1],net86 NaN 0.000042 NaN NaN NaN { NF golden}
+req_msg[17],resp_msg[2] NaN 0.000062 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[14],net72 NaN 0.000074 NaN NaN NaN { NF golden}
+_105_,clknet_2_0_0_clk NaN 0.000000 NaN NaN NaN { NF golden}
+_101_,net60 NaN 0.000030 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[14],net68 NaN 0.000014 NaN NaN NaN { NF golden}
+_101_,net58 NaN 0.000032 NaN NaN NaN { NF golden}
+_101_,net57 NaN 0.000126 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[14],net65 NaN 0.000197 NaN NaN NaN { NF golden}
+_140_,net8 NaN 0.000313 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[1],net77 NaN 0.000453 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[3],net11 NaN 0.000087 NaN NaN NaN { NF golden}
+_037_,net108 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[1],net76 NaN 0.000021 NaN NaN NaN { NF golden}
+req_msg[17],resp_msg[1] NaN 0.000272 NaN NaN NaN { NF golden}
+_067_,dpath.a_lt_b$in1[15] NaN 0.000000 NaN NaN NaN { NF golden}
+_159_,net36 NaN 0.000084 NaN NaN NaN { NF golden}
+_101_,net49 NaN 0.000293 NaN NaN NaN { NF golden}
+_101_,net50 NaN 0.000008 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net99 NaN 0.000000 NaN NaN NaN { NF golden}
+_101_,net48 NaN 0.000408 NaN NaN NaN { NF golden}
+_048_,net36 NaN 0.000016 NaN NaN NaN { NF golden}
+net16,net50 NaN 0.000048 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net97 NaN 0.000254 NaN NaN NaN { NF golden}
+_101_,net46 NaN 0.000305 NaN NaN NaN { NF golden}
+_101_,net45 NaN 0.000190 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net95 NaN 0.000019 NaN NaN NaN { NF golden}
+clknet_2_1_0_clk,dpath.a_lt_b$in1[10] NaN 0.000188 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net94 NaN 0.000000 NaN NaN NaN { NF golden}
+_095_,_103_ NaN 0.000168 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net93 NaN 0.000075 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[13],net24 NaN 0.000057 NaN NaN NaN { NF golden}
+clknet_1_1_0_clk,dpath.a_lt_b$in1[8] NaN 0.000035 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net92 NaN 0.000105 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net91 NaN 0.000103 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[13],net22 NaN 0.000110 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net90 NaN 0.000252 NaN NaN NaN { NF golden}
+_040_,clknet_1_0_0_clk NaN 0.000181 NaN NaN NaN { NF golden}
+_036_,_104_ NaN 0.000008 NaN NaN NaN { NF golden}
+_101_,net38 NaN 0.000290 NaN NaN NaN { NF golden}
+_176_,dpath.a_lt_b$in1[9] NaN 0.000081 NaN NaN NaN { NF golden}
+_003_,_109_ NaN 0.000096 NaN NaN NaN { NF golden}
+_020_,net106 NaN 0.000157 NaN NaN NaN { NF golden}
+net16,net36 NaN 0.000027 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[14],net42 NaN 0.000233 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[1],net55 NaN 0.000018 NaN NaN NaN { NF golden}
+_046_,clknet_2_3_0_clk NaN 0.000000 NaN NaN NaN { NF golden}
+_019_,net103 NaN 0.000392 NaN NaN NaN { NF golden}
+_159_,_160_ NaN 0.000235 NaN NaN NaN { NF golden}
+net26,req_msg[3] NaN 0.000082 NaN NaN NaN { NF golden}
+_101_,net26 NaN 0.000000 NaN NaN NaN { NF golden}
+net1,req_msg[0] NaN 0.000076 NaN NaN NaN { NF golden}
+net18,net61 NaN 0.000041 NaN NaN NaN { NF golden}
+_158_,clknet_1_1_0_clk NaN 0.000000 NaN NaN NaN { NF golden}
+net11,resp_msg[3] NaN 0.000011 NaN NaN NaN { NF golden}
+_055_,dpath.a_lt_b$in1[8] NaN 0.000140 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[1],net45 NaN 0.000168 NaN NaN NaN { NF golden}
+_048_,net11 NaN 0.000344 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[1],net44 NaN 0.000312 NaN NaN NaN { NF golden}
+_101_,net21 NaN 0.000016 NaN NaN NaN { NF golden}
+_168_,net68 NaN 0.000000 NaN NaN NaN { NF golden}
+net27,req_msg[20] NaN 0.000000 NaN NaN NaN { NF golden}
+_126_,net55 NaN 0.000000 NaN NaN NaN { NF golden}
+_109_,net79 NaN 0.000000 NaN NaN NaN { NF golden}
+_110_,net79 NaN 0.000000 NaN NaN NaN { NF golden}
+net18,net52 NaN 0.002893 NaN NaN NaN { NF golden}
+_142_,net1 NaN 0.000000 NaN NaN NaN { NF golden}
+_101_,_159_ NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[1],net36 NaN 0.000102 NaN NaN NaN { NF golden}
+_101_,net12 NaN 0.000319 NaN NaN NaN { NF golden}
+_066_,dpath.a_lt_b$in0[13] NaN 0.000250 NaN NaN NaN { NF golden}
+net21,net79 NaN 0.000357 NaN NaN NaN { NF golden}
+_105_,clknet_2_3_0_clk NaN 0.000038 NaN NaN NaN { NF golden}
+_071_,_112_ NaN 0.000455 NaN NaN NaN { NF golden}
+_110_,net72 NaN 0.000343 NaN NaN NaN { NF golden}
+_067_,net104 NaN 0.000020 NaN NaN NaN { NF golden}
+_152_,net79 NaN 0.000059 NaN NaN NaN { NF golden}
+_101_,_158_ NaN 0.000186 NaN NaN NaN { NF golden}
+_055_,dpath.a_lt_b$in1[6] NaN 0.000007 NaN NaN NaN { NF golden}
+_059_,_061_ NaN 0.000290 NaN NaN NaN { NF golden}
+req_msg[22],resp_msg[6] NaN 0.000000 NaN NaN NaN { NF golden}
+_126_,net36 NaN 0.000000 NaN NaN NaN { NF golden}
+clknet_1_1_0_clk,net70 NaN 0.000049 NaN NaN NaN { NF golden}
+_078_,_101_ NaN 0.000070 NaN NaN NaN { NF golden}
+net22,req_msg[29] NaN 0.000029 NaN NaN NaN { NF golden}
+_084_,clknet_2_1_0_clk NaN 0.000412 NaN NaN NaN { NF golden}
+_101_,_157_ NaN 0.000256 NaN NaN NaN { NF golden}
+_055_,dpath.a_lt_b$in1[5] NaN 0.000294 NaN NaN NaN { NF golden}
+net31,resp_msg[5] NaN 0.000196 NaN NaN NaN { NF golden}
+_059_,_060_ NaN 0.000076 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[0],net103 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[9],net74 NaN 0.000204 NaN NaN NaN { NF golden}
+_168_,net36 NaN 0.000322 NaN NaN NaN { NF golden}
+_154_,clknet_2_3_0_clk NaN 0.000056 NaN NaN NaN { NF golden}
+_173_,clknet_2_1_0_clk NaN 0.000158 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net36 NaN 0.000411 NaN NaN NaN { NF golden}
+_101_,_156_ NaN 0.000747 NaN NaN NaN { NF golden}
+clknet_1_1_0_clk,net55 NaN 0.000000 NaN NaN NaN { NF golden}
+_019_,_101_ NaN 0.000373 NaN NaN NaN { NF golden}
+_020_,_101_ NaN 0.000000 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net26 NaN 0.000000 NaN NaN NaN { NF golden}
+clk,req_msg[2] NaN 0.000000 NaN NaN NaN { NF golden}
+_101_,_155_ NaN 0.000000 NaN NaN NaN { NF golden}
+_013_,_126_ NaN 0.000043 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[9],net60 NaN 0.000007 NaN NaN NaN { NF golden}
+_145_,net9 NaN 0.000136 NaN NaN NaN { NF golden}
+_177_,dpath.a_lt_b$in1[15] NaN 0.000031 NaN NaN NaN { NF golden}
+_106_,_112_ NaN 0.000073 NaN NaN NaN { NF golden}
+_168_,net20 NaN 0.000018 NaN NaN NaN { NF golden}
+_054_,dpath.a_lt_b$in0[3] NaN 0.000256 NaN NaN NaN { NF golden}
+net5,req_msg[30] NaN 0.000000 NaN NaN NaN { NF golden}
+net51,resp_msg[8] NaN 0.000000 NaN NaN NaN { NF golden}
+_109_,net32 NaN 0.000016 NaN NaN NaN { NF golden}
+_161_,dpath.a_lt_b$in1[9] NaN 0.000090 NaN NaN NaN { NF golden}
+_124_,_125_ NaN 0.000181 NaN NaN NaN { NF golden}
+_035_,_069_ NaN 0.000076 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net16 NaN 0.000228 NaN NaN NaN { NF golden}
+_042_,_043_ NaN 0.000029 NaN NaN NaN { NF golden}
+clknet_1_1_0_clk,net36 NaN 0.000034 NaN NaN NaN { NF golden}
+_101_,_154_ NaN 0.000072 NaN NaN NaN { NF golden}
+clknet_2_2_0_clk,net13 NaN 0.000206 NaN NaN NaN { NF golden}
+_106_,_111_ NaN 0.000492 NaN NaN NaN { NF golden}
+clknet_1_1_0_clk,net31 NaN 0.000247 NaN NaN NaN { NF golden}
+_112_,dpath.a_lt_b$in1[15] NaN 0.000076 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[9],net45 NaN 0.000013 NaN NaN NaN { NF golden}
+_177_,net70 NaN 0.000000 NaN NaN NaN { NF golden}
+_035_,_068_ NaN 0.000215 NaN NaN NaN { NF golden}
+net22,net41 NaN 0.000256 NaN NaN NaN { NF golden}
+_177_,net64 NaN 0.000022 NaN NaN NaN { NF golden}
+net23,net55 NaN 0.000042 NaN NaN NaN { NF golden}
+_035_,_067_ NaN 0.000745 NaN NaN NaN { NF golden}
+_161_,net82 NaN 0.000158 NaN NaN NaN { NF golden}
+net24,net64 NaN 0.000158 NaN NaN NaN { NF golden}
+_016_,dpath.a_lt_b$in1[13] NaN 0.000134 NaN NaN NaN { NF golden}
+_176_,dpath.a_lt_b$in0[14] NaN 0.000158 NaN NaN NaN { NF golden}
+_066_,net55 NaN 0.000005 NaN NaN NaN { NF golden}
+net26,reset NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[4],net47 NaN 0.000369 NaN NaN NaN { NF golden}
+_007_,net68 NaN 0.000342 NaN NaN NaN { NF golden}
+_162_,clknet_2_1_0_clk NaN 0.000132 NaN NaN NaN { NF golden}
+_024_,clknet_2_3_0_clk NaN 0.000105 NaN NaN NaN { NF golden}
+_050_,net77 NaN 0.000263 NaN NaN NaN { NF golden}
+_004_,_115_ NaN 0.000198 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[14],net68 NaN 0.000014 NaN NaN NaN { NF golden}
+_050_,net75 NaN 0.000344 NaN NaN NaN { NF golden}
+_101_,_151_ NaN 0.000419 NaN NaN NaN { NF golden}
+_002_,ctrl.state.out[2] NaN 0.000006 NaN NaN NaN { NF golden}
+net23,net36 NaN 0.000012 NaN NaN NaN { NF golden}
+_062_,_086_ NaN 0.000174 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[14],net64 NaN 0.000287 NaN NaN NaN { NF golden}
+_112_,dpath.a_lt_b$in1[12] NaN 0.000126 NaN NaN NaN { NF golden}
+_170_,_172_ NaN 0.000775 NaN NaN NaN { NF golden}
+_137_,net103 NaN 0.001273 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[9],net10 NaN 0.000039 NaN NaN NaN { NF golden}
+_101_,_149_ NaN 0.000777 NaN NaN NaN { NF golden}
+_092_,net74 NaN 0.000467 NaN NaN NaN { NF golden}
+_067_,_178_ NaN 0.000133 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[4],net27 NaN 0.000011 NaN NaN NaN { NF golden}
+net24,net39 NaN 0.003354 NaN NaN NaN { NF golden}
+_161_,net55 NaN 0.000040 NaN NaN NaN { NF golden}
+_035_,dpath.a_lt_b$in0[14] NaN 0.000029 NaN NaN NaN { NF golden}
+req_msg[28],req_msg[8] NaN 0.000000 NaN NaN NaN { NF golden}
+_049_,net57 NaN 0.000000 NaN NaN NaN { NF golden}
+_111_,ctrl.state.out[2] NaN 0.000082 NaN NaN NaN { NF golden}
+net15,resp_msg[6] NaN 0.000000 NaN NaN NaN { NF golden}
+_101_,_148_ NaN 0.000058 NaN NaN NaN { NF golden}
+_062_,_084_ NaN 0.000420 NaN NaN NaN { NF golden}
+_118_,net36 NaN 0.000158 NaN NaN NaN { NF golden}
+net1,net79 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[4],net13 NaN 0.000160 NaN NaN NaN { NF golden}
+_101_,_147_ NaN 0.000084 NaN NaN NaN { NF golden}
+_050_,net44 NaN 0.000864 NaN NaN NaN { NF golden}
+_033_,net70 NaN 0.000185 NaN NaN NaN { NF golden}
+clknet_2_3_0_clk,dpath.a_lt_b$in1[8] NaN 0.000309 NaN NaN NaN { NF golden}
+_062_,clknet_2_1_0_clk NaN 0.000022 NaN NaN NaN { NF golden}
+_118_,net26 NaN 0.000239 NaN NaN NaN { NF golden}
+_062_,_083_ NaN 0.000044 NaN NaN NaN { NF golden}
+net27,net68 NaN 0.000070 NaN NaN NaN { NF golden}
+_101_,_146_ NaN 0.000159 NaN NaN NaN { NF golden}
+req_msg[13],req_msg[26] NaN 0.000000 NaN NaN NaN { NF golden}
+_096_,_103_ NaN 0.000064 NaN NaN NaN { NF golden}
+_075_,net68 NaN 0.000000 NaN NaN NaN { NF golden}
+_034_,_181_ NaN 0.000005 NaN NaN NaN { NF golden}
+_033_,net55 NaN 0.000365 NaN NaN NaN { NF golden}
+_070_,_072_ NaN 0.000250 NaN NaN NaN { NF golden}
+_092_,net102 NaN 0.000069 NaN NaN NaN { NF golden}
+_102_,net36 NaN 0.000084 NaN NaN NaN { NF golden}
+net27,net55 NaN 0.000010 NaN NaN NaN { NF golden}
+_007_,net13 NaN 0.000022 NaN NaN NaN { NF golden}
+_101_,_145_ NaN 0.000418 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[2],net57 NaN 0.000000 NaN NaN NaN { NF golden}
+_172_,dpath.a_lt_b$in1[12] NaN 0.000000 NaN NaN NaN { NF golden}
+net26,net36 NaN 0.000169 NaN NaN NaN { NF golden}
+clknet_2_3_0_clk,dpath.a_lt_b$in1[6] NaN 0.000011 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[2],net55 NaN 0.000295 NaN NaN NaN { NF golden}
+_105_,dpath.a_lt_b$in0[15] NaN 0.000157 NaN NaN NaN { NF golden}
+_152_,_153_ NaN 0.000071 NaN NaN NaN { NF golden}
+_034_,_180_ NaN 0.000158 NaN NaN NaN { NF golden}
+_111_,net93 NaN 0.000240 NaN NaN NaN { NF golden}
+_070_,_071_ NaN 0.000201 NaN NaN NaN { NF golden}
+_111_,net92 NaN 0.000399 NaN NaN NaN { NF golden}
+_058_,net79 NaN 0.000035 NaN NaN NaN { NF golden}
+clknet_2_1_0_clk,dpath.a_lt_b$in1[9] NaN 0.000319 NaN NaN NaN { NF golden}
+_074_,dpath.a_lt_b$in1[1] NaN 0.000000 NaN NaN NaN { NF golden}
+_143_,_145_ NaN 0.000013 NaN NaN NaN { NF golden}
+clknet_2_3_0_clk,dpath.a_lt_b$in1[5] NaN 0.000000 NaN NaN NaN { NF golden}
+_092_,dpath.a_lt_b$in0[9] NaN 0.000158 NaN NaN NaN { NF golden}
+_075_,net46 NaN 0.000186 NaN NaN NaN { NF golden}
+_111_,net83 NaN 0.000289 NaN NaN NaN { NF golden}
+_069_,_070_ NaN 0.000084 NaN NaN NaN { NF golden}
+_102_,net17 NaN 0.000000 NaN NaN NaN { NF golden}
+req_msg[28],resp_msg[8] NaN 0.000000 NaN NaN NaN { NF golden}
+net1,net36 NaN 0.000000 NaN NaN NaN { NF golden}
+net27,net36 NaN 0.000063 NaN NaN NaN { NF golden}
+_111_,net80 NaN 0.000255 NaN NaN NaN { NF golden}
+net3,net68 NaN 0.000075 NaN NaN NaN { NF golden}
+net30,net68 NaN 0.000025 NaN NaN NaN { NF golden}
+_016_,net55 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[3],dpath.a_lt_b$in1[3] NaN 0.000572 NaN NaN NaN { NF golden}
+_002_,clknet_2_2_0_clk NaN 0.000000 NaN NaN NaN { NF golden}
+_111_,net73 NaN 0.000063 NaN NaN NaN { NF golden}
+_111_,net68 NaN 0.000000 NaN NaN NaN { NF golden}
+_058_,dpath.a_lt_b$in1[6] NaN 0.000000 NaN NaN NaN { NF golden}
+_102_,_158_ NaN 0.000030 NaN NaN NaN { NF golden}
+_057_,dpath.a_lt_b$in0[6] NaN 0.000031 NaN NaN NaN { NF golden}
+clk,clknet_0_clk NaN 0.000016 NaN NaN NaN { NF golden}
+_024_,_153_ NaN 0.000269 NaN NaN NaN { NF golden}
+net30,net55 NaN 0.000009 NaN NaN NaN { NF golden}
+_105_,dpath.a_lt_b$in0[12] NaN 0.000000 NaN NaN NaN { NF golden}
+net2,net36 NaN 0.000090 NaN NaN NaN { NF golden}
+net31,net70 NaN 0.000089 NaN NaN NaN { NF golden}
+_127_,net36 NaN 0.000235 NaN NaN NaN { NF golden}
+_016_,net36 NaN 0.000000 NaN NaN NaN { NF golden}
+_111_,net58 NaN 0.000158 NaN NaN NaN { NF golden}
+_093_,dpath.a_lt_b$in1[6] NaN 0.000126 NaN NaN NaN { NF golden}
+_111_,net57 NaN 0.000189 NaN NaN NaN { NF golden}
+req_msg[29],resp_msg[11] NaN 0.000062 NaN NaN NaN { NF golden}
+_111_,net55 NaN 0.000042 NaN NaN NaN { NF golden}
+_038_,net108 NaN 0.000360 NaN NaN NaN { NF golden}
+_111_,dpath.a_lt_b$in1[2] NaN 0.000342 NaN NaN NaN { NF golden}
+_045_,_078_ NaN 0.000027 NaN NaN NaN { NF golden}
+_014_,_127_ NaN 0.000303 NaN NaN NaN { NF golden}
+net29,net36 NaN 0.000021 NaN NaN NaN { NF golden}
+net3,net36 NaN 0.000111 NaN NaN NaN { NF golden}
+net30,net36 NaN 0.000024 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in1[14] NaN 0.000016 NaN NaN NaN { NF golden}
+_112_,_180_ NaN 0.000001 NaN NaN NaN { NF golden}
+_042_,net57 NaN 0.000196 NaN NaN NaN { NF golden}
+_111_,dpath.a_lt_b$in1[1] NaN 0.000000 NaN NaN NaN { NF golden}
+_036_,_071_ NaN 0.000038 NaN NaN NaN { NF golden}
+_088_,_105_ NaN 0.000178 NaN NaN NaN { NF golden}
+_111_,net36 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[5],net79 NaN 0.000000 NaN NaN NaN { NF golden}
+_119_,net97 NaN 0.000164 NaN NaN NaN { NF golden}
+net5,req_msg[13] NaN 0.000037 NaN NaN NaN { NF golden}
+_029_,dpath.a_lt_b$in0[10] NaN 0.000022 NaN NaN NaN { NF golden}
+_163_,dpath.a_lt_b$in0[9] NaN 0.000251 NaN NaN NaN { NF golden}
+_036_,_069_ NaN 0.000092 NaN NaN NaN { NF golden}
+_000_,net33 NaN 0.000059 NaN NaN NaN { NF golden}
+_109_,dpath.a_lt_b$in0[0] NaN 0.000035 NaN NaN NaN { NF golden}
+net31,net36 NaN 0.000103 NaN NaN NaN { NF golden}
+net6,net68 NaN 0.000276 NaN NaN NaN { NF golden}
+_101_,_137_ NaN 0.000197 NaN NaN NaN { NF golden}
+_101_,dpath.a_lt_b$in1[12] NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[5],net70 NaN 0.000928 NaN NaN NaN { NF golden}
+_040_,clknet_2_1_0_clk NaN 0.000491 NaN NaN NaN { NF golden}
+_039_,clknet_2_1_0_clk NaN 0.000113 NaN NaN NaN { NF golden}
+_178_,net70 NaN 0.000053 NaN NaN NaN { NF golden}
+_036_,_068_ NaN 0.001201 NaN NaN NaN { NF golden}
+_004_,_101_ NaN 0.000088 NaN NaN NaN { NF golden}
+_162_,net102 NaN 0.000082 NaN NaN NaN { NF golden}
+_067_,net70 NaN 0.000105 NaN NaN NaN { NF golden}
+_093_,dpath.a_lt_b$in1[2] NaN 0.000000 NaN NaN NaN { NF golden}
+_178_,net64 NaN 0.000313 NaN NaN NaN { NF golden}
+net32,net37 NaN 0.000333 NaN NaN NaN { NF golden}
+net32,net36 NaN 0.000163 NaN NaN NaN { NF golden}
+_036_,_067_ NaN 0.000381 NaN NaN NaN { NF golden}
+_037_,_084_ NaN 0.000042 NaN NaN NaN { NF golden}
+_005_,_116_ NaN 0.000276 NaN NaN NaN { NF golden}
+_025_,net49 NaN 0.000083 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[15],net79 NaN 0.000194 NaN NaN NaN { NF golden}
+_162_,net82 NaN 0.000007 NaN NaN NaN { NF golden}
+_180_,_181_ NaN 0.000000 NaN NaN NaN { NF golden}
+_101_,_135_ NaN 0.000034 NaN NaN NaN { NF golden}
+_071_,net1 NaN 0.000000 NaN NaN NaN { NF golden}
+_042_,dpath.a_lt_b$in0[7] NaN 0.000076 NaN NaN NaN { NF golden}
+_119_,net68 NaN 0.000048 NaN NaN NaN { NF golden}
+net36,net96 NaN 0.000000 NaN NaN NaN { NF golden}
+_111_,_158_ NaN 0.000186 NaN NaN NaN { NF golden}
+_109_,_142_ NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[15],net73 NaN 0.000340 NaN NaN NaN { NF golden}
+net36,net93 NaN 0.000181 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[15],net72 NaN 0.000181 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[15],net70 NaN 0.000000 NaN NaN NaN { NF golden}
+_043_,dpath.a_lt_b$in1[6] NaN 0.000114 NaN NaN NaN { NF golden}
+_179_,_180_ NaN 0.000035 NaN NaN NaN { NF golden}
+net36,net86 NaN 0.000032 NaN NaN NaN { NF golden}
+_026_,_042_ NaN 0.000080 NaN NaN NaN { NF golden}
+_119_,net55 NaN 0.000000 NaN NaN NaN { NF golden}
+_051_,net69 NaN 0.000060 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[5],net36 NaN 0.000256 NaN NaN NaN { NF golden}
+_051_,net103 NaN 0.000257 NaN NaN NaN { NF golden}
+_120_,net48 NaN 0.000043 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[15],net56 NaN 0.000000 NaN NaN NaN { NF golden}
+net36,net76 NaN 0.000114 NaN NaN NaN { NF golden}
+_051_,dpath.a_lt_b$in1[1] NaN 0.000000 NaN NaN NaN { NF golden}
+_030_,_101_ NaN 0.000000 NaN NaN NaN { NF golden}
+_008_,net48 NaN 0.000065 NaN NaN NaN { NF golden}
+_065_,dpath.a_lt_b$in1[12] NaN 0.000130 NaN NaN NaN { NF golden}
+_162_,net55 NaN 0.000181 NaN NaN NaN { NF golden}
+clknet_2_1_0_clk,net70 NaN 0.000155 NaN NaN NaN { NF golden}
+_156_,dpath.a_lt_b$in1[7] NaN 0.000000 NaN NaN NaN { NF golden}
+_162_,net52 NaN 0.000010 NaN NaN NaN { NF golden}
+net37,net85 NaN 0.000072 NaN NaN NaN { NF golden}
+net34,net35 0.000623 NaN NaN NaN NaN { NF target}
+clknet_2_1_0_clk,net65 NaN 0.000075 NaN NaN NaN { NF golden}
+_121_,dpath.a_lt_b$in0[6] NaN 0.000204 NaN NaN NaN { NF golden}
+clknet_2_1_0_clk,net64 NaN 0.000361 NaN NaN NaN { NF golden}
+net36,net66 NaN 0.000563 NaN NaN NaN { NF golden}
+_028_,clknet_2_1_0_clk NaN 0.000295 NaN NaN NaN { NF golden}
+_063_,_084_ NaN 0.000000 NaN NaN NaN { NF golden}
+_120_,net36 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[15],net43 NaN 0.000038 NaN NaN NaN { NF golden}
+net36,net63 NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[13],dpath.a_lt_b$in1[13] NaN 0.000141 NaN NaN NaN { NF golden}
+net36,net61 NaN 0.000038 NaN NaN NaN { NF golden}
+net36,net59 NaN 0.000264 NaN NaN NaN { NF golden}
+net36,net60 NaN 0.000338 NaN NaN NaN { NF golden}
+_049_,_146_ NaN 0.000071 NaN NaN NaN { NF golden}
+_051_,net44 NaN 0.000007 NaN NaN NaN { NF golden}
+net36,net57 NaN 0.000218 NaN NaN NaN { NF golden}
+_155_,dpath.a_lt_b$in0[6] NaN 0.000347 NaN NaN NaN { NF golden}
+_076_,dpath.a_lt_b$in0[4] NaN 0.000090 NaN NaN NaN { NF golden}
+net36,net56 NaN 0.000188 NaN NaN NaN { NF golden}
+clknet_2_1_0_clk,net52 NaN 0.000331 NaN NaN NaN { NF golden}
+_027_,_055_ NaN 0.000068 NaN NaN NaN { NF golden}
+_162_,net36 NaN 0.000071 NaN NaN NaN { NF golden}
+_065_,dpath.a_lt_b$in1[10] NaN 0.000000 NaN NaN NaN { NF golden}
+net36,net52 NaN 0.000067 NaN NaN NaN { NF golden}
+net36,net51 NaN 0.000088 NaN NaN NaN { NF golden}
+_050_,_145_ NaN 0.000025 NaN NaN NaN { NF golden}
+net36,net48 NaN 0.000389 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in0[3],net68 NaN 0.000036 NaN NaN NaN { NF golden}
+net36,net47 NaN 0.000193 NaN NaN NaN { NF golden}
+_054_,_075_ NaN 0.000000 NaN NaN NaN { NF golden}
+dpath.a_lt_b$in1[15],net25 NaN 0.000014 NaN NaN NaN { NF golden}
+net36,net44 NaN 0.000082 NaN NaN NaN { NF golden}
+_071_,_072_ NaN 0.000126 NaN NaN NaN { NF golden}
+net36,net41 NaN 0.007645 NaN NaN NaN { NF golden}
+net36,net40 NaN 0.000070 NaN NaN NaN { NF golden}
+net36,net38 NaN 0.000026 NaN NaN NaN { NF golden}
+_090_,_112_ NaN 0.000076 NaN NaN NaN { NF golden}
+_112_,net96 NaN 0.000000 NaN NaN NaN { NF golden}
+_112_,_168_ NaN 0.000181 NaN NaN NaN { NF golden}
+_112_,net95 NaN 0.000181 NaN NaN NaN { NF golden}
+_166_,clknet_2_1_0_clk NaN 0.000194 NaN NaN NaN { NF golden}
+net38,net64 NaN 0.000037 NaN NaN NaN { NF golden}
+_060_,net79 NaN 0.000044 NaN NaN NaN { NF golden}
+net40,net79 NaN 0.000618 NaN NaN NaN { NF golden}
+_112_,net89 NaN 0.000000 NaN NaN NaN { NF golden}
+_112_,net88 NaN 0.000186 NaN NaN NaN { NF golden}
+_105_,dpath.a_lt_b$in0[9] NaN 0.000033 NaN NaN NaN { NF golden}
+_026_,dpath.a_lt_b$in0[7] NaN 0.000000 NaN NaN NaN { NF golden}
+_011_,_055_ NaN 0.000061 NaN NaN NaN { NF golden}
+_084_,dpath.a_lt_b$in0[11] NaN 0.000267 NaN NaN NaN { NF golden}
+_112_,_167_ NaN 0.000013 NaN NaN NaN { NF golden}
+_111_,_151_ NaN 0.000389 NaN NaN NaN { NF golden}
+_060_,net74 NaN 0.000029 NaN NaN NaN { NF golden}
+net9,req_msg[17] NaN 0.000000 NaN NaN NaN { NF golden}
+_062_,_063_ NaN 0.000010 NaN NaN NaN { NF golden}
+_034_,net36 NaN 0.000022 NaN NaN NaN { NF golden}

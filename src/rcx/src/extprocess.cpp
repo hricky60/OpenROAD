@@ -377,15 +377,18 @@ void extProcess::writeGround3D(FILE* fp, int met, const char* name,
     return;
   }
 
-  extMasterConductor* m = getMasterConductor(met);
-  y1 = m->_loLeft[2];
-  th = m->_hiLeft[2] - y1;
-  const double w = getConductor(met)->_min_width;
-  const double s = getConductor(met)->_min_spacing;
-  const double p = w + s;
+  double w, s, p;
+  if (met > 0) {
+    extMasterConductor* m = getMasterConductor(met);
+    y1 = m->_loLeft[2];
+    th = m->_hiLeft[2] - y1;
+    w = getConductor(met)->_min_width;
+    s = getConductor(met)->_min_spacing;
+    p = w + s;
+  }
 
   double l = 2 * p;
-  const double end = length - 2 * p;
+  double end = length - 2 * p;
   while (l <= end) {
     fprintf(fp, "POLY3D NAME= M%d__w0; ", met);
     fprintf(fp, " COORD= ");
@@ -499,12 +502,18 @@ void extProcess::writeProcessAndGround3D(FILE* wfp, const char* gndName,
   const char* thicknessName = "window_thichness";
   const char* lengthName = "window_length";
 
+  printf("RCX-3D: Entered writeProcessAndGround3D\n");
+
   writeParam(wfp, widthName, wid);
   writeParam(wfp, thicknessName, thickness);
   writeParam(wfp, lengthName, length);
 
+  printf("RCX-3D: Finished writing Params\n");
+
   // CX,CY bug : writeFullProcess(wfp, X, width, widthName);
   writeFullProcess3D(wfp, x, width, length, NULL);
+
+  printf("RCX-3D: Wrote full process stack\n");
 
   double y1 = 0.0;
   writeWindow3D(wfp, widthName, y1, thicknessName, lengthName);
@@ -513,6 +522,8 @@ void extProcess::writeProcessAndGround3D(FILE* wfp, const char* gndName,
 
   writeGround3D(wfp, 0, gndName, wid, length, -0.5 * wid, 0.0);
 
+  printf("RCX-3D: Wrote ground plane\n");
+
   double w, s, offset;
 
   if (underMet > 0) {
@@ -520,6 +531,9 @@ void extProcess::writeProcessAndGround3D(FILE* wfp, const char* gndName,
     s = getConductor(underMet)->_min_spacing;
     offset = w + s;
     wid = W + 2 * offset;
+    
+    printf("RCX-3D: underMet > 0\n");
+
     writeGround3D(wfp, underMet, gndName, wid, length, -0.5 * wid, 0.0);
   }
   if (overMet > 0) {
@@ -527,8 +541,12 @@ void extProcess::writeProcessAndGround3D(FILE* wfp, const char* gndName,
     s = getConductor(overMet)->_min_spacing;
     offset = w + s;
     wid = W + 2 * offset;
+
+    printf("RCX-3D: overMet > 0");
+
     writeGround3D(wfp, overMet, gndName, wid, length, -0.5 * wid, 0.0);
   }
+  printf("RCX-3D: End of writeProcessAndGround3D\n");
 }
 bool extDielectric::readDielectric(Ath__parser* parser) {
   if (strcmp("non_conformal_metal", parser->get(0)) == 0) {
@@ -868,6 +886,8 @@ void extMasterConductor::writeRaphaelConformalGround(FILE* fp, double X,
 }
 void extMasterConductor::writeRaphaelPoly3D(FILE* fp, uint wireNum, double X,
                                             double length, double volt) {
+  printf("RCX-3D: Entered writeRaphaelPoly3D\n");
+
   fprintf(fp, "POLY3D NAME=");
   writeBoxName(fp, wireNum);
 

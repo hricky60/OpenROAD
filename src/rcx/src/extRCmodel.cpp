@@ -1872,7 +1872,7 @@ extRCModel::extRCModel(uint layerCnt, const char* name, Logger* logger) {
   _metLevel = 0;
 }
 extRCModel::extRCModel(const char* name, Logger* logger) {
-  logger_ = logger;
+  logger = logger;
   _layerCnt = 0;
   strcpy(_name, name);
   _resOver = NULL;
@@ -2293,6 +2293,8 @@ FILE* extRCModel::openFile(const char* topDir, const char* name,
   strcat(filename, name);
   if (suffix != NULL)
     strcat(filename, suffix);
+
+  printf("RCX-MET: full filename %s\n", filename);  
 
   FILE* fp = fopen(filename, permissions);
   if (fp == NULL) {
@@ -2857,6 +2859,7 @@ void extRCModel::mkNet_prefix(extMeasure* m, const char* wiresNameSuffix) {
 FILE* extRCModel::mkPatternFile() {
   _parser->mkDirTree(_wireDirName, "/");
 
+  printf("RCX-MET: _wireDirName is %s\n", _wireDirName);
   FILE* fp = openFile(_wireDirName, _wireFileName, NULL, "w");
   if (fp == NULL)
     return NULL;
@@ -2879,11 +2882,20 @@ bool extRCModel::openCapLogFile() {
 
   const char* capLog = "caps.log";
 
+  printf("RCX-MET: Entered openCapLogFile\n");
+  printf("RCX-MET: Pattern name set to %s\n", _patternName);
+  printf("RCX-MET: Top Dir set to %s\n", _topDir);
+
   char buff[1024];
   sprintf(buff, "%s/%s", _topDir, _patternName);
+  printf("RCX-MET: mkDirTree input is %s\n", buff);
   _parser->mkDirTree(buff, "/");
 
+  printf("RCX-MET: Made directory tree\n");
+
   FILE* fp = openFile(buff, capLog, NULL, "r");
+
+  printf("RCX-MET: Opended file for reading\n");
 
   if (fp == NULL) {  // no previous run
     _capLogFP = openFile(buff, capLog, NULL, "w");
@@ -2903,9 +2915,7 @@ bool extRCModel::openCapLogFile() {
   } else {
     sprintf(cmd, "mv %s/%s/%s %s/%s/%s.in", _topDir, _patternName, capLog,
             _topDir, _patternName, capLog);
-    if (system(cmd) == -1) {
-      logger_->error(RCX, 489, "mv failed: {}", cmd);
-    }
+    system(cmd);
 
     _capLogFP = openFile(buff, capLog, NULL, "w");
 
@@ -3048,11 +3058,15 @@ void extRCModel::writeWires2(FILE* fp, extMeasure* measure, uint wireCnt) {
 }
 void extRCModel::writeRuleWires_3D(FILE* fp, extMeasure* measure,
                                    uint wireCnt) {
+  printf("RCX-3D: Entered writeRuleWires_3D\n");
+
   extMasterConductor* m = _process->getMasterConductor(measure->_met);
   double pitch = measure->_topWidth + measure->_seff;
   double minWidth = _process->getConductor(measure->_met)->_min_width;
   double minSpace = _process->getConductor(measure->_met)->_min_spacing;
   double min_pitch = minWidth + minSpace;
+
+  printf("RCX-3D: Set extMasterConductor, pitch, minWidth, minSpace, and min_pitch\n");
 
   uint n = wireCnt / 2;  // ASSUME odd number of wires, 2 will also work
   double orig = 0.0;
@@ -3064,7 +3078,9 @@ void extRCModel::writeRuleWires_3D(FILE* fp, extMeasure* measure,
     x += min_pitch;
   }
   x += 0.5 * measure->_topWidth;
-  m->writeRaphaelPoly(fp, n, x, measure->_len * 0.001, 0.0);
+  m->writeRaphaelPoly3D(fp, n, x, measure->_len * 0.001, 0.0);
+
+  printf("RCX-3D: Passed only writeRaphaelPoly\n");
 
   m->writeRaphaelPoly3D(fp, n + 1, orig, measure->_len * 0.001, 1.0);
   x = orig + pitch;
@@ -3516,16 +3532,12 @@ void extRCModel::runSolver(const char* solverOption) {
     sprintf(cmd, "cd %s ; dir ; cd ../../../../../../ ", _wireDirName);
   logger_->info(RCX, 73, "{}", cmd);
 #endif
-  if (system(cmd) == -1) {
-    logger_->error(RCX, 490, "system failed: {}", cmd);
-  }
+  system(cmd);
 }
 void extRCModel::cleanFiles() {
   char cmd[4000];
   sprintf(cmd, "rm -rf %s ", _wireDirName);
-  if (system(cmd) == -1) {
-    logger_->error(RCX, 491, "rm failed on {}", _wireDirName);
-  }
+  system(cmd);
 }
 int extRCModel::getOverUnderIndex(extMeasure* m, uint maxCnt) {
   return getMetIndexOverUnder(m->_met, m->_underMet, m->_overMet, _layerCnt,
@@ -4059,14 +4071,19 @@ bool extRCModel::measurePatternVar(extMeasure* m, double top_width,
   if (_writeFiles) {
     FILE* wfp = mkPatternFile();
 
-    if (wfp == NULL)
+    printf("RCX-UWU: _writeFiles TRUE.....file %s made\n", _wireFileName);
+
+    if (wfp == NULL){
+      printf("RCX-MET: process wire file not created\n");
       return false;  // should be an exception!! and return!
+    }
 
     double maxHeight =
         _process->adjustMasterDielectricsForHeight(m->_met, thicknessChange);
     maxHeight *= 1.2;
 
     if (m->_3dFlag) {
+      printf("RCX-3D: m->_3dFlag is TRUE\n");
       //			double W = (m->_ur[m->_dir] -
       // m->_ll[m->_dir])*10;
       double W = 40;
@@ -4096,7 +4113,9 @@ bool extRCModel::measurePatternVar(extMeasure* m, double top_width,
       if (m->_3dFlag) {  // 3d based extraction rules
                          //				writeWires2_3D(wfp, m,
                          // wireCnt);
+        printf("RCX-3D: About to call writeRuleWires_3D & writeRaphaelCaps3D\n");
         writeRuleWires_3D(wfp, m, wireCnt);
+        printf("RCX-3D: Finished writeRulesWires_3D");
         writeRaphaelCaps3D(wfp, m, wireCnt);
       } else {
         //				writeWires2(wfp, m, wireCnt);
@@ -4759,12 +4778,24 @@ void extRCModel::allocOverUnderTable(extMeasure* measure) {
 uint extRCModel::linesOver(uint wireCnt, uint widthCnt, uint spaceCnt,
                            uint dCnt, uint metLevel) {
   sprintf(_patternName, "Over%d", wireCnt);
-
+  
+  printf("RCX-MET: Entered linesOver\n");
+  printf("RCX-MET: _patternName set to %s\n", _patternName);
+  //sprintf(_topDir, "EXT");
+  printf("RCX-MET: _topDir set to %s\n", _topDir);
+ 
   openCapLogFile();
   uint cnt = 0;
 
+  printf("RCX-MET: Opened Cap.log file\n");
+
   extMeasure measure;
   measure._wireCnt = wireCnt;
+
+  printf("RCX-MET: Setting _3dFlag to TRUE\n");
+  measure._3dFlag = true;
+
+  printf("RCX-MET: Starting for loop\n");
 
   for (uint met = 1; met < _layerCnt; met++) {
     if (metLevel > 0 && met != metLevel)
@@ -4929,9 +4960,18 @@ uint extMain::metRulesGen(const char* name, const char* topDir,
                           const char* rulesFile, int pattern, bool writeFiles,
                           bool readFiles, bool runSolver, bool keepFile,
                           uint met) {
+  
+  printf("RCX-MET: Entered metRulesGen\n");
+
   extRCModel* m = _modelTable->get(0);
 
+  printf("RCX-MET: Got modelTable\n");
+
   m->setOptions(topDir, name, writeFiles, readFiles, runSolver, keepFile, met);
+  printf("RCX-MET: Set options\n");
+  printf("RCX-MET: pattern set to %d\n", pattern);
+  printf("RCX-MET: dir set to %s\n", topDir);
+  printf("RCX-MET: name set to %s\n", name);
   if ((pattern > 0) && (pattern <= 9))
     m->linesOver(pattern, 20, 20, 20, met);
   else if ((pattern > 10) && (pattern <= 19))

@@ -1,0 +1,2 @@
+(read_spef): Reading spef file "'/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/tools/OpenROAD/src/rcx/calibration_sky130/data/rcx_patterns_sky130_customrules.spef'" and placing data in setname "'openrcx'".
+**ERROR: (ENCOST-1054):	(read_spef): Could not open file '/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/tools/OpenROAD/src/rcx/calibration_sky130/data/rcx_patterns_sky130_customrules.spef' for reading.

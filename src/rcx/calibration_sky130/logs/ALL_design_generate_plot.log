@@ -1,0 +1,43 @@
+(read_spef): Reading spef file "'/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/tools/OpenROAD/src/rcx/calibration_sky130/data/rcx_design_sky130_customrules.spef'" and placing data in setname "'openrcx'".
+(read_spef): 'C_UNIT' is 1.000000 'PF'
+(read_spef): Derived 'cap' scale factor is 1.000000.
+(read_spef): 'R_UNIT' is 1.000000 'OHM'
+(read_spef): Derived 'res' scale factor is 1.000000.
+(read_spef): In 'NAME_MAP' section
+(read_spef): In 'PORTS' section
+(read_spef): Registering dataset information.
+(read_spef): 0 unresolved nodes 'processed' for xcap.
+(read_spef): 0 unresolved nodes 'resolved' for xcap.
+(read_spef): Closing spef file '/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/tools/OpenROAD/src/rcx/calibration_sky130/data/rcx_design_sky130_customrules.spef'.
+(read_spef): Reading spef file "'/import/okita1/ricardh/OpenROAD/pnr/sky130_design/innovus_design_sky130.spef'" and placing data in setname "'invs'".
+(read_spef): 'C_UNIT' is 1.000000 'PF'
+(read_spef): Derived 'cap' scale factor is 1.000000.
+(read_spef): 'R_UNIT' is 1.000000 'OHM'
+(read_spef): Derived 'res' scale factor is 1.000000.
+(read_spef): In 'NAME_MAP' section
+(read_spef): In 'PORTS' section
+(read_spef): Registering dataset information.
+(read_spef): 0 unresolved nodes 'processed' for xcap.
+(read_spef): 0 unresolved nodes 'resolved' for xcap.
+(read_spef): Closing spef file '/import/okita1/ricardh/OpenROAD/pnr/sky130_design/innovus_design_sky130.spef'.
+(build_plot):Building "'tcap'" plot "'design_openrcx_customrules_vs_invs_-40C'".
+(build_plot): Processing axis limits for 'tcap' plot "'design_openrcx_customrules_vs_invs_-40C'".
+(build_plot): Processing exclusion thresholds for 'tcap' plot "'design_openrcx_customrules_vs_invs_-40C'".
+(build_plot_data): Updating 'tcap' plot data for plot "'design_openrcx_customrules_vs_invs_-40C'".
+(build_plot):Building "'xcap'" plot "'design_openrcx_customrules_vs_invs_-40C'".
+(build_plot): Processing axis limits for 'xcap' plot "'design_openrcx_customrules_vs_invs_-40C'".
+(build_plot): Processing exclusion thresholds for 'xcap' plot "'design_openrcx_customrules_vs_invs_-40C'".
+(build_plot_data): Updating 'xcap' plot data for plot "'design_openrcx_customrules_vs_invs_-40C'".
+(build_plot_data): Updated xcap for 243 net-pairs.
+(export_sorted_list): Exporting list of nets.
+(export_sorted_list): Completed exporting list of nets.
+(export_sorted_list): Exporting list of nets.
+(export_sorted_list): Completed exporting list of nets.
+recommended scale factor for tcap: 1.087371 
+recommended scale factor for xcap: 1.004394 
+Drawing 'vs' plot
+Drawing 'diff' plot
+Drawing 'ratio' plot
+Drawing 'vs' plot
+Drawing 'diff' plot
+Drawing 'ratio' plot

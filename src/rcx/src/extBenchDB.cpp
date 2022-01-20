@@ -364,6 +364,26 @@ uint extRCModel::benchDB_WS(extMainOptions* opt, extMeasure* measure) {
   double minWidth = 0.001 * layer->getWidth();
   double spacing = 0.001 * layer->getSpacing();
   double pitch = 0.001 * layer->getPitch();
+
+  //--------------------------------------
+  // Addition by Ricky (Nov 30 2021)
+  /*uint &t;
+  if(!layer->getThickness(t)){
+    printf("RCX-T: No thickness");
+  }*/
+  printf("RCX-ADD: Starting addition of code by RICKY\n");
+
+
+  Ath__array1D<double>* thTable = &opt->_thicknessTable; //ADDITION BY RICKY (NOV 29 2021)
+  extConductor* cond = _process->getConductor(met);
+  double t = cond->_thickness;
+  double h = cond->_height;
+  double ro = cond->_p;
+
+  // End of Addition
+  //-------------------------------------
+
+
   if (layer->getSpacing() == 0) {
     spacing = pitch - minWidth;
   }
@@ -467,42 +487,42 @@ uint extRCModel::benchDB_WS(extMainOptions* opt, extMeasure* measure) {
       }
     }
   } else {
-    /* REQUIRED Testing
+    // REQUIRED Testing
+    // UNEDITED whole else block by Ricky (Nov 29 2021)
             for (uint ii = 0; ii < wTable->getCnt(); ii++) {
                     double w = wTable->get(ii); // layout
                     for (uint iii = 0; iii < wTable->getCnt(); iii++) {
                             double w2 = wTable->get(iii);
                             for (uint jj = 0; jj < sTable->getCnt(); jj++) {
                                     double s = sTable->get(jj); // layout
-                                    for (uint jjj = 0; jjj < sTable->getCnt();
-       jjj++) { double s2 = sTable->get(jjj);
+                                    for (uint jjj = 0; jjj < sTable->getCnt(); jjj++) { 
+					double s2 = sTable->get(jjj);
+					for (uint kk = 0; kk < thTable->getCnt(); kk++) { 
+						double tt = thTable->get(kk); // layout 
+						if(!opt->_thListFlag) // multiplier 
+							tt *= t;
 
-                                            for (uint kk = 0; kk <
-       thTable->getCnt(); kk++) { double tt = thTable->get(kk); // layout if
-       (!opt->_thListFlag) // multiplier tt *= t;
+                                                double top_width = w;
+                                                double top_widthR = w;
 
-                                                    double top_width = w;
-                                                    double top_widthR = w;
+                                                double bot_width = w;
+                                                double bot_widthR = w;
 
-                                                    double bot_width = w;
-                                                    double bot_widthR = w;
-
-                                                    double thickness = tt;
-                                                    double thicknessR = tt;
+                                                double thickness = tt;
+                                                double thicknessR = tt;
 
 
-                                                    measure->setTargetParams(w,
-       s, 0.0, t, h, w2, s2); measureResistance(measure, ro, top_widthR,
-       bot_widthR, thicknessR); measurePatternVar(measure, top_width, bot_width,
-       thickness, measure->_wireCnt, NULL);
+                                                measure->setTargetParams(w, s, 0.0, t, h, w2, s2); 
+						measureResistance(measure, ro, top_widthR, bot_widthR, thicknessR); 
+						measurePatternVar(measure, top_width, bot_width, thickness, measure->_wireCnt, NULL);
 
-                                                    cnt++;
+                                                cnt++;
                                             }
                                     }
                             }
                     }
             }
-            */
+      //    */
   }
   return cnt;
 }

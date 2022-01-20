@@ -1,0 +1,757 @@
+=================================================
+<FF>      Foundation Flow Code Generator
+<FF>        Version : 17.10-p003_1
+=================================================
+<FF> FLOW MODE == flat
+<FF> OUTPUT DIRECTORY == FF
+<FF> SETUP PATH == .
+<FF> DIRECTORY NAMING STYLE == none
+<FF> GENERATE MAKEFILE == false
+<FF> LOADING CONFIGURATION FILES:
+<FF> Finished loading setup.tcl
+<FF>    setup_tcl -> ./setup.tcl
+<FF>    innovus_config_tcl -> ./innovus_config.tcl
+<FF> Seeding variables ...
+<FF> Seeding variables ...
+<FF> Generating step init
+-------------------------------------------------
+
+                   Info Summary
+                  ---------------
+    (1) Changing vars(enable_ocv) from "false" to "pre_cts"
+
+                  Warning Summary
+                  ---------------
+    (1) Either fp_file, def_files, fp_tcl_file, fp_tcl_proc should be defined
+    (2) PAC is obsolete and will be removed in a future version. Consider using Sign-off ECO.
+    (3) Recommended variable vars(tie_cells) not defined
+    (4) Recommended variables dont_use_list and dont_use_file not defined
+    (5) Recommended variable vars(antenna_diode) not defined
+    (6) No scale factors set for rc corner (rc_typ)
+    (7) No derating factors set for delay corner (corner_tt)
+
+                   Error Summary
+                   ---------------
+    (1) Variable vars(rc_typ,cap_table) or vars(rc_typ,qx_tech_file) must be defined
+HELLO
+
+
+-------------------------------------------------
+<FF> CODE GENERATION COMPLETE
+<FF> ... VERSION  -> 17.1.0
+<FF> ... RUN DIRECTORY  -> /import/okita1/ricardh/OpenROAD/pnr/sky130_design
+<FF> ... SCRIPTS  -> FF
+<FF> ... PLUGINS  -> 6 defined, 6 found
+<FF> ... REPORT   -> FF/check.rpt
+-------------------------------------------------
+<FF> Creating FF/procs.tcl
+VPATH=make; export VPATH; innovus -init FF/INNOVUS/run_init.tcl -log LOG/init.log -overwrite -64 -nowin
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v18.14-s088_1, built Tue May 28 15:23:59 PDT 2019
+Options:	-init FF/INNOVUS/run_init.tcl -log LOG/init.log -overwrite -nowin 
+Date:		Fri Dec 17 14:19:01 2021
+Host:		okita.ecen.okstate.edu (x86_64 w/Linux 3.10.0-1062.9.1.el7.x86_64) (8cores*16cpus*Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz 16384KB)
+OS:		Red Hat Enterprise Linux Server release 7.7 (Maipo)
+
+License:
+		invs	Innovus Implementation System	18.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_29562_okita.ecen.okstate.edu_ricardh_QTuM5O.
+
+The soft stacksize limit is either up to the hard limit or larger than 0.2%RAM. No change is needed.
+
+**INFO:  MMMC transition support version v31-84 
+
+Sourcing file "FF/INNOVUS/run_init.tcl" ...
+<FF> Finished loading setup.tcl
+
+
+###############################################################
+# Host ID: okita
+# OS:      RedHat Linux 3.10.0-1062.9.1.el7.x86_64 x86_64
+# CPU:     2 -- Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz @ 3632.299 MHz
+/opt/rh/devtoolset-8/root/usr/bin/size: '67222163456': No such file
+/opt/rh/devtoolset-8/root/usr/bin/size: '33755754496': No such file
+# TIME:    14:19:08 CST
+###############################################################
+
+
+The timeout for a remote job to respond is 3600 seconds.
+Submit command for task runs will be: local
+<FF> Plugin -> pre_init_tcl
+<FF> LOADING 'pre_init_tcl' PLUG-IN FILE(s) 
+<FF> -> PLUG/INNOVUS/pre_init.tcl
+#% Begin Load MMMC data ... (date=12/17 14:19:08, mem=407.5M)
+#% End Load MMMC data ... (date=12/17 14:19:08, total cpu=0:00:00.0, real=0:00:00.0, peak res=407.7M, current mem=407.7M)
+
+Loading LEF file /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef ...
+
+Loading LEF file /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef ...
+**WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M1 pitch 460.
+
+##  Check design process and node:  ##
+##  Both design process and tech node are not set.
+
+**WARN: (IMPLF-201):	Pin 'X' in macro 'sky130_fd_sc_hd__xor2_4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'sky130_fd_sc_hd__probec_p_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'sky130_fd_sc_hd__probe_p_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'LO' in macro 'sky130_fd_sc_hd__macro_sparecell' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'sky130_fd_sc_hd__dlymetal6s4s_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'X' in macro 'sky130_fd_sc_hd__dlymetal6s2s_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+
+viaInitial starts at Fri Dec 17 14:19:08 2021
+viaInitial ends at Fri Dec 17 14:19:08 2021
+Loading view definition file from /import/okita1/ricardh/OpenROAD/pnr/sky130_design/FF/view_definition.tcl
+Reading libs_tt timing library '/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'X' of cell 'sky130_fd_sc_hd__a2111o_1' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'X' of cell 'sky130_fd_sc_hd__a2111o_2' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'X' of cell 'sky130_fd_sc_hd__a2111o_4' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'sky130_fd_sc_hd__a2111oi_0' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'sky130_fd_sc_hd__a2111oi_1' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'sky130_fd_sc_hd__a2111oi_2' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'sky130_fd_sc_hd__a2111oi_4' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'X' of cell 'sky130_fd_sc_hd__a211o_1' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'X' of cell 'sky130_fd_sc_hd__a211o_2' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'X' of cell 'sky130_fd_sc_hd__a211o_4' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'sky130_fd_sc_hd__a211oi_1' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'sky130_fd_sc_hd__a211oi_2' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'sky130_fd_sc_hd__a211oi_4' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'X' of cell 'sky130_fd_sc_hd__a21bo_1' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'X' of cell 'sky130_fd_sc_hd__a21bo_2' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'X' of cell 'sky130_fd_sc_hd__a21bo_4' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'sky130_fd_sc_hd__a21boi_0' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'sky130_fd_sc_hd__a21boi_1' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'sky130_fd_sc_hd__a21boi_2' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'sky130_fd_sc_hd__a21boi_4' is not defined in the library. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+**WARN: (TECHLIB-1161):	The library level attribute default_operating_conditions on line 173158 is defined after at least one cell definition. The attribute will be ignored. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__lpflow_decapkapwr_8'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__lpflow_decapkapwr_6'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__lpflow_decapkapwr_4'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__lpflow_decapkapwr_3'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__lpflow_decapkapwr_12'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__lpflow_bleeder_1'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__diode_2'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__decap_8'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__decap_6'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__decap_4'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__decap_3'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'sky130_fd_sc_hd__decap_12'. The cell will only be used for analysis. (File /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib)
+Read 428 cells in library 'sky130_fd_sc_hd__tt_025C_1v80' 
+*** End library_loading (cpu=0.01min, real=0.02min, mem=13.5M, fe_cpu=0.13min, fe_real=0.13min, fe_mem=510.2M) ***
+#% Begin Load netlist data ... (date=12/17 14:19:09, mem=423.3M)
+*** Begin netlist parsing (mem=510.2M) ***
+Created 428 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/6_final.v'
+
+*** Memory Usage v#1 (Current mem = 510.250M, initial mem = 236.625M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=510.2M) ***
+#% End Load netlist data ... (date=12/17 14:19:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=431.4M, current mem=431.4M)
+Set top cell to gcd.
+Hooked 428 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell gcd ...
+*** Netlist is unique.
+** info: there are 438 modules.
+** info: there are 9155 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 558.723M, initial mem = 236.625M) ***
+**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust met3 preferred direction offset from 0.34 to 0.17.
+Adjust met4 preferred direction offset from 0.46 to 0.23.
+Adjust met5 preferred direction offset from 1.7 to 0.17.
+Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers POLY and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 12.2 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.125 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.125 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.047 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.047 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.0285 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: setup_func
+    RC-Corner Name        : rc_typ
+    RC-Corner Index       : 0
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: hold_func
+    RC-Corner Name        : rc_typ
+    RC-Corner Index       : 0
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/6_final.sdc' ...
+Current (total cpu=0:00:07.8, real=0:00:08.0, peak res=587.4M, current mem=587.4M)
+gcd
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:01.0, peak res=597.0M, current mem=597.0M)
+Current (total cpu=0:00:07.9, real=0:00:09.0, peak res=597.0M, current mem=597.0M)
+Total number of combinational cells: 329
+Total number of sequential cells: 68
+Total number of tristate cells: 13
+Total number of level shifter cells: 7
+Total number of power gating cells: 0
+Total number of isolation cells: 11
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_12 sky130_fd_sc_hd__buf_16 sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_6 sky130_fd_sc_hd__buf_8 sky130_fd_sc_hd__clkbuf_1 sky130_fd_sc_hd__clkbuf_16 sky130_fd_sc_hd__clkbuf_2 sky130_fd_sc_hd__clkbuf_4 sky130_fd_sc_hd__clkbuf_8 sky130_fd_sc_hd__dlymetal6s2s_1 sky130_fd_sc_hd__probec_p_8 sky130_fd_sc_hd__probe_p_8
+Total number of usable buffers: 15
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: sky130_fd_sc_hd__bufinv_16 sky130_fd_sc_hd__clkinv_1 sky130_fd_sc_hd__bufinv_8 sky130_fd_sc_hd__clkinv_16 sky130_fd_sc_hd__clkinv_2 sky130_fd_sc_hd__clkinv_4 sky130_fd_sc_hd__clkinv_8 sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__clkinvlp_2 sky130_fd_sc_hd__clkinvlp_4 sky130_fd_sc_hd__inv_12 sky130_fd_sc_hd__inv_16 sky130_fd_sc_hd__inv_2 sky130_fd_sc_hd__inv_4 sky130_fd_sc_hd__inv_6 sky130_fd_sc_hd__inv_8
+Total number of usable inverters: 16
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: sky130_fd_sc_hd__bufbuf_16 sky130_fd_sc_hd__bufbuf_8 sky130_fd_sc_hd__clkdlybuf4s15_1 sky130_fd_sc_hd__clkdlybuf4s15_2 sky130_fd_sc_hd__clkdlybuf4s18_1 sky130_fd_sc_hd__clkdlybuf4s18_2 sky130_fd_sc_hd__clkdlybuf4s25_1 sky130_fd_sc_hd__clkdlybuf4s50_1 sky130_fd_sc_hd__clkdlybuf4s25_2 sky130_fd_sc_hd__clkdlybuf4s50_2 sky130_fd_sc_hd__dlygate4sd2_1 sky130_fd_sc_hd__dlygate4sd1_1 sky130_fd_sc_hd__dlygate4sd3_1 sky130_fd_sc_hd__dlymetal6s6s_1 sky130_fd_sc_hd__dlymetal6s4s_1
+Total number of identified usable delay cells: 15
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPSYC-2):	Timing information is not defined for cell sky130_fd_sc_hd__tapvpwrvgnd_1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell sky130_fd_sc_hd__fill_8; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell sky130_fd_sc_hd__fill_4; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell sky130_fd_sc_hd__fill_2; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell sky130_fd_sc_hd__fill_1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-201            6  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+WARNING   IMPFP-3961           1  The techSite '%s' has no related standar...
+WARNING   IMPEXT-2766          6  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          6  The via resistance between layers %s and...
+WARNING   IMPSYC-2             5  Timing information is not defined for ce...
+WARNING   TECHLIB-302         12  No function defined for cell '%s'. The c...
+WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+WARNING   TECHLIB-1161         1  The library level attribute %s on line %...
+*** Message Summary: 58 warning(s), 0 error(s)
+
+<FF> Plugin -> always_source_tcl
+Adjust met3 preferred direction offset from 0.34 to 0.17.
+Adjust met4 preferred direction offset from 0.46 to 0.23.
+Adjust met5 preferred direction offset from 1.7 to 0.17.
+Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+<FF> DERATING DELAY CORNERS ...
+**WARN: (IMPTR-9998):	The setTrialRouteMode command is obsolete and should not be used anymore.  It still works in this release but will be removed in a future release.  You should change to use setRouteMode to set modes for earlyGlobalRoute which is the replacement tool for trialRoute.
+#########################################################################
+##  Process: 130           (User Set)               
+##     Node: (Unset)                            
+#########################################################################
+
+##  Check design process and node:  ##
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+Updating process node dependent CCOpt properties for the 130nm process node.
+<FF> Plugin -> post_init_tcl
+<FF> LOADING 'post_init_tcl' PLUG-IN FILE(s) 
+<FF> -> PLUG/INNOVUS/post_init.tcl
+Adjusting coreMargin left    to finFet grid (PlacementGrid) : after adjusting :40.02
+Adjusting coreMargin bottom  to finFet grid (PlacementGrid) : after adjusting :40.12
+Adjusting coreMargin right   to finFet grid (PlacementGrid) : after adjusting :40.02
+Adjusting coreMargin top     to finFet grid (PlacementGrid) : after adjusting :40.12
+Adjusting core size to PlacementGrid : width :336.72 height : 331.84
+**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust met3 preferred direction offset from 0.34 to 0.17.
+Adjust met4 preferred direction offset from 0.46 to 0.23.
+Adjust met5 preferred direction offset from 1.7 to 0.17.
+Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+**ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'vgnd' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+**ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'vpwr' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name pattern and make sure it is correct.
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+#% Begin addRing (date=12/17 14:19:10, mem=620.2M)
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 722.3M)
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  met1  |        4       |       NA       |
+|   via  |        8       |        0       |
+|  met2  |        4       |       NA       |
++--------+----------------+----------------+
+innovus 1> #% End addRing (date=12/17 14:19:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=622.5M, current mem=622.5M)
+#% Begin sroute (date=12/17 14:19:10, mem=622.7M)
+*** Begin SPECIAL ROUTE on Fri Dec 17 14:19:10 2021 ***
+SPECIAL ROUTE ran on directory: /import/okita1/ricardh/OpenROAD/pnr/sky130_design
+SPECIAL ROUTE ran on machine: okita.ecen.okstate.edu (Linux 3.10.0-1062.9.1.el7.x86_64 x86_64 3.60Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 2
+srouteBottomTargetLayerLimit set to 2
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 2
+srouteCrossoverViaTopLayer set to 6
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1531.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 11 layers, 6 routing layers, 0 overlap layer
+Read in 437 macros, 63 used
+Read in 63 components
+  63 core components: 63 unplaced, 0 placed, 0 fixed
+Read in 54 logical pins
+Read in 54 nets
+Read in 2 special nets, 2 routed
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1253):	Cannot find any standard cell pin connected to net VDD.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1253):	Cannot find any standard cell pin connected to net VSS.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 246
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 123
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1546.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 369 wires.
+ViaGen created 246 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  met1  |       369      |       NA       |
+|   via  |       246      |        0       |
++--------+----------------+----------------+
+innovus 1> #% End sroute (date=12/17 14:19:10, total cpu=0:00:00.1, real=0:00:00.0, peak res=640.9M, current mem=640.9M)
+Reading DEF file '/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/6_final.def', current time is Fri Dec 17 14:19:10 2021 ...
+--- DIVIDERCHAR '/'
+--- UnitsPerDBU = 1.0000
+**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust met3 preferred direction offset from 0.34 to 0.17.
+Adjust met4 preferred direction offset from 0.46 to 0.23.
+Adjust met5 preferred direction offset from 1.7 to 0.17.
+Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+--- DIEAREA (0 0) (279960 280130)
+defIn read 10000 lines...
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+DEF file '/import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/6_final.def' is parsed, current time is Fri Dec 17 14:19:11 2021.
+Updating the floorplan ...
+floor plan core box changed from {{40.020000,40.120000},{239.940000,240.010000}} to {{10.120000,10.880000},{269.560000,269.280000}}
+Extraction called for design 'gcd' of instances=9155 and nets=376 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design gcd.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+**WARN: (IMPEXT-3032):	Because the cap table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.1
+      Min Width        : 0.17
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.35
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.35
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.8
+      Min Width        : 0.3
+      Layer Dielectric : 4.1
+* Layer Id             : 5 - M5
+      Thickness        : 0.8
+      Min Width        : 0.3
+      Layer Dielectric : 4.1
+* Layer Id             : 6 - M6
+      Thickness        : 1.2
+      Min Width        : 1.6
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile /tmp/innovus_temp_29562_okita.ecen.okstate.edu_ricardh_QTuM5O/gcd_29562_wBx4Sx.rcdb.d  -basic
+RC Mode: PostRoute -effortLevel low [Basic CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 734.6M)
+Extracted 10.0736% (CPU Time= 0:00:00.0  MEM= 738.6M)
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'L1M1_PR_MR' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+Extracted 20.0552% (CPU Time= 0:00:00.0  MEM= 746.6M)
+Extracted 30.0828% (CPU Time= 0:00:00.0  MEM= 746.6M)
+Extracted 40.0644% (CPU Time= 0:00:00.0  MEM= 746.6M)
+Extracted 50.092% (CPU Time= 0:00:00.0  MEM= 746.6M)
+Extracted 60.0736% (CPU Time= 0:00:00.0  MEM= 746.6M)
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M1M2_PR' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+Extracted 70.0552% (CPU Time= 0:00:00.0  MEM= 746.6M)
+Extracted 80.0828% (CPU Time= 0:00:00.0  MEM= 746.6M)
+Extracted 90.0644% (CPU Time= 0:00:00.0  MEM= 746.6M)
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M2M3_PR_M' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+Extracted 100% (CPU Time= 0:00:00.0  MEM= 746.6M)
+Number of Extracted Resistors     : 4786
+Number of Extracted Ground Cap.   : 4747
+Number of Extracted Coupling Cap. : 6540
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.4fF, relative_c_threshold=1, and total_c_threshold=0fF.
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 754.6M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 762.637M)
+RC Out has the following PVT Info:
+   RC:rc_typ, Operating temperature -40 C
+Dumping Spef file.....
+Printing D_NET...
+rcOut completed:: 9 % rcOut completed:: 19 % rcOut completed:: 29 % rcOut completed:: 39 % rcOut completed:: 49 % rcOut completed:: 59 % rcOut completed:: 68 % rcOut completed:: 78 % rcOut completed:: 88 % rcOut completed:: 100 % 
+RC Out from RCDB Completed (CPU Time= 0:00:00.0  MEM= 762.6M)
+Setting timing_disable_library_data_to_data_checks to 'true'.
+Setting timing_disable_user_data_to_data_checks to 'true'.
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Setting High Fanout Nets ( > 100 ) as ideal temporarily for -prePlace option
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+Starting delay calculation for setup views
+AAE DB initialization (MEM=783.867 CPU=0:00:00.1 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: gcd
+# Design Mode: 130nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=791.875)
+Initializing multi-corner resistance tables ...
+siFlow : Timing analysis mode is single, using late cdB files
+Total number of fetched objects 371
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=892.363 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=880.824 CPU=0:00:00.2 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.8 real=0:00:01.0 totSessionCpu=0:00:09.2 mem=880.8M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ setup_func 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.276  |  0.276  |  3.761  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   35    |   35    |   35    |
++--------------------+---------+---------+---------+
+
+Density: 100.000%
+------------------------------------------------------------
+Set Using Default Delay Limit as 1000.
+Resetting back High Fanout Nets as non-ideal
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Reported timing to dir RPT
+Total CPU time: 1.01 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 813.078125 Mbytes
+**WARN: (IMPREPO-210):	There are 850 Cells PG Pins with missing geometry.
+Begin checking placement ... (start mem=813.1M, init mem=813.1M)
+Pre-route DRC Violation:	976
+Pin Access Violation:	1
+*info: Recommended don't use cell = 0           
+*info: Placed = 9155           (Fixed = 873)
+*info: Unplaced = 0           
+Placement Density:100.00%(65947/65947)
+Placement Density (including fixed std cells):100.00%(67039/67039)
+Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.1, real=0:00:00.0; mem=813.1M)
+############################################################################
+# Innovus Netlist Design Rule Check
+# Fri Dec 17 14:19:12 2021
+
+############################################################################
+Design: gcd
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 9155
+Total Block Cell Number      (cells) : 0
+Total I/O Pad Cell Number    (cells) : 0
+Total Standard Cell Area     ( um^2) : 67039.30
+Total Block Cell Area        ( um^2) : 0.00
+Total I/O Pad Cell Area      ( um^2) : 0.00
+
+------ Design Statistics:
+
+Number of Instances            : 9155
+Number of Non-uniquified Insts : 9128
+Number of Nets                 : 376
+Average number of Pins per Net : 2.92
+Maximum number of Pins in Net  : 37
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 54
+Number of Input Ports          : 36
+Number of Output Ports         : 18
+Number of Bidirectional Ports  : 0
+Number of Power/Ground Ports   : 0
+Number of Floating Ports                     *: 0
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 54
+**WARN: (IMPREPO-202):	There are 54 Ports connected to core instances.
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 0
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+Number of Input/InOut Floating Pins            : 0
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+Number of nets with tri-state drivers          : 0
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 3
+Number of High Fanout nets (>50)               : 0
+**WARN: (IMPREPO-213):	There are 54 I/O Pins connected to Non-IO Insts.
+Checking for any assigns in the netlist...
+  No assigns found.
+Checking routing tracks.....
+Checking other grids.....
+Checking FINFET Grid is on Manufacture Grid.....
+
+Checking core/die box is on Grid.....
+
+WARNING (IMPFP-7236): DIE's corner: (279.960000 , 280.130000) is NOT on PlacementGrid,  Please use command fpiGetSnapRule to check current Grid settings. And use command fpiSetSnapRule to change which grid to snap to. Command floorplan can be used to fix this issue.
+Checking snap rule ......
+
+Checking Row is on grid......
+
+Checking AreaIO row.....
+Checking routing blockage.....
+Checking components.....
+Checking constraints (guide/region/fence).....
+Checking groups.....
+Checking Ptn Core Box.....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+ Design check done.
+Report saved in file checkDesign/gcd.main.htm.ascii.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+WARNING   IMPREPO-210          1  There are %d Cells PG Pins with missing ...
+WARNING   IMPREPO-213          1  There are %d I/O Pins connected to Non-I...
+*** Message Summary: 3 warning(s), 0 error(s)
+
+###############################################################
+#  Generated by:      Cadence Innovus 18.14-s088_1
+#  OS:                Linux x86_64(Host ID okita.ecen.okstate.edu)
+#  Generated on:      Fri Dec 17 14:19:12 2021
+#  Design:            gcd
+#  Command:           check_timing
+###############################################################
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: gcd
+# Design Mode: 130nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=825.305)
+AAE_INFO: 1 threads acquired from CTE.
+Total number of fetched objects 371
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=891.203 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=891.203 CPU=0:00:00.2 REAL=0:00:01.0)
+     +-----------------------------------------------------------------------------+ 
+     |                            TIMING CHECK SUMMARY                             | 
+     |-----------------------------------------------------------------------------| 
+     |     Warning     |              Warning Description               |  Number  | 
+     |                 |                                                |    of    | 
+     |                 |                                                | Warnings | 
+     |-----------------+------------------------------------------------+----------| 
+     | no_drive        | No drive assertion                             |       36 | 
+     | no_input_delay  | No input delay assertion with respect to clock |       35 | 
+     | uncons_endpoint | Unconstrained signal arriving at end point     |       18 | 
+     +-----------------------------------------------------------------------------+ 
+UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:          9.84             12          0.000 ns          0.276 ns  init
+The in-memory database contained RC information but was not saved. To save 
+the RC information, use saveDesign's -rc option. Note: Saving RC information can be quite large, 
+so it should only be saved when it is really desired.
+#% Begin save design ... (date=12/17 14:19:13, mem=717.8M)
+% Begin Save ccopt configuration ... (date=12/17 14:19:13, mem=717.8M)
+% End Save ccopt configuration ... (date=12/17 14:19:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=718.4M, current mem=718.4M)
+% Begin Save netlist data ... (date=12/17 14:19:13, mem=718.4M)
+Writing Binary DB to DBS/init.enc.dat/gcd.v.bin in single-threaded mode...
+% End Save netlist data ... (date=12/17 14:19:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=718.7M, current mem=718.7M)
+Saving congestion map file DBS/init.enc.dat/gcd.route.congmap.gz ...
+% Begin Save AAE data ... (date=12/17 14:19:13, mem=719.3M)
+Saving AAE Data ...
+% End Save AAE data ... (date=12/17 14:19:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=719.3M, current mem=719.3M)
+% Begin Save clock tree data ... (date=12/17 14:19:13, mem=719.7M)
+% End Save clock tree data ... (date=12/17 14:19:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=719.7M, current mem=719.7M)
+Saving preference file DBS/init.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=12/17 14:19:13, mem=721.2M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=12/17 14:19:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=721.6M, current mem=721.6M)
+Saving Drc markers ...
+... 978 markers are saved ...
+... 0 geometry drc markers are saved ...
+... 0 antenna drc markers are saved ...
+% Begin Save placement data ... (date=12/17 14:19:13, mem=721.6M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruing View Names to Binary file
+% End Save placement data ... (date=12/17 14:19:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=721.7M, current mem=721.7M)
+% Begin Save routing data ... (date=12/17 14:19:13, mem=721.7M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=891.2M) ***
+% End Save routing data ... (date=12/17 14:19:14, total cpu=0:00:00.0, real=0:00:01.0, peak res=722.7M, current mem=722.7M)
+Saving property file DBS/init.enc.dat/gcd.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=891.2M) ***
+% Begin Save power constraints data ... (date=12/17 14:19:14, mem=723.1M)
+% End Save power constraints data ... (date=12/17 14:19:14, total cpu=0:00:00.0, real=0:00:00.0, peak res=723.2M, current mem=723.2M)
+Generated self-contained design init.enc.dat
+#% End save design ... (date=12/17 14:19:14, total cpu=0:00:00.3, real=0:00:01.0, peak res=723.2M, current mem=722.0M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+** NOTE: Created directory path 'DBS/LEC' for file 'DBS/LEC/init.v.gz'.
+Writing Netlist "DBS/LEC/init.v.gz" ...
+<FF> ==============================================
+<FF>          COMPLETED STEP : init
+<FF>         ELAPSED RUNTIME : 0 days, 00:00:06
+<FF> ==============================================
+<FF> Plugin -> final_always_source_tcl
+
+*** Memory Usage v#1 (Current mem = 887.312M, initial mem = 236.625M) ***
+*** Message Summary: 81 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:10.1, real=0:00:13.0, mem=887.3M) ---
+

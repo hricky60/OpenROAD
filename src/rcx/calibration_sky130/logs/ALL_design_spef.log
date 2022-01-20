@@ -1,0 +1,46 @@
+OpenROAD 1 4dca404c76b3302aa4e6ef8af1cd976c8de91cb4
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef
+[INFO ODB-0223]     Created 11 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef
+[INFO ODB-0222] Reading LEF file: /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef
+[INFO ODB-0127] Reading DEF file: /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/6_final.def
+[INFO ODB-0128] Design: gcd
+[INFO ODB-0130]     Created 54 pins.
+[INFO ODB-0131]     Created 9155 components and 19355 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 18310 connections.
+[INFO ODB-0133]     Created 374 nets and 1045 connections.
+[INFO ODB-0134] Finished DEF file: /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/6_final.def
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0008] extracting parasitics of gcd ...
+[INFO RCX-0435] Reading extraction model file /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation gcd (max_merge_res 0.0) ...
+[INFO RCX-0040] Final 2947 rc segments
+[INFO RCX-0439] Coupling Cap extraction gcd ...
+[INFO RCX-0440] Coupling threshhold is 0.0100 fF, coupling capacitance less than 0.0100 fF will be grounded.
+[INFO RCX-0043] 2272 wires to be extracted
+[INFO RCX-0442] 53% completion -- 1209 wires have been extracted
+[INFO RCX-0442] 100% completion -- 2272 wires have been extracted
+[INFO RCX-0045] Extract 374 nets, 3318 rsegs, 3318 caps, 2656 ccs
+[INFO RCX-0015] Finished extracting gcd.
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 374 nets finished
+[INFO RCX-0017] Finished writing SPEF ...
+[INFO RCX-0433] A process corner X for Extraction RC Model 0 has already been defined, skipping definition
+[INFO RCX-0008] extracting parasitics of gcd ...
+[INFO RCX-0435] Reading extraction model file /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/tools/OpenROAD/src/rcx/calibration_sky130/data/rcx_sky130_custom.rules ...
+[INFO RCX-0436] RC segment generation gcd (max_merge_res 0.0) ...
+[INFO RCX-0040] Final 2947 rc segments
+[INFO RCX-0439] Coupling Cap extraction gcd ...
+[INFO RCX-0440] Coupling threshhold is 0.0100 fF, coupling capacitance less than 0.0100 fF will be grounded.
+[INFO RCX-0043] 2272 wires to be extracted
+[INFO RCX-0045] Extract 374 nets, 3318 rsegs, 3318 caps, 2386 ccs
+[INFO RCX-0015] Finished extracting gcd.
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 374 nets finished
+[INFO RCX-0017] Finished writing SPEF ...

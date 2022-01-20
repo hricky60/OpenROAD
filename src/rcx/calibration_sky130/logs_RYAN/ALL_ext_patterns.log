@@ -1,0 +1,33 @@
+OpenROAD 1 cb6269d47bec32bdda78d7a281fe2bb20d08d84d
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef
+[INFO ODB-0223]     Created 11 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef
+[INFO ODB-0127] Reading DEF file: EXT/patterns.def
+[INFO ODB-0128] Design: blk
+[INFO ODB-0130]     Created 140960 pins.
+[INFO ODB-0133]     Created 70480 nets and 0 connections.
+[INFO ODB-0134] Finished DEF file: EXT/patterns.def
+[INFO RCX-0431] Defined process_corner x with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner x
+[INFO RCX-0008] extracting parasitics of blk ...
+[INFO RCX-0432] Database dbFactor= 1.0  dbunit= 1000
+[INFO RCX-0435] Reading extraction model file /import/okita1/ricardh/OpenROAD/OpenROAD-flow-scripts/tools/OpenROAD/src/rcx/calibration_sky130/data/rcx_sky130_custom.rules ...
+[INFO RCX-0436] RC segment generation blk (max_merge_res 0.0) ...
+[INFO RCX-0040] Final 70480 rc segments
+[INFO RCX-0439] Coupling Cap extraction blk ...
+[INFO RCX-0440] Coupling threshhold is 0.0100 fF, coupling capacitance less than 0.0100 fF will be grounded.
+[INFO RCX-0043] 70480 wires to be extracted
+[INFO RCX-0442] 28% completion -- 19999 wires have been extracted
+[INFO RCX-0442] 36% completion -- 25849 wires have been extracted
+[INFO RCX-0442] 70% completion -- 49884 wires have been extracted
+[INFO RCX-0442] 75% completion -- 53273 wires have been extracted
+[INFO RCX-0442] 81% completion -- 57226 wires have been extracted
+[INFO RCX-0442] 95% completion -- 67466 wires have been extracted
+[INFO RCX-0045] Extract 70478 nets, 140960 rsegs, 140960 caps, 68214 ccs
+[INFO RCX-0015] Finished extracting blk.
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 70480 nets finished
+[INFO RCX-0017] Finished writing SPEF ...
