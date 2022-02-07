@@ -1,0 +1,57 @@
+* Same metal layout but no dielectrics included in input file
+* Also metal 0 or ground plane is described at the bottom and is last described
+*
+*
+*
+Running FasterCap version 6.0.7
+Copyright 2019 FastFieldSolvers S.R.L. http://www.fastfieldsolvers.com, All Rights reserved
+Starting capacitance extraction with the following parameters:
+Input file: wires_TEST.txt
+
+2D Solver Engine invoked
+Solution scheme (-g): Collocation, GMRES tolerance (-t): 0.01
+Out-of-core free memory to link memory condition (-f): 5
+Potential interaction coefficient to mesh refinement ratio (-d): 1
+Mesh curvature (-mc): 3
+Mesh refinement (-m): 0.1
+Precond Type(s) (-p): Jacobi 
+Number of input panels to solver engine: 51
+
+***************************************
+Refining the geometry.. 
+Refinement completed
+***************************************
+Computing the links.. 
+Number of panels after refinement: 113
+Number of links to be computed: 1790
+Done computing links
+***************************************
+GMRES Iteration: 0 1 2 3 4 5 6 7 8 9 10 11 
+GMRES Iteration: 0 1 2 3 4 5 6 7 8 9 10 
+GMRES Iteration: 0 1 2 3 4 5 6 7 8 9 10 
+GMRES Iteration: 0 1 2 3 4 5 6 7 8 9 
+GMRES Iteration: 0 1 2 3 4 5 6 7 8 9 
+GMRES Iteration: 0 1 2 3 4 5 6 7 8 9 10 11 
+Capacitance matrix is:
+Dimension 6 x 6
+g1_wire_M1  1.50357e-16 -9.08522e-17 -1.75217e-18 -1.28714e-18 -1.42062e-18 -1.66628e-18 
+g2_wire_M1  -9.24774e-17 2.04609e-16 -9.088e-17 -1.59183e-18 -1.43668e-18 -1.74909e-18 
+g3_wire_M1  -2.56364e-18 -9.08183e-17 2.04602e-16 -9.10001e-17 -1.70317e-18 -2.51954e-18 
+g4_wire_M1  -2.35205e-18 -1.72704e-18 -9.10547e-17 2.04461e-16 -9.10714e-17 -3.11157e-18 
+g5_wire_M1  -1.8984e-18 -1.40021e-18 -1.75209e-18 -9.10241e-17 2.04522e-16 -9.26733e-17 
+g6_wire_M1  -2.03355e-18 -1.84011e-18 -1.98018e-18 -2.52927e-18 -9.16884e-17 1.48688e-16 
+
+
+Solve statistics:
+Number of input panels: 51 of which 51 conductors and 0 dielectric
+Number of input panels to solver engine: 51
+Number of panels after refinement: 113
+Number of potential estimates: 2440
+Number of links: 1903 (uncompressed 12769, compression ratio is 85.1%)
+Max recursion level: 13
+Max Mesh relative refinement value: 0.0991176
+
+Total allocated memory: 16521 kilobytes
+Total time: 0.228222s (0 days, 0 hours, 0 mins, 0 s)
+
+

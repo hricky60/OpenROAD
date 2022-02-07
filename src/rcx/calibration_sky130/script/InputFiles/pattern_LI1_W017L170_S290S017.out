@@ -1,0 +1,50 @@
+Running FasterCap version 6.0.7
+Copyright 2019 FastFieldSolvers S.R.L. http://www.fastfieldsolvers.com, All Rights reserved
+Starting capacitance extraction with the following parameters:
+Input file: wires_LI1_W017L170_S029S017.txt
+
+3D Solver Engine invoked
+Solution scheme (-g): Collocation, GMRES tolerance (-t): 0.01
+Out-of-core free memory to link memory condition (-f): 5
+Potential interaction coefficient to mesh refinement ratio (-d): 1
+Mesh curvature (-mc): 3
+Mesh refinement (-m): 0.1
+Precond Type(s) (-p): Jacobi 
+Number of input panels to solver engine: 1100
+
+***************************************
+Refining the geometry.. 
+Refinement completed
+***************************************
+Computing the links.. 
+Number of panels after refinement: 1100
+Number of links to be computed: 3748
+Done computing links
+***************************************
+GMRES Iteration: 0 1 2 3 4 5 6 7 
+GMRES Iteration: 0 1 2 3 4 5 6 7 8 
+GMRES Iteration: 0 1 2 3 4 5 6 7 8 
+GMRES Iteration: 0 1 2 3 4 5 6 7 8 
+GMRES Iteration: 0 1 2 3 4 5 6 7 
+Capacitance matrix is:
+Dimension 5 x 5
+g1_wire_17_017  3.39955e-15 -1.75231e-15 -3.86927e-16 -2.18643e-16 -3.19145e-16 
+g2_wire_17_017  -1.74602e-15 4.84548e-15 -2.20029e-15 -3.0206e-16 -2.19852e-16 
+g3_wire_17_017  -4.05062e-16 -2.18139e-15 5.44169e-15 -2.21408e-15 -3.92016e-16 
+g4_wire_17_017  -2.04349e-16 -3.42293e-16 -2.16158e-15 4.82751e-15 -1.74135e-15 
+g5_wire_17_017  -3.17382e-16 -2.11268e-16 -4.1697e-16 -1.73308e-15 3.39962e-15 
+
+
+Solve statistics:
+Number of input panels: 30 of which 30 conductors and 0 dielectric
+Number of input panels to solver engine: 1100
+Number of panels after refinement: 1100
+Number of potential estimates: 3527
+Number of links: 4848 (uncompressed 1210000, compression ratio is 99.6%)
+Max recursion level: 13
+Max Mesh relative refinement value: 0.084587
+
+Total allocated memory: 17074 kilobytes
+Total time: 0.212002s (0 days, 0 hours, 0 mins, 0 s)
+
+

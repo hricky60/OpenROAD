@@ -1,0 +1,16 @@
+* 0.14umx2.8umx0.3um wire
+* Layer of wire: Metal 3
+* conductor name	|  3D coordinates of the four corners
+*
+* bottom panel
+Q wire_M3_W014_L28		0.0 0.0 0.0  0.14 0.0 0.0  0.14 2.8 0.0  0.0 2.8 0.0
+* front panel
+Q wire_M3_W014_L28		0.0 0.0 0.0  0.14 0.0 0.0  0.14 0.0 0.3  0.0 0.0 0.3
+* left panel
+Q wire_M3_W014_L28		0.0 0.0 0.0  0.0 2.8 0.0  0.0 2.8 0.3  0.0 0.0 0.3
+* top panel
+Q wire_M3_W014_L28		0.0 0.0 0.3  0.14 0.0 0.3  0.14 2.8 0.3  0.0 2.8 0.3
+* right panel
+Q wire_M3_W014_L28		0.14 0.0 0.0  0.14 0.0 0.3  0.14 2.8 0.3  0.14 2.8 0.0
+* back panel
+Q wire_M3_W014_L28		0.0 2.8 0.0  0.14 2.8 0.0  0.14 2.8 0.3  0.0 2.8 0.3

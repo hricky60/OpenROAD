@@ -1,0 +1,11 @@
+* 0.17umX17um dielectric layer for top and bottom face
+* Used for metal1 dielectric layer since thickness is 0.36um 
+*
+* Note: micro is too small of a scale so units are kept in meters and output is divided by 10^-6
+* since capacitance scales
+*
+* dielectric name      |    3D coordinates of the four corners
+*
+* top panel
+Q dielectric_face           0.0 0.0 0.0  0.17 0.0 0.0  0.17 17.0 0.0  0.0 17.0 0.0
+

@@ -1,0 +1,12 @@
+* 0.17umX17um wire face for top and bottom face
+* Used for metal1 and metal2 wires since thickness is
+* 0.36um for those two layers
+*
+* Note: micro is too small of a scale so units are kept in meters and output is divided by 10^-6
+* since capacitance scales
+*
+* conductor name      |    3D coordinates of the four corners
+*
+* top and bottom panel
+Q wire_17_017           0.0 0.0 0.0  0.17 0.0 0.0  0.17 17.0 0.0  0.0 17.0 0.0
+

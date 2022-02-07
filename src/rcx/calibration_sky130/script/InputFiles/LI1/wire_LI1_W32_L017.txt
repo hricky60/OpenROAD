@@ -1,0 +1,16 @@
+* 3.2umx0.17umx0.25um wire
+* Layer of wire: Metal 1
+* conductor name	|  3D coordinates of the four corners
+*
+* bottom panel
+Q wire_LI1_W32_L017		0.0 0.0 0.0  3.2 0.0 0.0  3.2 0.17 0.0  0.0 0.17 0.0
+* front panel
+Q wire_LI1_W32_L017		0.0 0.0 0.0  3.2 0.0 0.0  3.2 0.0 0.25  0.0 0.0 0.25
+* left panel
+Q wire_LI1_W32_L017		0.0 0.0 0.0  0.0 0.17 0.0  0.0 0.17 0.25  0.0 0.0 0.25
+* top panel
+Q wire_LI1_W32_L017		0.0 0.0 0.25  3.2 0.0 0.25  3.2 0.17 0.25  0.0 0.17 0.25
+* right panel
+Q wire_LI1_W32_L017		3.2 0.0 0.0  3.2 0.0 0.25  3.2 0.17 0.25  3.2 0.17 0.0
+* back panel
+Q wire_LI1_W32_L017		0.0 0.17 0.0  3.2 0.17 0.0  3.2 0.17 0.25  0.0 0.17 0.25

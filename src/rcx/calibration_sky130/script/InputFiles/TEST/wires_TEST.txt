@@ -1,0 +1,62 @@
+* 2D
+*
+*   name        |    dielectric constant    |   offset   
+*
+* W1 M1_3 Bottom Segment
+C wire_M1_3_W014_T005_bottom.txt    1.0       -0.91 0.65 +
+
+* W1 M1_3 Left Segment
+C wire_M1_3_W014_T005_left.txt      1.0       -0.91 0.65 +
+
+* W1 M1_3 Left Segment
+C wire_M1_3_W014_T005_left.txt      1.0       -0.91 0.7 +
+
+* W1 M1_3 Left Segment
+C wire_M1_3_W014_T005_left.txt      1.0       -0.91 0.75 +
+
+* W1 M1_5 Top Segment
+C wire_M1_3_W014_T005_top.txt       1.0       -0.91 0.75 +
+
+* W1 M1_3 Right Segment
+C wire_M1_3_W014_T005_right.txt     4.3e-6    -0.91 0.75 +
+
+* W1 M1_5 Right Segment
+C wire_M1_3_W014_T005_right.txt     4.3e-6    -0.91 0.7 + 
+
+* W1 M1_5 Right Segment
+C wire_M1_3_W014_T005_right.txt     4.3e-6    -0.91 0.65
+
+
+
+* W1 M1_3 Bottom Segment
+C wire_M1_3_W014_T005_bottom.txt    1.0       -0.63 0.65 +
+
+* W1 M1_3 Left Segment
+C wire_M1_3_W014_T005_left.txt      4.3e-6    -0.63 0.65 +
+
+* W1 M1_3 Left Segment
+C wire_M1_3_W014_T005_left.txt      4.3e-6    -0.63 0.7 +
+
+* W1 M1_3 Left Segment
+C wire_M1_3_W014_T005_left.txt      4.3e-6    -0.63 0.75 +
+
+* W1 M1_5 Top Segment
+C wire_M1_3_W014_T005_top.txt       1.0       -0.63 0.75 +
+
+* W1 M1_3 Right Segment
+C wire_M1_3_W014_T005_right.txt     1.0       -0.63 0.75 +
+
+* W1 M1_5 Right Segment
+C wire_M1_3_W014_T005_right.txt     1.0       -0.63 0.7 + 
+
+* W1 M1_5 Right Segment
+C wire_M1_3_W014_T005_right.txt     1.0       -0.63 0.65
+
+
+
+* Dielectric inbetween the two
+dielectric_M1_3_W014_T005.txt	    1.0 4.3e-6     -0.77 0.65    -0.77 0.65
+
+dielectric_M1_3_W014_T005.txt	    1.0 4.3e-6     -0.77 0.7    -0.77 0.7
+
+dielectric_M1_3_W014_T005.txt	    1.0 4.3e-6     -0.77 0.75    -0.77 0.75

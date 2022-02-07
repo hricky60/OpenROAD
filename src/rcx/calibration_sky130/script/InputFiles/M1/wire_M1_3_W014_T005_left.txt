@@ -1,0 +1,6 @@
+* 0.14umx0.05um square
+* Layer of square: Metal 1_3
+* segment name	| coordinates of one segment from point to point
+*
+* left segment
+S wire_M1		0.0 0.05  0.0 0.0

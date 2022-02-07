@@ -1,0 +1,46 @@
+* Five 0.17umX17um wires in parallel 
+* spaced by .29, .17, .17, and then .29 um
+*
+* Net Name: 06_M1oM0_W170W170_S00170S00170_x (x = 1-5)
+*
+*
+* Note: Micrometer goes beyond the geometric threshold so units are kept
+* in meters and the output is divided by 10^-6 since capacitance scales
+* 
+* conductor 	      		     | dielectric  | offset		| Dielectric
+* file name 	      		     | constant    | in space 		| reference point
+* 
+* Wire 1 bottom, sides, top
+C wire_W017L170H036_top_bot.txt		4.3e-6     	0.0 0.0 0.0 +
+C wire_W017L170H036_sides.txt		1		0.0 0.0 0.0 +
+C wire_W017L170H036_top_bot.txt		4.3e-6		0.0 0.0 0.36
+*
+* Wire 2 bottom, sides, top
+C wire_W017L170H036_top_bot.txt		4.3e-6     	0.46 0.0 0.0 +
+C wire_W017L170H036_sides.txt		1		0.46 0.0 0.0 +
+C wire_W017L170H036_top_bot.txt		4.3e-6		0.46 0.0 0.36
+*
+* Wire 3 bottom, sides, top
+C wire_W017L170H036_top_bot.txt		4.3e-6     	0.8 0.0 0.0 +
+C wire_W017L170H036_sides.txt		1		0.8 0.0 0.0 +
+C wire_W017L170H036_top_bot.txt		4.3e-6		0.8 0.0 0.36
+*
+* Wire 4 bottom, sides, top
+C wire_W017L170H036_top_bot.txt		4.3e-6     	1.14 0.0 0.0 +
+C wire_W017L170H036_sides.txt		1		1.14 0.0 0.0 +
+C wire_W017L170H036_top_bot.txt		4.3e-6		1.14 0.0 0.36
+*
+* Wire 5 bottom, sides, top
+C wire_W017L170H036_top_bot.txt		4.3e-6     	1.6 0.0 0.0 +
+C wire_W017L170H036_sides.txt		1		1.6 0.0 0.0 +
+C wire_W017L170H036_top_bot.txt		4.3e-6		1.6 0.0 0.36
+*
+* Dielectric bottom layer
+D dielectric_top_bot.txt		1.0 4.3e-6	0.0 0.0 0.0	  0.0 0.0 0.01
+D dielectric_sides.txt			1.0 4.3e-6	0.0 0.0 -0.36	  0.5 0.0 -0.18 -
+D dielectric_top_bot.txt		1.0 4.3e-6	0.0 0.0 -0.36	  0.0 0.0 -0.4
+*
+* Dielectric top layer
+D dielectric_top_bot.txt		1.0 4.3e-6	0.0 0.0 0.36	  0.0 0.0 0.2
+D dielectric_sides.txt			1.0 4.3e-6	0.0 0.0 0.36	  0.5 0.0 0.46 -
+D dielectric_top_bot.txt		1.0 4.3e-6	0.0 0.0 0.72	  0.0 0.0 0.8

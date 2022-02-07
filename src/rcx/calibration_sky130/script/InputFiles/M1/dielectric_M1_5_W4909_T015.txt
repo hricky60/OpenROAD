@@ -1,0 +1,12 @@
+* 49.09umx0.15um square
+* Layer of square: Metal 1_5
+* segment name	| coordinates of one segment from point to point
+*
+* bottom segment
+S dielectric_M1_5_W4909_T015		0.0 0.0  49.09 0.0
+* right segment
+S dielectric_M1_5_W4909_T015		49.09 0.0  49.09 0.15
+* top segment
+S dielectric_M1_5_W4909_T015		49.09 0.15  0.0 0.15
+* left segment
+S dielectric_M1_5_W4909_T015		0.0 0.15  0.0 0.0

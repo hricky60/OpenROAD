@@ -1,0 +1,22 @@
+* 0.14umX14.0umX0.36um wire that is vertical
+* Used for M2 wires since thickness is
+* 0.36um for this layer
+*
+* Note: micro is too small of a scale so units are kept in meters and dielectric constant is 
+* divided by 10^-6 so the scaling is mitigated
+*
+* conductor name      |    3D coordinates of the four corners
+*
+* bottom panel 
+Q wire_17_017 		0.0 0.0 0.0  0.14 0.0 0.0  0.14 14.0 0.0  0.0 14.0 0.0
+* front panel
+Q wire_17_017		0.0 0.0 0.0  0.14 0.0 0.0  0.14 0.0 0.36  0.0 0.0 0.36
+* left panel
+Q wire_17_017		0.0 0.0 0.0  0.0 14.0 0.0  0.0 14.0 0.36  0.0 0.0 0.36
+
+* top panel
+Q wire_17_017		0.0 0.0 0.36  0.14 0.0 0.36  0.14 14.0 0.36  0.0 14.0 0.36
+* right panel
+Q wire_17_017		0.14 0.0 0.0  0.14 0.0 0.36  0.14 14.0 0.36  0.14 14.0 0.0
+* back panel
+Q wire_17_017		0.0 14.0 0.0  0.14 14.0 0.0  0.14 14.0 0.36  0.0 14.0 0.36

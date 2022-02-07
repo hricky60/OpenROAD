@@ -1,0 +1,72 @@
+* 44 LI1 wires of 3.2x0.17x0.1um dimension
+* below 5 M2 wires of 0.14x14.0x0.36 dimension
+*
+* Net Name: O6_M3oM1_W140W140_S00140S00140_cntxM1_x (x=1-44)
+* Net Name: O6_M3oM1_W140W140_S00140S00140_x (x=1-5)
+*
+*
+* conductor            | dielectric | offset
+* file name            | constant   | in space
+*
+*
+* LI1 wires
+*
+C wire_LI1_W017L320.txt  3.9e-6    0.0 0.0 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 0.34 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 0.68 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 1.02 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 1.36 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 1.70 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 2.04 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 2.38 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 2.72 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 3.06 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 3.40 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 3.74 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 4.08 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 4.42 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 4.76 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 5.10 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 5.44 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 5.78 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 6.12 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 6.46 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 6.80 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 7.14 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 7.48 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 7.82 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 8.16 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 8.50 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 8.84 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 9.18 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 9.52 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 9.86 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 10.20 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 10.54 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 10.88 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 11.22 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 11.56 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 11.90 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 12.24 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 12.58 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 12.92 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 13.26 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 13.60 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 13.94 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 14.28 0.0
+C wire_LI1_W017L320.txt  3.9e-6    0.0 14.62 0.0
+*
+*
+* M2 wires
+*
+C wire_M2_W014L140.txt  3.9e-6    0.95 0.46 1.17
+C wire_M2_W014L140.txt  3.9e-6    1.41 0.46 1.17
+C wire_M2_W014L140.txt  3.9e-6    1.69 0.46 1.17
+C wire_M2_W014L140.txt  3.9e-6    1.97 0.46 1.17
+C wire_M2_W014L140.txt  3.9e-6    2.43 0.46 1.17
+
+
+
+
+
+

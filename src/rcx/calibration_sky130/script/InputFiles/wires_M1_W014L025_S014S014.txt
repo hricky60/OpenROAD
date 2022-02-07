@@ -1,0 +1,19 @@
+* Six 0.14umX0.25um wires in parallel 
+* spaced each by 0.14 um on LI1 layer
+*
+* Net Name: 06_M1oM0_W014_S014_x (x = 1-6)
+*
+*
+* Note: Micrometer goes beyond the geometric threshold so units are kept
+* in meters and the dielectric constant divided by 10^6 so the unit is in F/um to offset 
+* geometric scaling
+* 
+* conductor 	      | dielectric  | offset 
+* file name 	      | constant    | in space 
+* 
+C ./LI1/wire_LI1_W014_L025.txt	 7e-6     	0.0  0.0 0.0 
+C ./LI1/wire_LI1_W014_L025.txt   7e-6     	0.28 0.0 0.0
+C ./LI1/wire_LI1_W014_L025.txt	 7e-6		0.56 0.0 0.0
+C ./LI1/wire_LI1_W014_L025.txt	 7e-6		0.84 0.0 0.0
+C ./LI1/wire_LI1_W014_L025.txt	 7e-6		1.12 0.0 0.0
+C ./LI1/wire_LI1_W014_L025.txt	 7e-6		1.40 0.0 0.0

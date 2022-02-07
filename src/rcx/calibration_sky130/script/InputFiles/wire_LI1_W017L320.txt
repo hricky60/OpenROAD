@@ -1,0 +1,22 @@
+* 3.2umX0.17umX0.1um wire that is horizontal
+* Used for LI1 wires since thickness is
+* 0.1um for this layer
+*
+* Note: micro is too small of a scale so units are kept in meters and dielectric constant is 
+* divided by 10^-6 so the scaling is mitigated
+*
+* conductor name      |    3D coordinates of the four corners
+*
+* bottom panel 
+Q wire_17_017 		0.0 0.0 0.0  3.20 0.0 0.0  3.20 0.17 0.0  0.0 0.17 0.0
+* front panel
+Q wire_17_017		0.0 0.0 0.0  3.20 0.0 0.0  3.20 0.0 0.1  0.0 0.0 0.1
+* left panel
+Q wire_17_017		0.0 0.0 0.0  0.0 0.17 0.0  0.0 0.17 0.1  0.0 0.0 0.1
+
+* top panel
+Q wire_17_017		0.0 0.0 0.1  3.20 0.0 0.1  3.20 0.17 0.1  0.0 0.17 0.1
+* right panel
+Q wire_17_017		3.20 0.0 0.0  3.20 0.0 0.1  3.20 0.17 0.1  3.20 0.17 0.0
+* back panel
+Q wire_17_017		0.0 0.17 0.0  3.20 0.17 0.0  3.20 0.17 0.1  0.0 0.17 0.1

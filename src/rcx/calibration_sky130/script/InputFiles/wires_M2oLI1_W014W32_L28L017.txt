@@ -1,0 +1,30 @@
+* 4 LI1 wires of 3.2x0.17x0.1um dimension
+* below 5 M2 wires of 0.14x2.8x0.36 dimension
+*
+*
+*
+* conductor            | dielectric | offset
+* file name            | constant   | in space
+*
+*
+* LI1 wires
+*
+C ./LI1/wire_LI1_W32_L017.txt  3.9e-6    0.0 0.85 0.0
+C ./LI1/wire_LI1_W32_L017.txt  3.9e-6    0.0 1.19 0.0
+C ./LI1/wire_LI1_W32_L017.txt  3.9e-6    0.0 1.53 0.0
+C ./LI1/wire_LI1_W32_L017.txt  3.9e-6    0.0 1.87 0.0
+*
+*
+* M2 wires
+*
+C ./M3/wire_M3_W014_L28.txt  3.9e-6    0.95 0.0 0.0
+C ./M3/wire_M3_W014_L28.txt  3.9e-6    1.41 0.0 0.0
+C ./M3/wire_M3_W014_L28.txt  3.9e-6    1.69 0.0 0.0
+C ./M3/wire_M3_W014_L28.txt  3.9e-6    1.97 0.0 0.0
+C ./M3/wire_M3_W014_L28.txt  3.9e-6    2.43 0.0 0.0
+
+
+
+
+
+

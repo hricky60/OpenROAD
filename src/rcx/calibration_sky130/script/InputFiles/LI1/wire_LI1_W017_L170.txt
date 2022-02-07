@@ -1,0 +1,16 @@
+* 0.17umx17.0umx0.1um wire
+* Layer of wire: Metal 1
+* conductor name	|  3D coordinates of the four corners
+*
+* bottom panel
+Q wire_LI1_W017_L170		0.0 0.0 0.0  0.17 0.0 0.0  0.17 17.0 0.0  0.0 17.0 0.0
+* front panel
+Q wire_LI1_W017_L170		0.0 0.0 0.0  0.17 0.0 0.0  0.17 0.0 0.1  0.0 0.0 0.1
+* left panel
+Q wire_LI1_W017_L170		0.0 0.0 0.0  0.0 17.0 0.0  0.0 17.0 0.1  0.0 0.0 0.1
+* top panel
+Q wire_LI1_W017_L170		0.0 0.0 0.1  0.17 0.0 0.1  0.17 17.0 0.1  0.0 17.0 0.1
+* right panel
+Q wire_LI1_W017_L170		0.17 0.0 0.0  0.17 0.0 0.1  0.17 17.0 0.1  0.17 17.0 0.0
+* back panel
+Q wire_LI1_W017_L170		0.0 17.0 0.0  0.17 17.0 0.0  0.17 17.0 0.1  0.0 17.0 0.1
