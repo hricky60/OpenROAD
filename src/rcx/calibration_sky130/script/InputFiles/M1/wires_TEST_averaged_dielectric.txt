@@ -1,0 +1,111 @@
+* 2D - M1oM0_W0.14_S0.14 wires embedded in P1, M1, and M2 dielectrics
+*
+*
+*
+*     name      |    <out_perm> <in_perm>   |  offset  |  reference point
+*
+* P1 Dielectric
+D ../P1/dielectric_P1_1_W1000_T025_averaged.txt    1.0 5.1e-6    -5.0 0.0001    -4.90 0.1 -
+*
+*
+* M1_3 Dielectric Left Segment
+D dielectric_M1_3_W4909_T005_averaged.txt    1.0 4.4e-6    -5.0 0.65   -4.90 0.66 -
+* M1_3 Dielectric wire1 & wire2 Segment
+D dielectric_M1_3_W014_T005_averaged.txt     1.0 4.4e-6    -0.77 0.65   -0.76 0.66 -
+* M1_3 Dielectric wire2 & wire3 Segment
+D dielectric_M1_3_W014_T005_averaged.txt     1.0 4.4e-6    -0.49 0.65   -0.48 0.66 -
+* M1_3 Dielectric wire3 & wire4 Segment
+D dielectric_M1_3_W014_T005_averaged.txt     1.0 4.4e-6    -0.21 0.65   -0.20 0.66 -
+* M1_3 Dielectric wire4 & wire5 Segment
+D dielectric_M1_3_W014_T005_averaged.txt     1.0 4.4e-6     0.07 0.65    0.08 0.66 -
+* M1_3 Dielectric wire5 & wire6 Segment
+D dielectric_M1_3_W014_T005_averaged.txt     1.0 4.4e-6     0.35 0.65    0.36 0.66 -
+* M1_3 Dielectric Right Segment
+D dielectric_M1_3_W4937_T005_averaged.txt    1.0 4.4e-6     0.63 0.65    0.64 0.66 -
+*
+*
+* M2_1 Dielectric
+D ../M2/dielectric_M2_1_W1000_T005_averaged.txt    1.0 4.0e-6    -5.0 0.9    -4.90 0.91 -
+*
+*
+* ==========================================================
+*   Metal Wires Portion
+* ==========================================================
+*
+*   name        |    dielectric constant    |   offset   
+*
+*
+* W1 M1_3 Bottom Segment
+C wire_M1_3_W014_T005_bottom_averaged.txt    5.1e-6    -0.91 0.65 +
+* W1 M1_3 Left Segment
+C wire_M1_3_W014_T005_left_averaged.txt      4.4e-6    -0.91 0.65 +
+* W1 M1_4 Top Segment
+C wire_M1_3_W014_T005_top_averaged.txt       4.0e-6    -0.91 0.65 +
+* W1 M1_5 Right Segment
+C wire_M1_3_W014_T005_right_averaged.txt     4.4e-6    -0.91 0.65 
+*
+*
+*
+* W2 M1_3 Bottom Segment
+C wire_M1_3_W014_T005_bottom_averaged.txt    5.1e-6    -0.63 0.65 +
+* W2 M1_3 Left Segment
+C wire_M1_3_W014_T005_left_averaged.txt      4.4e-6    -0.63 0.65 +
+* W2 M1_5 Top Segment
+C wire_M1_3_W014_T005_top_averaged.txt       4.0e-6    -0.63 0.65 +
+* W2 M1_5 Right Segment
+C wire_M1_3_W014_T005_right_averaged.txt     4.4e-6    -0.63 0.65 
+*
+*
+*
+* W3 M1_3 Bottom Segment
+C wire_M1_3_W014_T005_bottom_averaged.txt    5.1e-6    -0.35 0.65 +
+* W3 M1_3 Left Segment
+C wire_M1_3_W014_T005_left_averaged.txt      4.4e-6    -0.35 0.65 +
+* W3 M1_5 Top Segment
+C wire_M1_3_W014_T005_top_averaged.txt       4.0e-6    -0.35 0.65 +
+* W3 M1_5 Right Segment
+C wire_M1_3_W014_T005_right_averaged.txt     4.4e-6    -0.35 0.65 
+*
+*
+*
+* W4 M1_3 Bottom Segment
+C wire_M1_3_W014_T005_bottom_averaged.txt    5.1e-6    -0.07 0.65 +
+* W4 M1_3 Left Segment
+C wire_M1_3_W014_T005_left_averaged.txt      4.4e-6    -0.07 0.65 +
+* W4 M1_5 Top Segment
+C wire_M1_3_W014_T005_top_averaged.txt       4.0e-6    -0.07 0.65 +
+* W4 M1_5 Right Segment
+C wire_M1_3_W014_T005_right_averaged.txt     4.4e-6    -0.07 0.65 
+*
+*
+*
+* W5 M1_3 Bottom Segment
+C wire_M1_3_W014_T005_bottom_averaged.txt    5.1e-6    0.21 0.65 +
+* W5 M1_3 Left Segment
+C wire_M1_3_W014_T005_left_averaged.txt      4.4e-6    0.21 0.65 +
+* W5 M1_5 Top Segment
+C wire_M1_3_W014_T005_top_averaged.txt       4.0e-6    0.21 0.65 +
+* W5 M1_5 Right Segment
+C wire_M1_3_W014_T005_right_averaged.txt     4.4e-6    0.21 0.65 
+*
+*
+*
+* W6 M1_3 Bottom Segment
+C wire_M1_3_W014_T005_bottom_averaged.txt    5.1e-6    0.49 0.65 +
+* W6 M1_3 Left Segment
+C wire_M1_3_W014_T005_left_averaged.txt      4.4e-6    0.49 0.65 +
+* W6 M1_5 Top Segment
+C wire_M1_3_W014_T005_top_averaged.txt       4.0e-6    0.49 0.65 +
+* W6 M1_5 Right Segment
+C wire_M1_3_W014_T005_right_averaged.txt     4.4e-6    0.49 0.65 
+*
+*
+* 
+* W0 M0 Bottom Segment
+C ../P1/wire_P1_1_W1000_T10_bottom.txt    1.0       -5.0 -1.0 +
+* W0 M0 Left Segment
+C ../P1/wire_P1_1_W1000_T10_left.txt      1.0       -5.0 -1.0 +
+* W0 M0 Top Segment
+C ../P1/wire_P1_1_W1000_T10_top.txt       5.1e-6    -5.0 -1.0 +
+* W0 M0 Right Segment
+C ../P1/wire_P1_1_W1000_T10_right.txt     1.0       -5.0 -1.0

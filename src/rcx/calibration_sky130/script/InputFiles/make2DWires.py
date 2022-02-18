@@ -1,7 +1,7 @@
 import sys
 import os
 
-INPUTFILE_DIR = "/home/rickysuave/Documents/OSUClasses/VLSILab/FasterCap_main/InputFiles/"
+INPUTFILE_DIR = "/home/rjridle/OR/ricky/OpenROAD/src/rcx/calibration_sky130/script/InputFiles/"
 
 
 class Wire():

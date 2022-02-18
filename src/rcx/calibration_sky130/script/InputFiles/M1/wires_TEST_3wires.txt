@@ -157,7 +157,7 @@ C wire_M1_5_W014_T015_right.txt     4.1e-6    -0.07 0.75 +
 C wire_M1_4_W014_T005_right.txt     4.9e-6    -0.07 0.7 +
 * W4 M1_3 Right Segment
 C wire_M1_3_W014_T005_right.txt     4.3e-6    -0.07 0.65
-*
+ *
 *
 *
 * W5 M1_3 Bottom Segment

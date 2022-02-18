@@ -1,0 +1,12 @@
+* 100.0umx0.05um square
+* Layer of square: Metal 2_1
+* segment name	| coordinates of one segment from point to point
+*
+* bottom segment
+S dielectric_M2		0.0 0.0  100.0 0.0
+* right segment
+S dielectric_M2		100.0 0.0  100.0 0.27
+* top segment
+S dielectric_M2		100.0 0.27  0.0 0.27
+* left segment
+S dielectric_M2		0.0 0.27  0.0 0.0
